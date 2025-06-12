@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitelabel</title>
+    <!-- css style -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward_ios" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+<body>
+    <!-- Navbar -->
+   <section class="Craitrix-Nav-section">
+        <nav class="navbar navbar-expand-lg Craitrix-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand Craitrix-nav-logo" href="#">
+                    <img src="assets/Craitrix-logo.png" alt="Cryptiecraft Logo" />
+                </a>
+
+                <!-- Hamburger toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+
+                <!-- Navbar Items -->
+                <div class="collapse navbar-collapse Craitrix-nav-items" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" name="Exchange">Exchange Solution <span class="arrow-icon"><i
+                                        class="fa-solid fa-angle-down"></i></span></a>
+                            <div class="container Craitrix-box"></div>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" name="Tokenization">Tokenization <span class="arrow-icon"><i
+                                        class="fa-solid fa-angle-down"></i></span></a>
+                            <div class="container Craitrix-box"></div>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" name="NFT">NFT <span class="arrow-icon"><i
+                                        class="fa-solid fa-angle-down"></i></span></a>
+                            <div class="container Craitrix-box"></div>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" name="Wallet">Wallet Solution <span class="arrow-icon"><i
+                                        class="fa-solid fa-angle-down"></i></span></a>
+                            <div class="container Craitrix-box"></div>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" name="Fintech">Fintech <span class="arrow-icon"><i
+                                        class="fa-solid fa-angle-down"></i></span></a>
+                            <div class="container Craitrix-box"></div>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" name="Defi">Defi <span class="arrow-icon"><i
+                                        class="fa-solid fa-angle-down"></i></span></a>
+                            <div class="container Craitrix-box"></div>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" name="More">Blog </a>
+                            <div class="container Craitrix-box"></div>
+
+                        </li>
+                    </ul>
+
+                    <div class="Craitrix-nav-button d-flex">
+                        <button type="button" class="btn btn-warning">Get in Touch</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="Craitrix-downbox">
+
+        </div>
+     </section>
+
+    <!-- header -->
+    <div id="main-content">
+        <header>
+            <div class="Whitelabel-hero">
+                <div class="container">
+                    <div class="row">
+                      
+                        <div class="col-lg-6 ">
+                            <div class="Whitelabel-hero-left">
+                                <h1><span class="Whitelabel-hero-left-span">White Label Cryptocurrency </span> Exchange
+                                    Software</h1>
+                                <p>A Customizable & Pre-Built Platform To Launch Your Cryptocurrency Exchange</p>
+                                <div class="Whitelabel-hero-left-button" >
+                                    <button onclick="openPopup()">Request a demo</button>
+                                </div>
+                            </div>
+
+                                  <!-- Modal Structure -->
+                        <div id="popup-overlay" class="overlay" style="display: none;">
+                <div class="popup">
+                    <div class="popup-content">
+                        <span class="close-btn"><i class="fas fa-times"></i></span>
+                        <h2>Start Your Free Trial Now!</h2>
+                        <img src="assets/popup.png" alt="Trial-Image" class="illustration">
+                        
+                        <div class="button-container">
+                            <a href="https://wa.me/+917760075641" target="_blank"><button class="whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> Whatsapp
+                            </button></a>
+                            <a href="https://teams.live.com/l/invite/FEAcE1RvYii9C4uLQI" target="_blank"><button class="teams-btn">
+                                <i class="fab fa-microsoft"></i> Microsoft Teams
+                            </button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        </div>
+
+                          <div class="col-lg-6 ">
+                            <div class="Whitelabel-hero-right">
+                                <img src="assets/whitelabel-hero-img.png" alt="Whitelabel-crypto-exchange-software-dashboard">
+                            </div>
+                           </div>
+                         
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <section class="Whitelabel">
+            <div class="container">
+                <div class="row">
+                      <div class="col-lg-6 order-lg-2">
+                        <div class="Whitelabel-right ">
+                            <h2><span>What is </span>Cryptocurrency Exchange Script?</h2>
+                            <p class="hero-info">A White Label Cryptocurrency Exchange Script is a customizable, pre-built software solution that allows entrepreneurs and businesspersons to launch their own cryptocurrency trading platforms instantly, without the need to develop them from scratch. <br> <br> It includes advanced functionalities such as Spot, Derivative trading, KYC/AML compliance, multi-currency support, liquidity management support, and other top-tier security protocols. By using this ready-made software, companies can reduce development costs while ensuring a scalable, safe, secure, and high-performance trading platform. Additionally, it supports several trading models, including Decentralized (DEX), Centralized (CEX), and Peer-To-Peer (P2P) exchanges, making it a functional solution for entrepreneurs who desire to enter the booming cryptocurrency market.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="Whitelabel-left">
+                            <img src="assets/whitelabel-exchange-crypto.png" alt="Whitelabel-crypto-exchange-script">
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </section>
+
+        <section class="Whitelabel-Blockchain">
+            <h2 class="Whitelabel-Blockchain-head">Key <span>Operational Categories</span> Of the Exchanges</h2>
+            <div class="Whitelabel-Blockchain-div">
+                <div>
+                    <div class="Whitelabel-Blockchain-div1 row justify-content-center ">
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                            <button class="Whitelabel-Blockchain-btn active">Spot Exchange</button>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                            <button class="Whitelabel-Blockchain-btn">P2P Exchange</button>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 col6">
+                            <button class="Whitelabel-Blockchain-btn">Derivatives Exchange</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="Whitelabel-Blockchain-div-box">
+                    <div class="Whitelabel-Blockchain-div-box-round">
+                    <img src="assets/spot exchange.png" id="blockchain-img" alt="spot-exchange">
+
+                    </div>
+                    <br>
+                    <br>
+                    <p id="blockchain-desc">
+                        Spot Exchange allows users to trade cryptocurrencies instantly at market prices. It's ideal for straightforward trades and quick access to digital assets.</p>
+                    <div class="Whitelabel-Blockchain-div-box-buttons">
+                        <button class="get-demo-btn" onclick="openPopup()">Get Demo</button>
+                        <button style="color: black;">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="Whitelabel-features-section">
+            <div class="Whitelabel-container">
+                <h2 class="Whitelabel-section-title">Top <span style="color: #0099cc;">Features</span> Of White Label
+                    Exchange
+                </h2>
+
+                <div class="Whitelabel-features-tabs row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                    <div class=" Whitelabel-feature-tab active">Performance Features</div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                    <div class="Whitelabel-feature-tab">Security Features</div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                    <div class="Whitelabel-feature-tab">Wallet Features</div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                    <div class="Whitelabel-feature-tab">Trading Features</div>
+
+                    </div>
+                </div>
+
+                <div class="Whitelabel-features-content">
+                    <div class="Whitelabel-features-right order-lg-2">
+                        <div class="Whitelabel-feature-image">
+                            <img src="assets/Advanced Trading Engine.png" alt="Advanced Trading Engine"
+                                id="Whitelabel-feature-image">
+                        </div>
+                        <div class="Whitelabel-feature-description">
+                            <p id="Whitelabel-feature-text">The white label cryptocurrency exchange software from cryptiecraft is designed in a way that has low latency and high-speed transactions. Though, the high market volatility, it assures for the seamless trade execution in that cases too</p>
+                        </div>
+                    </div>
+                    <div class="Whitelabel-features-left order-lg-1">
+                        <div class="Whitelabel-feature-item features-active" data-feature="trading-engine">
+                            <span>Advanced Trading Engine</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <div class="Whitelabel-feature-item" data-feature="matching">
+                            <span>Order Matching Algorithm</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <div class="Whitelabel-feature-item" data-feature="charts">
+                            <span>Live Trading Charts</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Whitelabel-benefits">
+            <div class="container">
+                <h2>Business <span style="color: #0099cc;">Benefits </span>of White Label Cryptocurrency Exchange</h2>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="Whitelabel-benefits-box">
+                            <h4>Rapid Crypto Exchange Launch</h4>
+                            <p>The minimum time to build a crypto exchange platform from scratch can take between 6 months to 2 years, as it requires extensive back-testing of its functions and features. In such cases, white-label crypto exchanges provide the ideal solution for crypto entrepreneurs to launch an exchange without the long wait</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="Whitelabel-benefits-box">
+                            <h4>Easy Customization</h4>
+                            <p>Our ready-to-go white-label cryptocurrency exchange software is customizable and scalable to add features based on business requirements. The software facilitates seamless integration of third-party services like KYC/AML and payment gateways through APIs, helping you launch your go-to-market exchange effortlessly.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="Whitelabel-benefits-box">
+                            <h4>Bug Free Exchange Software</h4>
+                            <p>Cryptiecraft delivers a robust white-label exchange software designed to minimize QA efforts and time compared to building from scratch.The platform is  built on a proven codebase with regular updates from the core version, it ensures you receive a reliable, bug-free and secure product</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Whitelabel-services">
+            <h2>Our Tailored White label Exchange <span style="color: #0099cc;">Services</span></h2>
+
+            <div class="Whitelabel-solutions-container">
+                <div class="Whitelabel-solutions-left">
+                    <div class="Whitelabel-network-image">
+                        <img src="assets/Our Tailored White label Exchange Services.png"
+                            alt="White label Exchange Services" id="service-image">
+                    </div>
+                </div>
+
+                <div class="Whitelabel-solutions-right">
+                    <div class="Whitelabel-accordion">
+                        <div class="Whitelabel-accordion-item" data-service="centralized">
+                            <div class="Whitelabel-accordion-header">
+                                <h3>Centralized Crypto Exchange</h3>
+                            </div>
+                            <div class="Whitelabel-accordion-content">
+                                <p>We develop centralized cryptocurrency exchanges that provide access for a central authority to manage trades and transactions on the platform. It offers users compliance assurance, fast transactions, and grievance support.</p>
+                            </div>
+                        </div>
+
+                        <div class="Whitelabel-accordion-item" data-service="decentralized">
+                            <div class="Whitelabel-accordion-header">
+                                <h3>Decentralized Exchange</h3>
+                            </div>
+                            <div class="Whitelabel-accordion-content">
+                                <p>Decentralized exchange development facilitates the elimination of a central authority, allowing users to trade directly from their Web3 wallets with complete control over their assets. The software enables privacy-focused trading, transparent transactions, and low fees..</p>
+                            </div>
+                        </div>
+
+                        <div class="Whitelabel-accordion-item" data-service="hybrid">
+                            <div class="Whitelabel-accordion-header">
+                                <h3>Hybrid Crypto Exchange</h3>
+                            </div>
+                            <div class="Whitelabel-accordion-content">
+                                <p>The hybrid exchange comes with the combined benefits of both centralized and decentralized exchange platforms. Besides, our robust hybrid model covers quick transaction, continual liquidity and high level security for optimizing the activities of cryptocurrency trading.</p>
+                            </div>
+                        </div>
+
+                        <div class="Whitelabel-accordion-item" data-service="p2p">
+                            <div class="Whitelabel-accordion-header">
+                                <h3>P2P Crypto Exchange</h3>
+                            </div>
+                            <div class="Whitelabel-accordion-content">
+                                <p>We develop ready-to-launch peer-to-peer crypto exchange platforms specialized in reliable escrow transactions without the involvement of intermediaries. This facilitates direct interaction during transactions, offering enhanced privacy, reduced trading fees, and support for multi-currency trading across the globe.</p>
+                            </div>
+                        </div>
+
+                        <div class="Whitelabel-accordion-item" data-service="defi">
+                            <div class="Whitelabel-accordion-header">
+                                <h3>DeFi Exchange</h3>
+                            </div>
+                            <div class="Whitelabel-accordion-content">
+                                <p>Our feature-rich and safe DeFi exchange focuses on decentralization that allows to swap several cryptocurrencies from several chains. Our DeFi exchange platform supports crypto lending, liquidity and foster financial inclusivity.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Whitelabel-process-section">
+            <div class="Whitelabel-process-container">
+                <h2 class="Whitelabel-process-title">Our White Label Crypto Exchange <span
+                        style="color: #0099cc;">Development
+                        Process</span></h2><br><br>
+
+                <div class="Whitelabel-process-steps">
+                    <!-- Step 1: Details Gathering -->
+                    <div class="Whitelabel-process-card card1">
+                        <div class="Whitelabel-process-icon">
+                            <img src="assets/Details Gathering.png" alt="Requirement Analysis">
+                        </div>
+                        <h3 class="Whitelabel-process-step-title">Requirement Analysis</h3>
+                        <p class="Whitelabel-process-step-desc">The initial phase of white-label cryptocurrency exchange software development involves understanding the objectives, gathering business requirements, assessing feasibility, and planning the technical architecture.</p>
+                    </div>
+
+                    <!-- Step 2: Graphical Design -->
+                    <div class="Whitelabel-process-card card2">
+                        <div class="Whitelabel-process-icon">
+                            <img src="assets/Graphical Design.png" alt="Graphical Design">
+                        </div>
+                        <h3 class="Whitelabel-process-step-title">UI/UX & Graphical Design</h3>
+                        <p class="Whitelabel-process-step-desc">The design process include crafting a seamless user experience with intuitive interfaces and impactful visuals. The focus is on usability, originality, and visual clarity.</p>
+                    </div>
+
+                    <!-- Step 3: Smart Contract Development -->
+                    <div class="Whitelabel-process-card card3">
+                        <div class="Whitelabel-process-icon">
+                            <img src="assets/Smart Contract Development.png" alt="Core Development">
+                        </div>
+                        <h3 class="Whitelabel-process-step-title">Core Development</h3>
+                        <p class="Whitelabel-process-step-desc">Core features are developed based on your business needs, with backend systems and blockchain modules integrated for full functionality.</p>
+                    </div>
+
+                    <!-- Step 4: UX/UI Design -->
+                    <div class="Whitelabel-process-card card4">
+                        <div class="Whitelabel-process-icon">
+                            <img src="assets/Comprehensive Testing.png" alt="UX/UI Design">
+                        </div>
+                        <h3 class="Whitelabel-process-step-title">Comprehensive Testing</h3>
+                        <p class="Whitelabel-process-step-desc">This phase of the development process assures for the error free functioning of the platform. It covers both manual and automated testing, auditing the software, user interface testing ensures high-level security and performance
+</p>
+                    </div>
+
+                    <!-- Step 5: Comprehensive Testing -->
+                    <div class="Whitelabel-process-card card5">
+                        <div class="Whitelabel-process-icon">
+                            <img src="assets/UI Design.png" alt="Deployment">
+                        </div>
+                        <h3 class="Whitelabel-process-step-title">Deployment Process</h3>
+                        <p class="Whitelabel-process-step-desc">We handle secure deployment to the live server, ensuring everything runs smoothly. A full audit is conducted with strict security protocols in place</p>
+                    </div>
+
+                    <!-- Step 6: Deployment & Upgrading -->
+                    <div class="Whitelabel-process-card card6">
+                        <div class="Whitelabel-process-icon">
+                            <img src="assets/Deployment & Upgrading.png" alt="Post Launch Support & Maintenance">
+                        </div>
+                        <h3 class="Whitelabel-process-step-title">Post Launch Support & Maintenance</h3>
+                        <p class="Whitelabel-process-step-desc">We provide Post launch support for the delivered product to ensure smooth operations and help maintain platform performance and stability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="BinanceClone-why-cryptiecraft">
+            <div class="multi-crypto-wallet-section">
+                <h2><span style="color: #0099cc;">Why</span> Choose Us?</h2>
+                <!-- <p>At Cryptiecraft, we don't just provide a Binance clone script — we offer you the foundation to create
+                    a successful cryptocurrency exchange that stands out in the competitive market. Here's why we're the
+                    best choice for your project:</p> -->
+                <div class="features-circle-container">
+                    <div class="center-logo">
+                        <img src="assets/why choose us.png" alt="Cryptiecraft Logo">
+                    </div>
+
+                    <div class="feature-circle">
+                        <!-- Top features -->
+                        <!-- <div class="feature-item top-left">
+                            <div class="feature-box">
+                                <span>24/7 Support</span>
+                            </div>
+                            <div class="connector"></div>
+                        </div> -->
+
+                        <div class="feature-item top-right">
+                            <div class="feature-box">
+                                <span>Customizable Solutions</span>
+                            </div>
+                            <div class="connector"></div>
+                        </div>
+
+                        <!-- Right features -->
+                        <div class="feature-item right-top">
+                            <div class="feature-box">
+                                <span>Post-Launch Support</span>
+                            </div>
+                            <div class="connector"></div>
+                        </div>
+
+                        <div class="feature-item right-bottom">
+                            <div class="feature-box">
+                                <span>Expert Development Team</span>
+                            </div>
+                            <div class="connector"></div>
+                        </div>
+
+
+
+                        <!-- Left features -->
+                        <div class="feature-item left-top">
+                            <div class="feature-box">
+                                <span>Industry Leadership</span>
+                            </div>
+                            <div class="connector"></div>
+                        </div>
+
+                        <div class="feature-item left-middle">
+                            <div class="feature-box">
+                                <span>Security & Compliance</span>
+                            </div>
+                            <div class="connector"></div>
+                        </div>
+
+                        <div class="feature-item left-bottom">
+                            <div class="feature-box">
+                                <span>Cost Effective Solutions</span>
+                            </div>
+                            <div class="connector"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-stack-section">
+            <div class="tech-container">
+                <h2 class="tech-title"><span style="color: #0099cc;">Technology Stack</span> We Use</h2>
+                <br><br>
+                <div class="tech-categories">
+                    <div class="tech-category">
+                        <div class="category-label">Front end Development</div>
+                        <div class="tech-icons">
+                            <img src="assets/image-9.png" alt="HTML5" class="tech-icon" data-animate>
+                            <img src="assets/image-10.png" alt="CSS3" class="tech-icon" data-animate>
+                            <img src="assets/image-11.png" alt="Angular" class="tech-icon" data-animate>
+                            <img src="assets/image-12.png" alt="React" class="tech-icon" data-animate>
+                            <img src="assets/image-13.png" alt="Vue.js" class="tech-icon" data-animate>
+                        </div>
+                    </div>
+
+                    <div class="tech-category">
+                        <div class="category-label">Back end Development</div>
+                        <div class="tech-icons">
+                            <img src="assets/image-14.png" alt="Java" class="tech-icon" data-animate>
+                            <img src="assets/image 2379.png" alt="Node.js" class="tech-icon" data-animate>
+                            <img src="assets/image-17.png" alt="PHP" class="tech-icon" data-animate>
+                            <img src="assets/image-15.png" alt=".NET" class="tech-icon" data-animate>
+                            <img src="assets/image-16.png" alt="Python" class="tech-icon" data-animate>
+                        </div>
+                    </div>
+
+                    <div class="tech-category">
+                        <div class="category-label">App Development</div>
+                        <div class="tech-icons">
+                            <img src="assets/image 2373.png" alt="React Native" class="tech-icon" data-animate>
+                            <img src="assets/image-12.png" alt="Swift" class="tech-icon" data-animate>
+                            <img src="assets/image.png" alt="Flutter" class="tech-icon" data-animate>
+                            <img src="assets/image-1.png" alt="Java Mobile" class="tech-icon" data-animate>
+                            <img src="assets/image 2374.png" alt="Kotlin" class="tech-icon" data-animate>
+                        </div>
+                    </div>
+
+                    <div class="tech-category">
+                        <div class="category-label">Database</div>
+                        <div class="tech-icons">
+                            <img src="assets/image-2.png" alt="SQL Server" class="tech-icon" data-animate>
+                            <img src="assets/image-3.png" alt="MySQL" class="tech-icon" data-animate>
+                            <img src="assets/image-4.png" alt="MongoDB" class="tech-icon" data-animate>
+                            <img src="assets/image-5.png" alt="Oracle" class="tech-icon" data-animate>
+                        </div>
+                    </div>
+
+                    <div class="tech-category">
+                        <div class="category-label">Cloud Services</div>
+                        <div class="tech-icons">
+                            <img src="assets/image-6.png" alt="AWS" class="tech-icon" data-animate>
+                            <img src="assets/image-7.png" alt="Azure" class="tech-icon" data-animate>
+                            <img src="assets/image 2376.png" alt="Google Cloud" class="tech-icon" data-animate>
+                        </div>
+                    </div>
+
+                    <div class="tech-category">
+                        <div class="category-label">Testing Stack</div>
+                        <div class="tech-icons">
+                            <img src="assets/image-8.png" alt="Postman" class="tech-icon" data-animate="">
+                            <img src="assets/image 2377.png" alt="Selenium" class="tech-icon" data-animate="">
+                            <img src="assets/image 2378.png" alt="Cypress" class="tech-icon" data-animate="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     <section class="faq-contactus-container">
+        <h2>Frequently Asked Questions</h2>
+        <img src="assets/Contactus-left.png" class="leftimg">
+                <div class="faqListContainer">
+                </div>
+    </section>
+
+
+
+
+
+        <!--  -->
+         <section class="Craitrix-Contactus py-5">
+        <div class="container">
+            <div class="Craitrix-Contactus-container-left">
+                <div class="row justify-content-center align-items-start">
+
+                    <!-- Left: Form -->
+                    <div class="col-lg-7">
+                        <div class="contact-box p-4 h-100">
+                            <div class="mb-3">
+                                <img src="assets/Cryptiecraft Logo.png" alt="Logo" width="60">
+                            </div>
+                            <h6 class="fw-bold"><span>Start</span> your Journey with Cryptiecraft</h6>
+                            <p class="text-muted small">Unlock creativity and discover new possibilities with our
+                                powerful
+                                tools and resources.</p>
+
+                            <form>
+                                <div class="mb-2">
+                                    <label class="form-label "><i class="fa-solid fa-user"></i> Name</label>
+                                    <input type="text" class="form-control" placeholder="James Dawson">
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-label"><i class="fa-solid fa-envelope"></i> Email</label>
+                                    <input type="email" class="form-control" placeholder="hello@kit.com">
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-label"><i class="fa-solid fa-phone-flip"></i> Contact
+                                        Number</label>
+                                    <input type="tel" class="form-control" placeholder="+91 - Enter phone number">
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-label">Whatsapp / Telegram / Microsoft Teams</label>
+                                    <input type="text" class="form-control" placeholder="Enter your ID / username">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label"><i class="fa-solid fa-message"></i> Message</label>
+                                    <textarea class="form-control" rows="3"
+                                        placeholder="Type your message here..."></textarea>
+                                </div>
+                                <button type="submit" class=" Craitrix-Contactus-container-button">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Right: Contact Info -->
+                    <div class="col-lg-5">
+                        <div class="contact-box2">
+                            <img src="assets/contactus-img.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div class="Craitrix-Contactus-container-right container mt-4">
+  <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 text-center g-4">
+    
+    <div class="col">
+      <div class="Craitrix-Contactus-container-right-div border-none">
+        <img src="assets/mail.png" alt="Mail">
+        <div class="Craitrix-Contactus-container-right-info">
+          <h6>Email</h6>
+          <p><a href="mailto:contact@cryptiecraft.com" target="_blank">contact@cryptiecraft.com</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="Craitrix-Contactus-container-right-div">
+        <img src="assets/phone.png" alt="Phone">
+        <div class="Craitrix-Contactus-container-right-info">
+          <h6>Phone</h6>
+          <p><a href="tel:+1234567890">+91 7760075641</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="Craitrix-Contactus-container-right-div">
+        <img src="assets/whatsapp.png" alt="Whatsapp">
+        <div class="Craitrix-Contactus-container-right-info">
+          <h6>Whatsapp</h6>
+          <p><a href="https://wa.me/+917760075641" target="blank">+91 7760075641</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="Craitrix-Contactus-container-right-div">
+        <img src="assets/teams.png" alt="Teams">
+        <div class="Craitrix-Contactus-container-right-info">
+          <h6>Microsoft Teams</h6>
+          <p><a href="https://teams.live.com/l/invite/FEAcE1RvYii9C4uLQI" target="_blank">Microsoft Teams</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="Craitrix-Contactus-container-right-div">
+        <img src="assets/telegram.png" alt="Telegram">
+        <div class="Craitrix-Contactus-container-right-info">
+          <h6>Telegram</h6>
+          <p><a href="https://t.me/cryptiecraft" target="_blank">@cryptiecraft</a></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+        </div>
+    </section>
+
+        <footer class="footer-section py-5">
+            <div class="container">
+                <div class="row gy-4">
+
+                    <!-- Left Logo & Social -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-div1">
+                            <img src="assets/footer-icon.png" alt="Logo" width="150" class="mb-3 footer-div1-img">
+                            <p class="footer-div1-para">
+                                Lorem ipsum dolor sit amet consectetur. Sit eu sit nibh elementum dui tortor augue erat
+                                at.
+                                Interdum facilisi nunc sollicitudin feugiat eget augue vulputate. Interdum ut donec nec
+                                sapien cursus. Ac at a nulla enim duis consectetur. Augue nec sed viverra purus faucibus
+                                diam et. Convallis scelerisque volutpat tortor viverra erat varius et a dictumst. Justo
+                                nibh. </p>
+                            <div class="d-flex">
+                                <p class="small fw-semibold "><span>
+                                        Follow
+                                    </span> us on</p>
+                                <div class="d-flex gap-1">
+                                    <img src="assets/footer-X.png" width="30px" height="30px">
+                                    <img src="assets/footer-facebook.png" width="30px" height="30px">
+                                    <img src="assets/footer-instagram.png" width="30px" height="30px">
+                                    <img src="assets/footer-linkedin.png" width="30px" height="30px">
+                                    <img src="assets/footer-youtube.png" width="30px" height="30px">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Company -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-div2 box">
+                            <h6 class="fw-bold mb-3">Company</h6>
+                            <ul class="list-unstyled small">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <!-- Blockchain -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-div3 box">
+                            <h6 class="fw-bold mb-3">Blockchain</h6>
+                            <ul class="list-unstyled small">
+                                <li><a href="#">Blockchain Development</a></li>
+                                <li><a href="#">Cryptocurrency Exchange Development</a></li>
+                                <li><a href="#">Crypto Payment Gateway Development</a></li>
+                                <li><a href="#">Cryptocurrency Wallet Development</a></li>
+                                <li><a href="#">P2P Crypto Exchange Development</a></li>
+                                <li><a href="#">White Label Cryptocurrency Exchange Software</a></li>
+                                <li><a href="#">Centralized Exchange Development Company</a></li>
+                                <li><a href="#">White Label Crypto Wallet</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <!-- DeFi -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-div4 box">
+                            <h6 class="fw-bold mb-3">DeFi</h6>
+                            <ul class="list-unstyled small">
+                                <li><a href="#">DeFi Development</a></li>
+                                <li><a href="#">Decentralized Exchange Development</a></li>
+                                <li><a href="#">DeFi Wallet Development</a></li>
+                                <li><a href="#">DeFi Crowdfunding Development</a></li>
+                                <li><a href="#">DEX Similar to SushiSwap</a></li>
+                                <li><a href="#">DEX Similar to BakerySwap</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+               
+                    <!-- Exchange Clone -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-div6 box">
+                            <h6 class="fw-bold mb-3">Exchange Clone</h6>
+                            <ul class="list-unstyled small">
+                                <li><a href="#">Binance Clone Script</a></li>
+                                <li><a href="#">Coinbase Clone Script</a></li>
+                                <li><a href="#">KuCoin Clone Script</a></li>
+                                <li><a href="#">Opensea Clone Script</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-div7 box">
+                            <h6 class="fw-bold mb-3">NFT</h6>
+                            <ul class="list-unstyled small">
+                                <li><a href="#">NFT Marketplace Development</a></li>
+                                <li><a href="#">Coinbase Like NFT Marketplace</a></li>
+                                <li><a href="#">NFT Lending Platform Development</a></li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                         <div class="col-lg-3 col-md-6">
+                        <div class="footer-div5">
+                            <div class="d-flex align-items-center justify-content-around box1">
+                                <div class="footer-div5-email">
+                                  <img src="assets/footer-mail.png" width="60px">
+                                <div>
+                                    <p class="footer-div5-para">Email</p>
+                                    <span class="small">contact@cryptiecraft.com</span>
+                                </div>
+                                </div>
+                              
+                            </div>
+                            <div class="box1 mt-3">
+                                <p class="fw-semibold small text-center">Connect With Us</p>
+                                <div class="d-flex gap-2 justify-content-between px-4">
+                                    <a href="https://wa.me/+917760075641" target="blank"><img src="assets/footer-whatsapp.png" alt="WhatsApp" width="44"></a>
+                                    <a href="https://t.me/cryptiecraft" target="_blank"><img src="assets/footer-telegram.png" alt="Telegram" width="44"></a>
+                                    <a href="https://teams.live.com/l/invite/FEAcE1RvYii9C4uLQI" target="_blank"><img src="assets/footer-teams.png" alt="Teams" width="44"></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-div8">
+                            <h6 class="fw-bold mt-4 mb-1"><span>Next-Gen Crypto. Solid</span> Blockchain.</h6>
+                            <img src="assets/footer-group.png" alt="Decorative Globe" class="img-fluid mt-5">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="wl-process-ccontainer">
+            <div class="bottom-content">
+                <img src="assets/Cryptiecraft_landscape.png"
+                    alt="logo">
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2025 All Rights Reserved by Cryptiecraft.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- js file -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
