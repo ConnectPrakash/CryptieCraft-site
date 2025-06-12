@@ -780,6 +780,81 @@
     line-height: 1.5;
     font-family: 'Times New Roman', Times, serif;
 }
+/* ------------------------- */
+.cta-banner {
+  height: 300px;
+background: linear-gradient(to right,#0A97BE,#087C9ED9);
+position: relative;
+width: 100%;
+}
+.cta-banner .container{
+  z-index:10;
+}
+.cta-img2{
+    position: absolute;
+    height: 100%;
+    width: 500px;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.cta-img2 img{
+    width: 100%;
+    height: 100%;
+}
+.cta-img1{
+    position: absolute;
+    height: 100%;
+    width: 500px;
+    right: 0;
+    bottom: 0;
+    top:0;
+    z-index: 2;
+}
+.cta-img1 img{
+    width: 100%;
+    height: 100%;
+}
+
+/* responsive */
+@media (max-width:1024px) {
+    .cta-banner {
+  height: 250px;
+
+}
+   .cta-img1{
+    width:400px;
+}
+  .cta-img2{
+    width:400px;
+}
+}
+@media (max-width:968px) {
+   .cta-banner{
+    height: 200px;
+   }
+   .cta-img1{
+    width: 300px;
+   }
+   .cta-img2{
+    width: 300px;
+   }
+}
+
+@media (max-width:768px) {
+   .cta-img1{
+    width: 200px;
+   }
+   .cta-img2{
+    width: 200px;
+   }
+   .cta-banner h4{
+    font-size: 16px;
+   }
+   span{
+    font-size: 14px;
+   }
+}
 
 /* -------------------------------------------- */
 /* Whitelabel-services */
