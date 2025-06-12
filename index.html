@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coinbase Clone Script</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward_ios" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <section class="Craitrix-Nav-section">
+        <nav class="navbar navbar-expand-lg Craitrix-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand Craitrix-nav-logo" href="#">
+                    <img src="./asset/Craitrix-logo.png" alt="Craitrix Logo" />
+                </a>
+
+                <!-- Hamburger toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+
+                <!-- Navbar Items -->
+                <div class="collapse navbar-collapse Craitrix-nav-items" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" name="Exchange">Exchange Solution <span class="arrow-icon"><i
+                                        class="fa-solid fa-angle-down"></i></span></a>
+                            <div class="container Craitrix-box"></div>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" name="Tokenization">Tokenization <span class="arrow-icon"><i
+                                        class="fa-solid fa-angle-down"></i></span></a>
+                            <div class="container Craitrix-box"></div>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" name="NFT">NFT <span class="arrow-icon"><i
+                                        class="fa-solid fa-angle-down"></i></span></a>
+                            <div class="container Craitrix-box"></div>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" name="Wallet">Wallet Solution <span class="arrow-icon"><i
+                                        class="fa-solid fa-angle-down"></i></span></a>
+                            <div class="container Craitrix-box"></div>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" name="Fintech">Fintech <span class="arrow-icon"><i
+                                        class="fa-solid fa-angle-down"></i></span></a>
+                            <div class="container Craitrix-box"></div>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" name="Defi">Defi <span class="arrow-icon"><i
+                                        class="fa-solid fa-angle-down"></i></span></a>
+                            <div class="container Craitrix-box"></div>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" name="More">Blog </a>
+                            <div class="container Craitrix-box"></div>
+
+                        </li>
+                    </ul>
+
+                    <div class="Craitrix-nav-button d-flex">
+                        <button type="button" class="btn btn-warning">Get in Touch</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="Craitrix-downbox">
+
+        </div>
+    </section>
+
+    <!-- header -->
+    <div id="main-content">
+        <section class="Coinbase-Clone-hero py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="Coinbase-Clone-hero-left">
+                        <h2>
+                            <span class="Coinbase-Clone-hero-span">Coinbase</span> Clone
+                            Script
+                        </h2>
+                        <p class="mt-3">
+                            With our feature-rich Coinbase Clone Script, you may now create a
+                            strong cryptocurrency exchange business in the emerging
+                            cryptocurrency space. Enjoy a safe trading experience and earn
+                            millions of dollars with the addition of comprehensive security
+                            measures and simpler trading conveniences.
+                        </p>
+                            <button class="Coinbase-Clone-button" id="openModalBtn">
+                                Request a demo
+                            </button>
+
+
+                        </div>
+                     
+                        <!-- Modal Structure -->
+                        <div id="popupModal" class="modal">
+                            <div class="modal-content">
+                                <span class="modal-content-close-btn">&times;</span>
+                                <h2>Start Your Free Trial Now!</h2>
+                                <img src="https://cryptiecraft.com/wp-content/themes/10%20pages%20final%202/asset/popup.png" alt="Trial Image" />
+                                <div class="button-group">
+                                    <a href="https://wa.me/+91 7760075641" target="_blank">
+                                    <button class="whatsapp"> <i class="fa-brands fa-whatsapp"></i> Whatsapp</button>
+                                    </a>
+                                    <a href="#">
+                                    <button class="teams"><i class="fa-brands fa-microsoft"></i> Microsoft Teams</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 mt-5">
+                        <img src="./asset/coinBase-clone-ui.png" alt="Coinbase clone uI" class="img-fluid phone-img" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Coinbase-Clone-Banner py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                      <div class="col-md-6 mt-5 order-lg-2">
+                        <h4 class="Coinbase-Clone-Banner-header mb-2">
+                            <span class="fw-semibold">Start a Coinbase like</span> Crypto
+                            Exchange
+                        </h4>
+                        <h5 class="Coinbase-Clone-Banner-header  mb-3">Within 10 Days!</h5>
+                        <p class="Coinbase-Clone-Banner-para">
+                            Are you a businessperson or entrepreneur seeking to establish a
+                            presence in the cryptocurrency space through profitable business
+                            opportunities? The best option to take advantage of the
+                            opportunities in the cryptocurrency markets would be to launch a
+                            crypto exchange like Coinbase. Our coinbase clone script is an
+                            exact replica of the original platform and can be developed and
+                            launched in a week based on your modification preferences. It can
+                            effortlessly mix numerous coins and enable safe and speedy
+                            exchanges because of its many basic features and functions. With
+                            the aid of this feature-rich, reliable, secure, and robust
+                            exchange solution, you can easily build your own cryptocurrency
+                            exchange platform. Using market current techniques and
+                            technologies, Cryptiecraft, a reputable cryptocurrency exchange
+                            development business, creates beautifully designed coinbase clone
+                            software.
+                        </p>
+                    </div>
+                    <div class="col-md-6 order-lg-1">
+                        <img src="./asset/Coinbase-Clone-Banner.png" alt="Crypto Icon" class="img-fluid" />
+                    </div>
+                  
+                </div>
+            </div>
+        </section>
+
+        <section class="CoinbaseFeature py-5">
+            <div class="container text-center">
+                <h2 class="mb-4">
+                    <span class="CoinbaseFeature-span">Features of </span>
+                    Coinbase Clone Script
+                </h2>
+
+                <div class="CoinbaseFeature-box p-4">
+                    <div class="row align-items-center p-4 g-5">
+
+                        <!-- Left Feature Buttons -->
+                        <div class="col-md-4">
+                            <div class="d-grid gap-3" id="leftFeaturesContainer"></div>
+                        </div>
+
+                        <!-- Center Display -->
+                        <div class="col-md-4">
+                            <img id="featureImage" class="img-fluid mb-2" style="max-height: 80px;" />
+                            <h5 class="CoinbaseFeatureCenter-head" id="featureTitle"></h5>
+                            <p class="desc-text" id="featureDesc"></p>
+                        </div>
+
+                        <!-- Right Feature Buttons -->
+                        <div class="col-md-4">
+                            <div class="d-grid gap-3" id="rightFeaturesContainer"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="VersaliteCoinbase">
+            <div class="container py-5">
+                <div class="row align-items-center">
+                    <div class="col-md-5 text-md-start text-center">
+                        <h2>
+                            <span>Versalite Coinbase </span>Clone App
+                        </h2>
+                        <p class="VersaliteCoinbase-para mt-4 ">
+                            To successfully establish the cryptocurrency trading platform,
+                            analyze the Coinbase clone software modules and their features. We
+                            provide top-notch Coinbase Clone app development services that
+                            work with both iOS and Android. Our Coinbase clone software
+                            provides a straightforward trading experience for your new users
+                            in order to support the increasing number of portable devices. All
+                            market information is updated and shown in the UI after a thorough
+                            analysis of the transaction. In addition to reliable payment
+                            methods, we provide custom clone app development services with
+                            security features, UI design, a provisional API, and user
+                            onboarding tools to better serve users.
+                        </p>
+                    </div>
+                    <div class="col-md-7">
+                        <img src="./asset/versalite-Coinbase.png" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Essentialfeature">
+            <div class="container py-5">
+                <div class="row align-items-center">
+
+                    <!-- Left Image -->
+                    <div class="col-md-5 text-center mb-4 mb-md-0">
+                        <img src="./asset/Essential-feature.png" alt="Essential Feature" style="max-height: 300px;"
+                            class="img-fluid" />
+                    </div>
+
+                    <!-- Right Content -->
+                    <div class="col-md-7 text-center text-md-start">
+                        <h2 class="text-center">
+                            Essential Features Of <br />
+                            <span class="Essentialfeature-span">Coinbase Clone App</span>
+                        </h2>
+
+                        <div class="Essentialfeature-right d-flex flex-wrap justify-content-center mt-4"
+                            id="essentialFeaturesContainer"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="Coinbase-Clone-Benefits mt-5">
+            <div class="container text-center">
+                <h2>Benefits of Using Coinbase Clone App</h2>
+                <div class="Coinbase-Clone-Benefits-div row justify-content-center mt-4" id="benefitsContainer"></div>
+            </div>
+        </section>
+
+        <section class="Coinbase-Clone-CloneSoftware py-5">
+            <div class="container ">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="Coinbase-Clone-CloneSoftware-left">
+                            <h2 class="mb-5">White Label Coinbase Clone Software</h2>
+                            <p>
+                                The White Label Coinbase Clone Software is a fully configurable
+                                version of the trading platform that is identical to Coinbase.
+                                In order to improve profitable exchanges, all of the features
+                                and functionality have been streamlined. Our white label
+                                coinbase clone solutions will enable you to contribute to all
+                                endeavors in an economical manner, so significantly increasing
+                                trading accessibility in a closed circle. With the use of all
+                                cutting-edge requirements, our developers will create the means
+                                for the safe exchange of digital asset.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="./asset/cloneSoftware.png" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="CloneScript py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Coinbase Staking Clone Script</h2>
+                <p class="text-center mb-5">
+                    The full replication of the original staking operations provided by the current Coinbase platform is
+                    known as the Coinbase staking clone script. These provide the initiation of the platform for
+                    investors to reap the benefits and enable staking. The platform's alluring features are:
+                </p>
+
+                <div class="row" id="cloneScriptFeatures"></div>
+            </div>
+        </section>
+
+        <section class="container py-5 WorkflowSection">
+            <div class="row align-items-center">
+                <div class="Workflow col-md-6 mb-4 mb-md-0">
+                    <h2>
+                        <span>Workflow Of Our</span> Coinbase Clone Script
+                    </h2>
+                    <div class="WorkflowImageDiv position-relative mt-3">
+                        <img src="./asset/workflow.png" alt="Workflow background" class="Workflow1 img-fluid" />
+                        <img src="./asset/workflow2.png" alt="Workflow overlay" class="Workflow2 position-absolute" />
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="workflow-box p-4 rounded" style="max-height: 580px; overflow-y: auto;"
+                        id="workflowSteps">
+                        <!-- JavaScript will inject steps here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="revenue-section py-5 d-flex flex-column align-items-center justify-content-center">
+            <h2 class="section-title text-center mb-5">
+                Revenue Streams of Our Coinbase Clone <br />
+                Script
+            </h2>
+
+            <div class="d-flex flex-wrap justify-content-center mb-4 gap-4" id="revenueRow1">
+                <!-- First 3 items will be injected here -->
+            </div>
+
+            <div class="d-flex justify-content-center gap-4 flex-wrap" id="revenueRow2">
+                <!-- Remaining items will be injected here -->
+            </div>
+        </section>
+        <section class="Craitrix-Chooseus">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="Craitrix-Chooseus-left ">
+                            <img src="./asset/Whychooseus.png" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="Craitrix-Chooseus-right">
+                            <h2>Why Choose Cryptiecraft?</h2>
+                            <p>Cryptiecraft, as a promising NFT marketplace development company, works on various
+                                blockchain
+                                networks and technology stacks to build a user-friendly and futuristic OpenSea Clone
+                                Script.
+                                We develop an OpenSea Clone App having end-to-end security features and
+                                revenue-generating
+                                modules. We will bring your business ideas into this digital world with the help of our
+                                expert team. We provide</p>
+                            <ul>
+                                <li>Expertise In NFTs</li>
+                                <li>Long-Term Support</li>
+                                <li>Scalability Options</li>
+                                <li>NDA Policy</li>
+                                <li>On-Time Delivery</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cta-banner d-flex align-items-center justify-content-center text-center text-white">
+            <div class="cta-img1">
+                <img src="/asset/img1.png">
+            </div>
+            <div class="container">
+                <h4 class="mb-4">
+                    Set Up your very own Binance NFT Marketplace <br />
+                    Clone right now with Cryptiecraft
+                </h4>
+                <div class="d-flex justify-content-center gap-3">
+                    <button class="btn btn-light d-flex align-items-center gap-2 px-4 py-2 rounded-pill shadow-sm">
+                        <img src="/asset/logos_whatsapp-icon.png" alt="WhatsApp" width="24" />
+                        <span>Whatsapp</span>
+                    </button>
+                    <button class="btn btn-light d-flex align-items-center gap-2 px-4 py-2 rounded-pill shadow-sm">
+                        <img src="/asset/logos_telegram.png" alt="Telegram" width="24" />
+                        <span>Telegram</span>
+                    </button>
+                </div>
+            </div>
+            <div class="cta-img2">
+                <img src="/asset/img2.png">
+            </div>
+        </section>
+          <section class="faq-contactus-container">
+        <h2>Frequently Asked Questions</h2>
+        <img src="asset/Contactus-left.png" class="leftimg">
+                <div class="faqListContainer">
+                </div>
+    </section>
+
+
+
+
+        <!-- Contact Section -->
+         <section class="Craitrix-Contactus py-5">
+        <div class="container">
+            <div class="Craitrix-Contactus-container-left">
+                <div class="row justify-content-center align-items-start">
+
+                    <!-- Left: Form -->
+                    <div class="col-lg-7">
+                        <div class="contact-box p-4 h-100">
+                            <div class="mb-3">
+                                <img src="./asset/Cryptiecraft Logo.png" alt="Logo" width="60">
+                            </div>
+                            <h6 class="fw-bold"><span>Start</span> your Journey with Cryptiecraft</h6>
+                            <p class="text-muted small">Unlock creativity and discover new possibilities with our
+                                powerful
+                                tools and resources.</p>
+
+                            <form>
+                                <div class="mb-2">
+                                    <label class="form-label "><i class="fa-solid fa-user"></i> Name</label>
+                                    <input type="text" class="form-control" placeholder="James Dawson">
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-label"><i class="fa-solid fa-envelope"></i> Email</label>
+                                    <input type="email" class="form-control" placeholder="hello@kit.com">
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-label"><i class="fa-solid fa-phone-flip"></i> Contact
+                                        Number</label>
+                                    <input type="tel" class="form-control" placeholder="+91 - Enter phone number">
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-label">Whatsapp / Telegram / Microsoft Teams</label>
+                                    <input type="text" class="form-control" placeholder="Enter your ID / username">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label"><i class="fa-solid fa-message"></i> Message</label>
+                                    <textarea class="form-control" rows="3"
+                                        placeholder="Type your message here..."></textarea>
+                                </div>
+                                <button type="submit" class=" Craitrix-Contactus-container-button">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Right: Contact Info -->
+                    <div class="col-lg-5">
+                        <div class="contact-box2">
+                            <img src="./asset/contactus-img.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div class="Craitrix-Contactus-container-right container mt-4">
+  <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 text-center g-4">
+    
+    <div class="col">
+      <div class="Craitrix-Contactus-container-right-div border-none">
+        <img src="./asset/mail.png" alt="Mail">
+        <div class="Craitrix-Contactus-container-right-info">
+          <h6>Email</h6>
+          <p>contact@cryptiecraft.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="Craitrix-Contactus-container-right-div">
+        <img src="./asset/phone.png" alt="Phone">
+        <div class="Craitrix-Contactus-container-right-info">
+          <h6>Phone</h6>
+          <p>+91 7760075641</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="Craitrix-Contactus-container-right-div">
+        <img src="./asset/whatsapp.png" alt="Whatsapp">
+        <div class="Craitrix-Contactus-container-right-info">
+          <h6>Whatsapp</h6>
+          <p>+91 7760075641</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="Craitrix-Contactus-container-right-div">
+        <img src="./asset/teams.png" alt="Teams">
+        <div class="Craitrix-Contactus-container-right-info">
+          <h6>Microsoft Teams</h6>
+          <p>+91 7760075641</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="Craitrix-Contactus-container-right-div">
+        <img src="./asset/telegram.png" alt="Telegram">
+        <div class="Craitrix-Contactus-container-right-info">
+          <h6>Telegram</h6>
+          <p>t.me/cryptiecraft</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+        </div>
+    </section>
+<footer class="footer-section py-5">
+            <div class="container">
+                <div class="row gy-4">
+
+                    <!-- Left Logo & Social -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-div1">
+                            <img src="asset/footer-icon.png" alt="Logo" width="150" class="mb-3 footer-div1-img">
+                            <p class="footer-div1-para">
+                                Lorem ipsum dolor sit amet consectetur. Sit eu sit nibh elementum dui tortor augue erat
+                                at.
+                                Interdum facilisi nunc sollicitudin feugiat eget augue vulputate. Interdum ut donec nec
+                                sapien cursus. Ac at a nulla enim duis consectetur. Augue nec sed viverra purus faucibus
+                                diam et. Convallis scelerisque volutpat tortor viverra erat varius et a dictumst. Justo
+                                nibh. </p>
+                            <div class="d-flex">
+                                <p class="small fw-semibold "><span>
+                                        Follow
+                                    </span> us on</p>
+                                <div class="d-flex gap-1">
+                                    <img src="asset/footer-X.png" width="30px" height="30px">
+                                    <img src="asset/footer-facebook.png" width="30px" height="30px">
+                                    <img src="asset/footer-instagram.png" width="30px" height="30px">
+                                    <img src="asset/footer-linkedin.png" width="30px" height="30px">
+                                    <img src="asset/footer-youtube.png" width="30px" height="30px">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Company -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-div2 box">
+                            <h6 class="fw-bold mb-3">Company</h6>
+                            <ul class="list-unstyled small">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <!-- Blockchain -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-div3 box">
+                            <h6 class="fw-bold mb-3">Blockchain</h6>
+                            <ul class="list-unstyled small">
+                                <li><a href="#">Blockchain Development</a></li>
+                                <li><a href="#">Cryptocurrency Exchange Development</a></li>
+                                <li><a href="#">Crypto Payment Gateway Development</a></li>
+                                <li><a href="#">Cryptocurrency Wallet Development</a></li>
+                                <li><a href="#">P2P Crypto Exchange Development</a></li>
+                                <li><a href="#">White Label Cryptocurrency Exchange Software</a></li>
+                                <li><a href="#">Centralized Exchange Development Company</a></li>
+                                <li><a href="#">White Label Crypto Wallet</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <!-- DeFi -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-div4 box">
+                            <h6 class="fw-bold mb-3">DeFi</h6>
+                            <ul class="list-unstyled small">
+                                <li><a href="#">DeFi Development</a></li>
+                                <li><a href="#">Decentralized Exchange Development</a></li>
+                                <li><a href="#">DeFi Wallet Development</a></li>
+                                <li><a href="#">DeFi Crowdfunding Development</a></li>
+                                <li><a href="#">DEX Similar to SushiSwap</a></li>
+                                <li><a href="#">DEX Similar to BakerySwap</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+               
+                    <!-- Exchange Clone -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-div6 box">
+                            <h6 class="fw-bold mb-3">Exchange Clone</h6>
+                            <ul class="list-unstyled small">
+                                <li><a href="#">Binance Clone Script</a></li>
+                                <li><a href="#">Coinbase Clone Script</a></li>
+                                <li><a href="#">KuCoin Clone Script</a></li>
+                                <li><a href="#">Opensea Clone Script</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-div7 box">
+                            <h6 class="fw-bold mb-3">NFT</h6>
+                            <ul class="list-unstyled small">
+                                <li><a href="#">NFT Marketplace Development</a></li>
+                                <li><a href="#">Coinbase Like NFT Marketplace</a></li>
+                                <li><a href="#">NFT Lending Platform Development</a></li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                         <div class="col-lg-3 col-md-6">
+                        <div class="footer-div5">
+                            <div class="d-flex align-items-center justify-content-around box1">
+                                <div class="footer-div5-email">
+                                  <img src="asset/footer-mail.png" width="60px">
+                                <div>
+                                    <p class="footer-div5-para">Email</p>
+                                    <span class="small">contact@cryptiecraft.com</span>
+                                </div>
+                                </div>
+                              
+                            </div>
+                            <div class="box1 mt-3">
+                                <p class="fw-semibold small text-center">Connect With Us</p>
+                                <div class="d-flex gap-2 justify-content-between px-4">
+                                    <a href="https://wa.me/+917760075641" target="blank"><img src="asset/footer-whatsapp.png" alt="WhatsApp" width="44"></a>
+                                    <a href="https://t.me/cryptiecraft" target="_blank"><img src="asset/footer-telegram.png" alt="Telegram" width="44"></a>
+                                    <a href="https://teams.live.com/l/invite/FEAcE1RvYii9C4uLQI" target="_blank"><img src="asset/footer-teams.png" alt="Teams" width="44"></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-div8">
+                            <h6 class="fw-bold mt-4 mb-1"><span>Next-Gen Crypto. Solid</span> Blockchain.</h6>
+                            <img src="asset/footer-group.png" alt="Decorative Globe" class="img-fluid mt-5">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="wl-process-ccontainer">
+            <div class="bottom-content">
+                <img src="asset/Cryptiecraft_landscape.png"
+                    alt="logo">
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2025 All Rights Reserved by Cryptiecraft.</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- js link -->
+    <script src="./script.js"></script>
+    <!-- bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

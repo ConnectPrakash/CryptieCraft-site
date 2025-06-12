@@ -1,0 +1,2116 @@
+/* Prevent scrolling */
+.no-scroll {
+    overflow: hidden;
+}
+h2,h3,h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p,li{
+    font-family: 'Times New Roman', Times, serif;
+}
+button{
+    font-family: 'Times New Roman', Times, serif !important;
+}
+/* Blur effect on background */
+.blur-background {
+    filter: blur(4px);
+    transition: filter 0.3s ease-in-out;
+}
+
+.Craitrix-box {
+    display: none;
+}
+
+.Craitrix-box.show {
+    display: block;
+}
+
+#main-content{
+    margin-top: 100px;
+}
+/* ------------------------- */
+/* Critrix-Nav-section */
+.Craitrix-Nav-section {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+}
+
+.Craitrix-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.Craitrix-nav-logo {
+    
+    margin-left: 80px;
+}
+
+.Craitrix-nav-logo img {
+    width: 120px;
+    display: flex;
+    margin: auto;
+}
+
+.navbar-toggler .toggler-icon {
+    width: 24px;
+    height: 2px;
+    background-color: #0099CC;
+    display: block;
+    margin: 6px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.navbar-toggler.open .top-bar {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar-toggler.open .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggler.open .bottom-bar {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.Craitrix-nav-items {
+    flex: 10;
+    display: flex;
+}
+
+.Craitrix-nav-items ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    flex: 9;
+}
+
+.Craitrix-nav-items ul li {
+    list-style: none;
+    font-size: 14px;
+}
+
+.nav-link {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: black !important;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: #0099CC !important;
+}
+
+.nav-link.nav-active {
+    color: #0099CC !important;
+}
+
+.arrow-icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.rotate-arrow {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+.Craitrix-nav-button {
+    flex: 3;
+    text-align: center;
+}
+
+.Craitrix-nav-button button {
+    width: 70%;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 10px;
+    background: linear-gradient(to right, #0A97BE, #087C9ED9);
+    color: white;
+    margin-left: auto;
+}
+
+/* Content area below navbar */
+.Craitrix-box {
+    display: none;
+    padding: 15px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.Craitrix-downbox {
+    display: none;
+    background: white;
+    width: 100%;
+    position: relative;
+    z-index: 999;
+    height: 400px;
+    max-height: 60%;
+    box-shadow: 0px 0px 5px #087C9E;
+}
+
+.Craitrix-box h5 {
+    font-weight: bold;
+    color: #087C9E;
+    margin-bottom: 8px;
+}
+
+.Craitrix-box div.entry {
+    background-color: #f8f9fa;
+    border-left: 4px solid #0A97BE;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: block;
+}
+
+.tab-header {
+    background-color: #f8f9fb;
+    display: flex;
+    gap: 20px;
+    padding: 10px 80px;
+    border-bottom: none;
+}
+
+.tab-header-button {
+    display: flex;
+    width: 60% !important;
+    margin-left: 0px !important;
+    justify-content: space-between;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: #000;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.tab-btn.navactive {
+    background: linear-gradient(to right, #0A97BE, #5BC4DD);
+    color: #fff;
+}
+
+.tab-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 80px;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.tab-pane {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tab-pane.navactive {
+    display: flex !important;
+}
+
+.card-entry {
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    height: 120px;
+    gap: 20px;
+    flex: 1 1 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.item-content img {
+    width: 60px;
+    height: 100%;
+    flex: 2;
+}
+
+.item-content div {
+    flex: 9;
+}
+
+
+.icon-container {
+    width: 100px;
+}
+
+.entry-icon {
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+}
+
+/* -------------------------------------------------- */
+/* Coinbase-hero */
+.Coinbase-Clone-hero {
+  background: linear-gradient(to right, #FFFF, #92E0EE82);
+}
+
+.Coinbase-Clone-hero-span{
+  color: #0A97BE
+}
+
+.Coinbase-Clone-button {
+  border: 2px solid #0A97BE;
+  padding: 10px 20px;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+    background-color: #0A97BE;
+  color: white;
+  width:50%;  
+}
+
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width:100vw;
+  height: 100vh;
+  overflow: hidden !important;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 30px !important;
+  border-radius: 12px !important;
+  width: 50% !important;
+  height: fit-content !important;
+  text-align: center;
+  position: relative;
+}
+.modal-content h2{
+    color:#0A97BE;
+}
+.modal-content img{
+    display: flex;
+    margin:auto;
+    width: 70%;
+    height: 100%;
+}
+.modal-content-close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.modal-content .button-group {
+  margin-top: 20px;
+}
+
+.modal-content .whatsapp {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.modal-content .teams {
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width:986px) {
+     .modal-content{
+        width: 90% !important;
+     }
+   .modal-content .button-group{
+        display: flex;
+        gap:5px;
+        margin: auto;
+    }
+    .modal-content .button-group button{
+         width: 100%;
+         font-size: 14px;
+    }
+
+}
+@media (max-width:568px) {
+  .button {
+    font-size: 15px;
+  }
+   .modal-content{
+    padding:20px !important
+   }
+   .modal-content h2{
+    font-size: 16px;
+   }
+  .modal-content .button-group button{
+    font-size: 10px;
+  }
+}
+
+/* ----------------------------------- */
+/* Coinbase-Clone-Banner */
+.Coinbase-Clone-Banner{
+    background-image: radial-gradient(#cfe8ff 1.2px, transparent 0);
+    background-size: 20px 20px;
+    background-position: center;
+}
+
+/* set header style */
+.Coinbase-Clone-Banner-header {
+    font-size: 30px;
+}
+
+.Coinbase-Clone-Banner h4 span {
+    color: #0A97BE;
+}
+
+.Coinbase-Clone-Banner-para {
+    line-height: 2;
+    text-align: justify;
+}
+
+@media (max-width:992px) {
+    .Coinbase-Clone-Banner-header {
+        text-align: center;
+    }
+}
+
+
+/* -------------------------------------- */
+/* CoinbaseFeature */
+.CoinbaseFeature{
+    background-color: #E9F9FB;
+}
+/* set style to header */
+.CoinbaseFeature-span{
+    color:#0A97BE
+}
+.CoinbaseFeature-box{
+ background: white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(100, 100, 100, 0.1);
+  color:#6F6F6F;
+}
+/* set button style */
+.feature-btn{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #ABABAB;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: #ABABAB;
+  width: 100%;
+}
+.feature-btn.active {
+  background-color: #279EBF;
+  color: white;
+  border-color: #00aaff;
+}
+.feature-btn:hover {
+  background-color: #279EBF;
+  color: white;
+  border-color: #00aaff;
+}
+.CoinbaseFeatureCenter-head{
+    color:#0A97BE;
+}
+
+
+/* --------------------------------------- */
+/*VersaliteCoinbase  */
+.VersaliteCoinbase{
+  background-image: radial-gradient(#cfe8ff 1.2px, transparent 0);
+  background-size: 20px 20px;
+  background-position: center;
+}
+.VersaliteCoinbase span{
+    color:#0A97BE;
+}
+.VersaliteCoinbase-para{
+    line-height: 2;
+}
+
+/* -------------------------------------------- */
+/* Essentialfeature */
+.Essentialfeature {
+  background-color: #E9F9FB;
+}
+
+.Essentialfeature-span {
+  color: #0A97BE;
+}
+
+.Essentialfeature-right {
+  width: 90%;
+  margin: auto;
+
+}
+
+.Essentialfeature {
+  background-color: #E9F9FB;
+}
+
+.Essentialfeature-span {
+  color: #0A97BE;
+}
+
+.hexagon {
+  width: 180px;
+  height: 210px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  background: url('./asset/Polygon.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.hexagon:hover {
+  transform: translateY(-5px);
+}
+
+.hex-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.hex-title {
+  font-size: 18px;
+  margin: 0;
+  padding-inline: 2px;
+}
+
+.hex1 {
+  position: relative;
+  top: -50px;
+}
+
+@media (max-width:1200px) {
+  .hex1 {
+    position: relative;
+    top: 0px !important;
+  }
+
+}
+
+
+/* --------------------------------- */
+/* Coinbase-Clone-Benefits */
+.Coinbase-Clone-Benefits h2{
+    text-align: center;
+    color:#0A97BE;
+    margin-bottom: 30px;
+}
+
+.Benefits-title{
+        color:#0A97BE;
+}
+#benefitsContainer{
+    width: 100%;
+    margin: auto;
+}
+
+.benefit-card {
+  transition: transform 0.3s ease;
+  height: 300px;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+.Coinbase-Clone-Benefits-div p{
+    font-size: 24px;
+}
+@media (max-width:992px) {
+    .Benefits-div p{
+        width: 100% !important;
+        font-size: 16px;
+    }  
+    .Benefits-div div{
+        padding:10px;
+    }
+}
+
+/* ------------------------------------ */
+/* Coinbase clone software */
+.Coinbase-Clone-CloneSoftware{
+    background-color: #E9F9FB;
+    margin-top: 20px;
+}
+.Coinbase-Clone-CloneSoftware-left h2{
+    color: #0A97BE;
+    font-size: 40px;
+}
+.Coinbase-Clone-CloneSoftware-left p{
+   line-height: 2;
+   font-size: 18px;
+}
+
+/* --------------------------------- */
+/* Coinbase Clone Script */
+
+.CloneScript {
+  padding-top: 2rem;
+}
+
+.CloneScript h2 {
+  color: #0A97BE;
+  font-size: 40px;
+}
+
+.CloneScript p {
+  line-height: 2;
+  font-size: 18px;
+}
+
+.CloneScript-card {
+  border: 2px solid #0A97BEE0;
+  box-shadow: 0 4px 15px rgba(10, 151, 190, 0.25); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.CloneScript-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(10, 151, 190, 0.35); 
+}
+@media (max-width:968px) {
+ 
+
+.CloneScript p {
+  line-height: 2;
+  font-size: 16px;
+}
+}
+
+/* ------------------------------ */
+/* Workflowsection */
+
+.WorkflowSection h3{
+    text-align: center;
+
+}
+.WorkflowSection span{
+    color:#0A97BE
+}
+.WorkflowImageDiv{
+    max-width: 500px;
+    height: 400px;
+}
+.Workflow1{
+    object-fit: contain;
+    transform:translate(10%,0%);
+    width: 400px;
+}
+.Workflow2{
+    top:70%;
+   left:10%;
+    transform: translate(-40%, -30%);
+        width: 500px;
+        height: 400px;
+        z-index: -1;
+}
+
+.workflow-box {
+  scrollbar-width: 35px;
+  scrollbar-color: #0A97BE #f1f1f1;
+  padding: 30px;
+  background-color: #E9F9FB;
+  overflow-y: auto;
+  max-height: 300px;
+}
+.workflow-box-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+   padding:40px;
+}
+.workflow-box-div p{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.workflow-box::-webkit-scrollbar {
+  width: 10px; 
+}
+
+.workflow-box::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px; 
+  margin-block: 4px; 
+}
+
+.workflow-box::-webkit-scrollbar-thumb {
+  background-color: #0A97BE;
+  border-radius: 10px; 
+  border: 2px solid transparent; 
+  background-clip: padding-box;
+}
+
+.step-number{
+    color:#0A97BE
+}
+@media (max-width:768px) {
+    .Workflow2{
+        width: 100% !important;
+        height: auto;
+    }
+    .Workflow1{
+        width: 80% !important;
+        height: auto;
+    }
+    .workflow-box-div{
+    display: block !important;
+    }
+    .WorkflowImageDiv{
+    max-width: 500px;
+    height: 200px;
+}
+.step-number{
+    text-align: center;
+}
+}
+
+/* ------------------------------------- */
+/* revenue-section */
+.revenue-section {
+  background-color: #e8fafd;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.section-title {
+  color: #0a97be;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.revenue-card {
+  background-color: #ffffff;
+  border: 2px solid #0a97be;
+  border-radius: 12px;
+  width: 250px;
+  min-height: 230px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.revenue-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(10, 151, 190, 0.15);
+}
+
+.revenue-card img {
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.revenue-title {
+  color: #0a97be;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+/* --------------------------------------------- */
+Craitrix-Chooseus
+.Craitrix-Chooseus {
+    background: url('./asset/Vector.png');
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+}
+
+.Craitrix-Chooseus-right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Craitrix-Chooseus-right h2 {
+    color: #0A97BE;
+}
+
+.Craitrix-Chooseus-right p {
+    line-height: 2;
+}
+
+
+/* -------------------------------------------- */
+/* Craitrix-Contact */
+.cta-banner {
+  height: 300px;
+background: linear-gradient(to right,#0A97BE,#087C9ED9);
+position: relative;
+width: 100%;
+}
+.cta-img2{
+    position: absolute;
+    height: 100%;
+    width: 500px;
+    left: 0;
+    top: 0;
+}
+.cta-img2 img{
+    width: 100%;
+    height: 100%;
+}
+.cta-img1{
+    position: absolute;
+    height: 100%;
+    width: 500px;
+    right: 0;
+    bottom: 0;
+    top:0;
+}
+.cta-img1 img{
+    width: 100%;
+    height: 100%;
+}
+
+/* responsive */
+@media (max-width:1024px) {
+    .cta-banner {
+  height: 250px;
+
+}
+   .cta-img1{
+    width:400px;
+}
+  .cta-img2{
+    width:400px;
+}
+}
+@media (max-width:968px) {
+   .cta-banner{
+    height: 200px;
+   }
+   .cta-img1{
+    width: 300px;
+   }
+   .cta-img2{
+    width: 300px;
+   }
+}
+
+@media (max-width:768px) {
+   .cta-img1{
+    width: 200px;
+   }
+   .cta-img2{
+    width: 200px;
+   }
+   .cta-banner h4{
+    font-size: 16px;
+   }
+   .cta-banner span{
+    font-size: 14px;
+   }
+}
+/* -------------------------------------------- */
+/* Craitrix-Frequently */
+
+
+/* faq-contactus */
+
+.faqListContainer{
+  width: 70%;
+  margin:auto;
+}
+.faq-contactus-container{
+  background-color: #E9F9FB;
+  padding-block: 50px;
+}
+.faq-contactus-container img{
+  position: absolute;
+  z-index: 0;
+  width: 40%;
+  left:0;
+  top: 0;
+}
+.faq-contactus-container h2{
+    color:#0A97BE;
+  font-size: 40px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 30px;
+}
+/* --------------- */
+.faq-question-content{
+  position: relative;
+    width: 100%;
+  background-color: white;
+  margin-bottom: 10px;
+    padding:10px 20px;
+    box-shadow: 0px 5px 10px black;
+    border-radius: 1rem;
+    color: #0099CC;
+    cursor: pointer;
+}
+.faq-content-box{
+    border:1px solid #0A97BE;
+    border-radius: 0.5rem;
+    position: relative;
+    padding: 5px 10px 5px 50px;
+}
+.faq-content-box::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    left:39px;
+    top: -1px;
+    z-index: 1;
+    border-radius: 0.5rem 0px 0px 0px;
+    border:1px solid #0A97BE;
+     border-right:none;
+    border-bottom:none;
+    box-shadow: -5px -10px 0px white ;
+}
+.faq-content-box::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    left:-1px;
+    top: 39px;
+    z-index: 1;
+    border-radius: 0.5rem 0px 0px 0px;
+    border:1px solid #0A97BE;
+     border-right:none;
+    border-bottom:none;
+    box-shadow: -8px 0px 0px white ;
+}
+.faq-content-small-box{
+    position: absolute;
+    top: -1PX !important;
+    left: -1PX !important;
+    border:1px solid #0A97BE;
+     border-left: none;
+     border-top:none;
+     border-radius: 0px 0px 0.5rem 0px;
+
+    width: 40px;
+    height: 40px;
+    background-color: white;
+}
+.faq-content-small-box img{
+    width: 40px;
+}
+.faq-content-box p{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+  .faq-contactus p{
+    margin-block: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+    .faq-contactus p i{
+        margin-left: 20px;
+    }
+/* ------------------------------ */
+.faq-contactus{
+  margin-bottom:20px;
+}
+.faq-answer-content{
+  position: relative;
+    width: 100%;
+  background-color: white;
+    margin-left:100px;
+    padding:10px 20px;
+    box-shadow: 0px 5px 10px black;
+    border-radius: 1rem;
+
+}
+.faq-ans-content-box{
+  width:100%;
+     border:1px solid #0A97BE;
+    border-radius: 0.5rem;
+    position: relative;
+    padding: 5px 50px 5px 10px;
+    background-color: #E9F9FB;
+}
+
+.faq-ans-content-box p{
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.faq-ans-content-box::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    right:39px;
+    top: -1px;
+    z-index: 1;
+    border-radius:0px 0.5rem 0px 0px;
+    border:1px solid #0A97BE;
+     border-left:none;
+    border-bottom:none;
+    box-shadow: 1px -5px 0px white ;
+}
+.faq-ans-content-box::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    right:-1px;
+    top: 39px;
+    z-index: 1;
+    border-radius:0px 0.5rem 0px 0px;
+    border:1px solid #0A97BE;
+     border-left:none;
+    border-bottom:none;
+    box-shadow: 10px -5px 0px white ;
+}
+
+.faq-ans-content-small-box{
+    position: absolute;
+    top: -1PX !important;
+    right: -1PX !important;
+    border:1px solid #0A97BE;
+     border-right: none;
+     border-top:none;
+     border-radius: 0px 0px 0px 0.5rem ;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+}
+
+.faq-ans-content-small-box img{
+    width: 40px;
+}
+
+
+@media (max-width:1200px) {
+   .faq-question-content{
+    width: 90%;
+  }
+  .faq-answer-content {
+    width: 90%;
+  }
+}
+@media (max-width:987px) {
+    .faq-contactus-container img{
+  width: 70%;
+}
+  .faq-answer-content {
+    margin-left:50px;
+  }
+}
+
+@media (max-width:768px) {
+    .faq-content-box{
+        height: fit-content !important;
+    }
+  .faq-question-content{
+    width: 90%;
+  }
+  .faq-answer-content {
+    width: 90%;
+  }
+  .faq-contactus p{
+    font-size: 14px;
+    
+  }
+  
+
+}
+
+@media (max-width:487px) {
+     .Whitelabel-features-left {
+    margin-top:0px;
+    margin-bottom:0px;
+  }
+  .faq-contactus p{
+    font-size: 10px;
+         margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+  }
+  .faq-content-box{
+    height: 30px;
+  }
+  .faq-content-small-box {
+    width:30px;
+    height: 30px;
+  }
+    .faq-content-small-box img{
+      width: 30px;
+    }
+    .faq-content-box::before {
+      left:29px;
+      height: 15px;
+    }
+    .faq-content-box::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 4px;
+        left: 0px;
+        top: 29px;
+        z-index: 1;
+        border-radius: 0.5rem 0px 0px 0px;
+        border: 1px solid #0A97BE;
+        border-right: none;
+        border-bottom: none;
+        box-shadow: -8px 0px 0px white;
+    }
+
+
+    .faq-ans-content-small-box img {
+    width: 30px;
+}
+.faq-ans-content-small-box
+ {
+    height: 30px;
+ }
+.faq-ans-content-box::before
+ {
+    height: 20px;
+}
+.faq-ans-content-box::after
+ {
+    top: 29px;
+    height: 0px;
+ }
+     .faq-answer-content {
+      width: 90%;
+margin-left:30px    }
+ 
+}
+.faqListContainer{
+  width: 70%;
+  margin:auto;
+}
+
+.faq-contactus-container{
+  background-color: #E9F9FB;
+  padding-block: 50px;
+    position: relative;
+
+}
+.faq-contactus-container img{
+  position: absolute;
+  z-index: 0;
+  width: 30%;
+  left:0;
+  top: 0;
+}
+.faq-contactus-container h2{
+  font-size: 40px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* --------------- */
+.faq-question-content{
+  position: relative;
+    width: 100%;
+  background-color: white;
+  margin-bottom: 10px;
+    padding:10px 20px;
+    box-shadow: 0px 5px 10px black;
+    border-radius: 1rem;
+}
+.faq-content-box{
+    border:1px solid #0A97BE;
+    border-radius: 0.5rem;
+    position: relative;
+    padding: 5px 10px 5px 50px;
+}
+.faq-content-box::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    left:39px;
+    top: -1px;
+    z-index: 1;
+    border-radius: 0.5rem 0px 0px 0px;
+    border:1px solid #0A97BE;
+     border-right:none;
+    border-bottom:none;
+    box-shadow: -5px -10px 0px white ;
+}
+.faq-content-box::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 8px;
+    left:0px;
+    top: 39px;
+    z-index: 1;
+    border-radius: 0.5rem 0px 0px 0px;
+    border:1px solid #0A97BE;
+     border-right:none;
+    border-bottom:none;
+    box-shadow: -8px 0px 0px white ;
+}
+.faq-content-small-box{
+    position: absolute;
+    top: -2PX !important;
+    left: -2PX !important;
+    border:1px solid #0A97BE;
+     border-left: none;
+     border-top:none;
+     border-radius: 0px 0px 0.5rem 0px;
+    width: 43px;
+    height: 42px;
+    background-color: white;
+}
+.faq-content-small-box img{
+    width: 40px;
+}
+
+  .faq-contactus p{
+    text-align: center;
+  }
+/* ------------------------------ */
+.faq-contactus{
+  margin-bottom:20px;
+}
+.faq-answer-content{
+  position: relative;
+    width: 100%;
+  background-color: white;
+    margin-left:100px;
+    padding:10px 20px;
+    box-shadow: 0px 5px 10px black;
+    border-radius: 1rem;
+
+}
+.faq-ans-content-box{
+  width:100%;
+     border:1px solid #0A97BE;
+    border-radius: 0.5rem;
+    position: relative;
+    padding: 5px 50px 5px 10px;
+    background-color: #E9F9FB;
+}
+
+.faq-ans-content-box::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    right:39px;
+    top: -1px;
+    z-index: 1;
+    border-radius:0px 0.5rem 0px 0px;
+    border:1px solid #0A97BE;
+     border-left:none;
+    border-bottom:none;
+    box-shadow: 1px -5px 0px white ;
+}
+.faq-ans-content-box::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 6px;
+    right: -1px;
+    top: 39px;
+    z-index: 1;
+    border-radius: 0px 0.5rem 0px 0px;
+    border: 1px solid #0A97BE;
+    border-left: none;
+    border-bottom: none;
+    box-shadow: 10px -1px 0px white;
+}
+
+.faq-ans-content-small-box{
+    position: absolute;
+    top: -2PX !important;
+    right: -2PX !important;
+    border:1px solid #0A97BE;
+     border-right: none;
+     border-top:none;
+     border-radius: 0px 0px 0px 0.5rem ;
+    width: 42px;
+    height: 42px;
+    background-color: white;
+}
+
+.faq-ans-content-small-box img{
+    width: 40px;
+}
+
+
+@media (max-width:1200px) {
+   .faq-question-content{
+    width: 90%;
+  }
+  .faq-answer-content {
+    width: 90%;
+  }
+}
+@media (max-width:987px) {
+  .faq-answer-content {
+    margin-left:50px;
+  }
+  .leftimg{
+    width: 100%;
+  }
+}
+
+@media (max-width:768px) {
+    .faq-content-box{
+        height: 60px;
+    }
+  .faq-question-content{
+    width: 90%;
+  }
+  .faq-answer-content {
+    width: 90%;
+  }
+  .faq-contactus p{
+    font-size: 14px;
+    
+  }
+  
+
+}
+
+@media (max-width:487px) {
+    .faqListContainer{
+        width: 90%;
+    }
+  .faq-contactus p{
+    font-size: 10px;
+         margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+  }
+  .faq-content-box{
+    height: 40px;
+  }
+  .faq-content-small-box {
+    width:32px;
+    height: 32px;
+    top:-2px !important;
+    left:-2px !important;
+  }
+    .faq-content-small-box img{
+      width: 30px;
+    }
+    .faq-content-box::before {
+      left:39px;
+      height: 15px;
+    }
+    .faq-content-box::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 4px;
+        left: 0px;
+        top: 29px;
+        z-index: 1;
+        border-radius: 0.5rem 0px 0px 0px;
+        border: 1px solid #0A97BE;
+        border-right: none;
+        border-bottom: none;
+        box-shadow: -8px 0px 0px white;
+    }
+
+
+    .faq-ans-content-small-box img {
+    width: 30px;
+}
+.faq-ans-content-small-box
+ {
+    height: 32px;
+ }
+.faq-ans-content-box::before
+ {
+    height: 20px;
+}
+.faq-ans-content-box::after
+ {
+    top: 29px;
+    height: 20px;
+ }
+     .faq-answer-content {
+      width: 90%;
+margin-left:30px    }
+ 
+}
+
+
+
+@media (max-width:1400px) {
+    .faq-content-small-box{
+        width: 42px;
+    }
+  .faq-question-icon{
+    left: 2%;
+    top:45px;
+  }
+}
+@media (max-width:1200px) {
+  .faq-question-icon{
+    left: 0%;
+  }
+    .faq-ans-text{
+      padding:20px 60px 20px 20px;
+    }
+  .faq-ans-text p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width:987px) {
+  .faq-question-icon{
+    left:0%;
+    top:35%;
+  }
+     .faq-ans-text{
+      height: 50px;
+     }
+  .faq-ans-icon {
+    width:50px;
+  }
+
+}
+@media (max-width: 768px) {
+  .faq-item {
+    margin-bottom: 10px;
+}
+  .faq-question{
+    padding:10px 10px 10px 20px;
+  }
+  .faq-question-text {
+    height: 50px;
+  }
+   .faq-question-text p{
+    font-size: 10px;
+   }
+   .faq-question-icon{
+    width: 30px;
+    left:4%;
+    top:55%
+   }
+   .faq-answer{
+    margin-left:30px;
+   }
+       .faq-ans-text {
+        height: 20px;
+    }
+     .faq-ans-text p{
+      font-size: 10px;
+     }
+     .faq-ans-icon {
+      top:40px;
+    width:30px;
+  }
+}
+@media (max-width:487px){
+  .curved-box{
+    width: 100%;
+  }
+   .faq-question{
+    border-radius: 1rem;
+   }
+   .faq-question-text {
+    height: 35px;
+  }
+ .faq-question-text p{
+  font-size: 8px;
+  height: 35px;
+          display: flex;
+        align-items: center;
+ }
+  .faq-question-icon{
+    width: 20px;
+    left:6%;
+    top:65%
+   }
+    .faq-ans-icon {
+      top:40px;
+      right:10px;
+    width:20px;
+  }
+      .faq-ans-text {
+        height: 0px;
+      }
+   .faq-ans-text p{
+    font-size: 7px;
+   }
+   .faq-contactus {
+    padding:0px;
+   }
+   .faq-contactus h2 {
+    font-size: 20px;
+    padding-block: 20px;
+   }
+
+   /* ------------------------ */
+   .Craitrix-Contactus-container-right-info a{
+    font-size: 10px !important;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color:#0099CC;
+    cursor: pointer;
+}
+}
+
+
+/* ------------------------------------------- */
+/* responsive design */
+@media (max-width:1400px) {
+    .faq-content-small-box{
+        width: 42px;
+    }
+  .faq-question-icon{
+    left: 2%;
+    top:45px;
+  }
+}
+@media (max-width:1200px) {
+  .faq-question-icon{
+    left: 0%;
+  }
+    .faq-ans-text{
+      padding:20px 60px 20px 20px;
+    }
+  .faq-ans-text p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width:987px) {
+  .faq-question-icon{
+    left:0%;
+    top:35%;
+  }
+     .faq-ans-text{
+      height: 50px;
+     }
+  .faq-ans-icon {
+    width:50px;
+  }
+
+}
+@media (max-width: 768px) {
+  .faq-item {
+    margin-bottom: 10px;
+}
+  .faq-question{
+    padding:10px 10px 10px 20px;
+  }
+  .faq-question-text {
+    height: 50px;
+  }
+   .faq-question-text p{
+    font-size: 10px;
+   }
+   .faq-question-icon{
+    width: 30px;
+    left:4%;
+    top:55%
+   }
+   .faq-answer{
+    margin-left:30px;
+   }
+       .faq-ans-text {
+        height: 20px;
+    }
+     .faq-ans-text p{
+      font-size: 10px;
+     }
+     .faq-ans-icon {
+      top:40px;
+    width:30px;
+  }
+}
+@media (max-width:487px){
+  .curved-box{
+    width: 100%;
+  }
+   .faq-question{
+    border-radius: 1rem;
+   }
+   .faq-question-text {
+    height: 35px;
+  }
+ .faq-question-text p{
+  font-size: 8px;
+  height: 35px;
+          display: flex;
+        align-items: center;
+ }
+  .faq-question-icon{
+    width: 20px;
+    left:6%;
+    top:65%
+   }
+    .faq-ans-icon {
+      top:40px;
+      right:10px;
+    width:20px;
+  }
+      .faq-ans-text {
+        height: 0px;
+      }
+   .faq-ans-text p{
+    font-size: 7px;
+   }
+   .faq-contactus {
+    padding:0px;
+   }
+   .faq-contactus h2 {
+    font-size: 20px;
+    padding-block: 20px;
+   }
+}
+
+
+/* --------------------------------------------- */
+/* footer-section */
+
+
+.footer-section {
+    margin-bottom: 60vh;
+    width: auto;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 2;
+    position: relative;
+    border-radius: 0px 0px 79px 79px;
+    box-shadow: 0px 8px 0px #0099cc, 0px 20px 180px 5px #0099cc66;
+}
+
+.wl-process-ccontainer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.6s ease;
+    transform: translateY(100%);
+    z-index: 1;
+
+}
+
+.wl-process-ccontainer.reveal {
+    transform: translateY(0);
+    margin-bottom: 100px;
+    height: 200px;
+}
+
+.bottom-content img {
+    height: 100%;
+    width: 70%;
+    margin-left: 15%;
+    opacity: 1;
+
+}
+
+.bottom-content {
+    background-color: white;
+    align-items: center;
+    display: flex;
+    height: 90%;
+}
+
+.box {
+    background-color: #FBFBFB;
+    padding: 30px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.box h6 {
+    color: #0A97BE;
+}
+
+.box ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+
+.box1 {
+    background-color: #FBFBFB;
+    padding: 15px;
+    height: fit-content;
+    border-radius: 15px;
+}
+
+.footer-div1-img {
+    display: flex;
+    margin: auto
+}
+
+.footer-div1-para {
+    text-align: justify;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.footer-div1 span {
+    color: #0099CC
+}
+.footer-div5-email{
+  display: flex;
+}
+.footer-div5-para {
+    margin-bottom: 0px !important;
+}
+
+.footer-div8 span {
+    color: #0A97BE;
+}
+
+/* responsive design */
+
+@media (max-width:1140px) {
+    .nav-link{
+        font-size: 12px;
+    }
+}
+@media (max-width:1060px) {
+
+    /* Craitrix-Nav-section */
+    .nav-link{
+        font-size: 10px !important;
+    }
+}
+
+
+@media (max-width:1024px) {
+
+    /* Craitrix-Nav-section */
+    .Craitrix-nav-logo img {
+        width: 100px;
+        display: flex;
+        margin: 0px;
+    }
+
+    .Craitrix-nav-button button {
+        margin: auto;
+    }
+
+    .tab-btn.navactive {
+        background: linear-gradient(to right, #0A97BE, #5BC4DD);
+        color: white;
+        border-bottom: 1px solid #00aaff;
+
+    }
+
+    .Craitrix-nav-items ul li {
+        height: fit-content;
+    }
+
+    .nav-link {
+        width: 100%;
+        font-size: 10px !important;
+    }
+}
+
+@media (max-width:1000px) {
+
+     /* Craitrix-Nav-section */
+    .card-entry {
+        display: block;
+        padding: 0px;
+        box-shadow: none;
+        background-color: transparent !important;
+    }
+
+    .entry-icon {
+        display: none;
+    }
+
+    .card-entry p {
+        display: none;
+    }
+}
+
+/* Show downbox only on desktop */
+@media (min-width: 992px) {
+    .Craitrix-box {
+        display: none !important;
+    }
+}
+
+
+/* On mobile, hide .Craitrix-downbox and use .Craitrix-box */
+@media (max-width: 991.98px) {
+
+    /* Craitrix-nav-section */
+    .Craitrix-downbox {
+        display: none !important;
+    }
+
+    .Craitrix-box {
+        display: none;
+    }
+
+    .Craitrix-nav-items {
+        display: block;
+    }
+
+    .Craitrix-nav-items ul li {
+        height: fit-content;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.507);
+    }
+
+    .close-btn {
+        font-size: 20px !important;
+
+    }
+
+    .tab-header {
+        justify-content: space-between;
+        
+    }
+
+    .tab-header-button {
+        display: flex;
+        width: 100% !important;
+        margin-left: 0px !important;
+        justify-content: space-between;
+    }
+
+    .tab-content {
+        max-height: 200px !important;
+    }
+
+    .tab-btn {
+        width: 100%;
+    }
+       .card-entry {
+        height: fit-content !important;
+    }
+    .tab-pane{
+        gap:0px;
+    }
+    .item-content img {
+    width: 30px;
+    }
+    .tab-content {
+        padding:20px 20px;
+    }
+    .item-content{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.397);
+    }
+
+
+      /* ---------------------------------- */
+
+
+.Coinbase-Clone-Banner img{
+    margin-top: 50px;
+}
+     .Coinbase-Clone-Banner .container{
+        width: 100% !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        max-width: 100% !important;
+     }
+    .Coinbase-Clone-Banner-para {
+        line-height: 1.5 ;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #main-content{
+        margin-top: 50px;
+    }
+    /* Craitrix-nav-section */
+    .Craitrix-nav {
+        padding: 0px;
+    }
+
+    .Craitrix-nav-logo img {
+        width: 80px;
+    }
+
+    .tab-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 0px;
+        padding: 0px 0px;
+        margin-right: 20px;
+        background-color: #f8f9fb;
+    }
+   .tab-header-button{
+    margin-right: 20px;
+   }
+    .tab-btn {
+        font-size: 10px;
+        width: 100%;
+    }
+
+
+    .card-entry {
+        display: block;
+        padding: 0px;
+        box-shadow: none;
+        background-color: transparent !important;
+    }
+
+    .entry-icon {
+        display: none;
+    }
+
+    .card-entry p {
+        display: none;
+    }
+
+    .Craitrix-nav-items ul {
+
+        padding-left: 0px;
+    }
+
+    .nav-link {
+        width: 100%;
+        display: flex !important;
+
+    }
+    .tab-pane{
+        gap:0px;
+    }
+    .item-content img {
+    width: 30px;
+    }
+    .tab-content {
+        padding:20px 20px;
+    }
+  /* -------------------------------------- */
+  /*  Coinbase-clone-hero*/
+
+  .Coinbase-Clone-hero-left{
+    text-align: center;
+  }
+  .Coinbase-Clone-button{
+    display: flex;
+    margin: auto;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+    /* ------------------------------ */
+    /* Whitelabel-ContactUs */
+    .Whitelabel-contactInfo-img{
+            width: 100%;
+    }
+
+/* ---------------------------------------- */
+/* Coinbase-Benefits */
+    .Coinbase-Clone-Benefits-div p{
+        font-size: 14px;
+    }
+
+    .Coinbase-Clone-CloneSoftware-left h2 {
+      text-align: center;
+    }
+    
+#benefitsContainer {
+    width: 100%;
+}
+.step-number{
+    font-size: 2rem !important;
+}
+.workflow-box-div p{
+    font-size: 12px;
+    text-align: center;
+}
+  .WorkflowImageDiv{
+    display: none;
+   }
+ 
+
+/* --------------------------------- */
+/* faq-section */
+.faq-section-container {
+    width: 90%;
+    position: relative;
+}
+/* ------------------------------------ */
+/* Coinbase-footer */
+  .bottom-content img {
+        height: 100%;
+        width: 100%;
+        margin-left: 0px !important;
+        opacity: 1;
+    }
+
+    .wl-process-ccontainer.reveal {
+        margin-bottom: 20px;
+    }
+
+}
+@media (max-width: 480px) {
+    /* Nav-section */
+    .Craitrix-nav-logo{
+        margin-left: 10px;
+    }
+    .item-content h6{
+        font-size: 10px;
+    }
+
+    /* ------------------------------- */
+    /* workflowsection */
+    .workflow-box-div{
+    display: block !important;
+    justify-content: center;
+    align-items: center;
+}
+   .accordion-button{
+    font-size: 12px !important;
+   }
+ 
+   /* ___________________________________ */
+   /* Coinbase-footer */
+   .bottom-content{
+        height: 60%;
+    }
+}
+
+
+
+
+/* --------------------------- */
+/* contactus */
+
+/* whitelabel -Contact-us */
+.Craitrix-Contactus-container{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.212);
+    border-radius: 1rem;
+    padding:20px 40px;
+}
+.contact-box{
+     border-radius: 1rem;
+    padding:10px;
+    box-shadow: 0px 0px 5px #0A97BE70;
+}
+.contact-box h5 span{
+    color:#0A97BE;
+}
+.form-label{
+    color:#0A97BE;
+    font-weight: bold;
+}
+.Craitrix-Contactus-container-button{
+    background-color: #0A97BE;
+    color:white;
+    border:none;
+    width: 60%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding:10px 20px;
+    border-radius: 1rem;
+}
+
+.contact-box2{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contact-box2 img{
+    width:100%;
+    height:100%
+}
+.Craitrix-Contactus-container-right{
+    padding:40px 40px;
+        box-shadow: 0px 0px 10px #0A97BE70;
+             border-radius: 1rem;
+             margin-top:20px;
+
+
+}
+.Craitrix-Contactus-container-right-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    border-left: 1px solid rgba(0, 0, 0, 0.459);
+}
+.border-none{
+    border-left:none;
+}
+.Craitrix-Contactus-container-right-div img{
+    width: 45px;
+}
+.Craitrix-Contactus-container-right-info{
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+}
+.Craitrix-Contactus-container-right-info p{
+    font-size: 14px;
+}
+
+@media (max-width:1200px) {
+   .Craitrix-Contactus-container-right-div{
+    border-left: none;
+    justify-content: start;
+} 
+}
+@media (max-width:768px) {
+    .contact-box2{
+        width: 70%;
+        margin: auto;
+    }
+}
+@media (max-width:487px) {
+    .Craitrix-Contactus-container-right-info h6{
+        font-size: 12px !important;
+    }
+    .Craitrix-Contactus-container-right-info p {
+        font-size: 10px;
+    }
+    .Craitrix-Contactus-container-right-div img {
+    width: 30px;
+}
+}
