@@ -1,0 +1,2321 @@
+/* Prevent scrolling */
+.no-scroll {
+    overflow: hidden;
+}
+
+/* Blur effect on background */
+.blur-background {
+    filter: blur(4px);
+    transition: filter 0.3s ease-in-out;
+}
+
+.Craitrix-box {
+    display: none;
+}
+
+.Craitrix-box.show {
+    display: block;
+}
+
+
+/* ------------------------- */
+/* Critrix-Nav-section */
+.Craitrix-Nav-section {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+}
+
+.Craitrix-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.Craitrix-nav-logo {
+    
+    margin-left: 80px;
+}
+
+.Craitrix-nav-logo img {
+    width: 120px;
+    display: flex;
+    margin: auto;
+}
+
+.navbar-toggler .toggler-icon {
+    width: 24px;
+    height: 2px;
+    background-color: #0099CC;
+    display: block;
+    margin: 6px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.navbar-toggler.open .top-bar {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar-toggler.open .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggler.open .bottom-bar {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.Craitrix-nav-items {
+    flex: 10;
+    display: flex;
+}
+
+.Craitrix-nav-items ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    flex: 9;
+}
+
+.Craitrix-nav-items ul li {
+    list-style: none;
+    font-size: 14px;
+}
+
+.nav-link {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: black !important;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: #0099CC !important;
+}
+
+.nav-link.nav-active {
+    color: #0099CC !important;
+}
+
+.arrow-icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.rotate-arrow {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+.Craitrix-nav-button {
+    flex: 3;
+    text-align: center;
+}
+
+.Craitrix-nav-button button {
+    width: 70%;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 10px;
+    background: linear-gradient(to right, #0A97BE, #087C9ED9);
+    color: white;
+    margin-left: auto;
+}
+
+/* Content area below navbar */
+.Craitrix-box {
+    display: none;
+    padding: 15px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.Craitrix-downbox {
+    display: none;
+    background: white;
+    width: 100%;
+    position: relative;
+    z-index: 999;
+    height: 400px;
+    max-height: 60%;
+    box-shadow: 0px 0px 5px #087C9E;
+}
+
+.Craitrix-box h5 {
+    font-weight: bold;
+    color: #087C9E;
+    margin-bottom: 8px;
+}
+
+.Craitrix-box div.entry {
+    background-color: #f8f9fa;
+    border-left: 4px solid #0A97BE;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: block;
+}
+
+.tab-header {
+    background-color: #f8f9fb;
+    display: flex;
+    gap: 20px;
+    padding: 10px 80px;
+    border-bottom: none;
+}
+
+.tab-header-button {
+    display: flex;
+    width: 60% !important;
+    margin-left: 0px !important;
+    justify-content: space-between;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: #000;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.tab-btn.navactive {
+    background: linear-gradient(to right, #0A97BE, #5BC4DD);
+    color: #fff;
+}
+
+.tab-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 80px;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.tab-pane {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tab-pane.navactive {
+    display: flex !important;
+}
+
+.card-entry {
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    height: 120px;
+    gap: 20px;
+    flex: 1 1 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.item-content img {
+    width: 60px;
+    height: 100%;
+    flex: 2;
+}
+
+.item-content div {
+    flex: 9;
+}
+
+
+.icon-container {
+    width: 100px;
+}
+
+.entry-icon {
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+}
+
+
+/* --------------------------------------- */
+/* header */
+.Tokendevelopment-hero {
+    background: linear-gradient(to right, #FFFFFF, #92E0EE82);
+    padding-block: 100px;
+}
+
+.Tokendevelopment-hero-right {
+    width: 100%;
+}
+
+.Tokendevelopment-hero-right img {
+    width: 100%;
+}
+
+.Tokendevelopment-hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.Tokendevelopment-hero-left h1 span {
+    color: #0A97BE;
+}
+.Tokendevelopment-hero-left p{
+      font-family:'Times New Roman', Times, serif;
+      font-size: 18px;
+      
+}
+
+.Tokendevelopment-hero-left button {
+    background-color: #0A97BE;
+    padding: 12px 60px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 50%;
+}
+
+
+
+/* ------------------------------------- */
+/* Tokendevelopment */
+.Tokendevelopment {
+    padding-top: 40px;
+    background: url("./asset/Vector.png");
+    background-position: center;
+    background-size: contain;
+ 
+}
+
+.Tokendevelopment-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.Tokendevelopment-left img {
+    width: 100%;
+}
+
+.Tokendevelopment-right {
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.Tokendevelopment-right h2 {
+    color: #0A97BE;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.Tokendevelopment-right h2 span{
+    color: black;
+
+}
+
+.Tokendevelopment-right p {
+    font-weight: 400;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    
+}
+
+
+/* Binance-Clone-Script */
+.Tokendevelopment-Notablefeature {
+    background-color: #E9F9FBAD;
+    padding-block: 50px;
+}
+.Tokendevelopment-Notablefeature-container h3 span{
+    color:#0A97BE;
+}
+.feature-box {
+    max-height: 400px;
+    height: 370px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.feature-buttons {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+    height:100%
+}
+
+.feature-buttons button {
+    border: 1px solid #ABABAB;
+    border-radius: 20px;
+    text-align: left;
+    padding: 13px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #6F6F6F;
+}
+
+.feature-content {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+   height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.Tokendevelopment-Notablefeature-header {
+    color: #0980A1;
+}
+
+.feature-content img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.feature-action-buttons {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.feature-action-buttons button {
+    border: 1px solid #ABABAB;
+    border-radius: 20px;
+    padding: 13px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #6F6F6F;
+}
+
+.active-feature {
+    background-color: #279EBF !important;
+    color: white !important;
+}
+
+/* Tokendevelopment-Cross-Chain */
+.Tokendevelopment-Cross-Chain{
+    padding-block: 50px;
+    background: url("./asset/Vector.png");
+    background-position: center;
+    background-size: contain;
+}
+.Tokendevelopment-Cross-Chain-header h2{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.Tokendevelopment-Cross-Chain-header p{
+    text-align: center;
+    width: 60%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.TokenDevelopment-Cross-Chain-boxs{
+    width: 90%;
+    margin: auto;
+}
+.TokenDevelopment-Cross-Chain-box{
+    border:2px solid #0A97BE91;
+    text-align: center;
+    border-radius: 10px;
+    height: 180px;
+    margin-bottom: 20px;
+    box-shadow: #0A97BE40 0px 2px 8px 0px;
+    padding:10px;
+    background-color: white;
+}
+.TokenDevelopment-Cross-Chain-box img{
+    width: 75px;
+}
+
+
+
+/* Tokendevelopment-Crypto-token */
+.Tokendevelopment-Crypto-token-container{
+    width: 100%;
+}
+ .Tokendevelopment-Crypto-token-header{
+    text-align: center;
+ }
+ .Tokendevelopment-Crypto-token-header h2{
+    width: 60%;
+   margin: auto;
+ }
+  .Tokendevelopment-Crypto-token-header  p{
+    padding-block: 20px;
+  }
+ .Tokendevelopment-Crypto-token-header span{
+    color:#0A97BE
+ }
+.icon-box {
+  border: 1px solid rgba(255, 255, 255, 0.3); /* subtle white border */
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+  width: 80%;
+
+  background: rgba(255, 255, 255, 0.1); /* transparent background */
+  backdrop-filter: blur(10px); /* frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+
+  box-shadow: 0 4px 10px #0A97BE; /* soft shadow */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+    .icon-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .icon-box img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+    }
+
+    .custom-shape {
+      width: 100%;
+      max-width: 300px;
+    }
+
+    @media (max-width: 768px) {
+      .custom-shape {
+        margin: 20px auto;
+      }
+    }
+
+
+    /* ----------------------------- */
+    /* TokenDevelopment-service */
+    .TokenDevelopment-service{
+        padding-block: 30px;
+    }
+    .TokenDevelopment-service-div-box{
+        margin-top: 100px;
+        padding:20px;
+        text-align: center;
+        box-shadow: 0px 0px 5px #0A97BE;
+        border-radius: 1rem;
+        width: 100%;
+        position: relative;
+        height: 250px;
+    }
+    .TokenDevelopment-service-head{
+        padding-block: 20px;
+        text-align: center;
+    }
+.TokenDevelopment-service-btn{
+    border:none;
+    padding:10px 20px;
+    width: 100%;
+    border-radius: 1rem;
+    color:#0A97BE;
+    background-color: white;
+    border:1px solid #0A97BE;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 70px;
+}
+.TokenDevelopment-service-btn.active{
+    background-color: #0A97BE;
+    color:white
+}
+.TokenDevelopment-service-div-box-round{
+    background-color: white;
+    border: 2px solid #0980A1;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top:-30%;
+    transform: translateX(-50%);
+}
+.TokenDevelopment-service-div-box-round img{
+    width: 100px;
+
+}
+#TokenDevelopment-service-desc{
+    margin-top: 50px;
+}
+ 
+/* BinanceNft-Marketplace */
+.trc-process-section {
+  background: #fff;
+  position: relative;
+  padding-top:50px
+}
+
+.trc-process-span {
+  color: #0A97BE;
+}
+
+.BinanaceNft-process-list {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  width: 80%;
+  position: relative;
+}
+.BinanceNft-process-step {
+  background:white;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+  list-style: none;
+}
+
+.BinanceNft-process-step.active {
+  background: linear-gradient(to right, #0A97BEB5, #73A0AD1A);
+  font-weight: bold;
+}
+
+
+.BinanceNft-process-step::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #555;
+  border-radius: 50%;
+  position: absolute;
+  left: -27px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+
+
+.BinanceNft-process-step.active::before {
+  background: none;
+}
+
+.BinanceNft-step-icon {
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 46px;
+}
+
+.process-card {
+  background: #fff;
+  height: fit-content;
+  box-shadow: 0px 0px 15px #0A97BEB5;
+  position: relative;
+  max-height:350px;
+  min-width:450px;
+  min-height: 350px;
+  z-index: 1;
+   width: 550px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #008fcf;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-bottom-right-radius: 70px;
+  border-top-left-radius: 10px;
+  z-index: 1;
+}
+
+.BinanceNft-faq-answer {
+    display: none;
+}
+.BinanceNft-process-right {
+    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: auto;
+  position: relative;
+}
+.BinanceNft-process-right-img{
+    width: 100px;
+    margin-right: 30px;
+}
+
+.process-right-img {
+
+}
+
+.process-right-header {
+  text-align: center;
+  color: #0A97BE;
+}
+
+.process-right-para {
+  text-align: center;
+}
+
+.trc-process-section-img1 {
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.trc-process-section-img2 {
+  width: 250px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.BinanceNft-faq-question{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Hide the right panel by default on mobile */
+@media (max-width: 997px) {
+    .BinanceNft-process-list{
+        width: 100%;
+    }
+  .process-right {
+    display: none !important;
+  }
+  .BinanceNft-process-step::before {
+    display: none;
+  }
+   li.BinanceNft-process-step::marker{
+    display: none;
+    color:white
+   }
+  .BinanceNft-process-step {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #f8f9fa;
+    width: 100%;
+  }
+
+  .BinanceNft-faq-question {
+    width: 100%;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 12px;
+  background:white;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.BinanceNft-faq-answer {
+  padding: 15px;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 0 6px 6px 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+  height:0px;
+  opacity:0;
+  max-height: 250px;
+  transition: all 0.4s ease;
+    z-index: 10;
+
+}
+.BinanceNft-faq-question.open + .BinanceNft-faq-answer{
+    height: 250px;
+    opacity: 1;
+}
+.BinanceNft-faq-answer-div{
+    margin-top: 40px;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
+/* .BinanceNft-faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+  transition: transform 0.2s ease;
+}
+
+.BinanceNft-faq-question.open::after {
+  content: "-";
+} */
+.BinanceNft-process-right-img{
+    width: 50px;
+    margin-right: 30px;
+}
+
+.trc-process-section-img2 {
+display: none;
+}
+.trc-process-section-img1 {
+    width: 50px !important;
+}
+}
+  
+
+/* ----------------------------------------- */
+/* multi-chain */
+.Multi-Chain{
+    padding-block: 50px;
+    background-color: #E9F9FB;
+}
+.Multi-Chain h2{
+    padding-block: 20px;
+    
+    text-align: center;
+}
+.Multi-Chain-boxs{
+    justify-content: space-between;
+}
+.Multi-Chain-box{
+    background-color: white;
+    width: 49% !important;
+    text-align: center;
+    border-radius:0.5rem;
+    box-shadow: 0px 0px 5px #0A97BE57;
+    padding:20px;
+    transition: all 0.3s ease;
+}
+.Multi-Chain-box:hover{
+    transform: translateY(-5px);
+        box-shadow: 0px 0px 10px #0A97BE57;
+}
+.Multi-Chain-box img{
+    width: 60px;
+}
+
+
+/* ------------------------------------- */
+/*  */
+/* ------------------------------------------ */
+/* Whitelabel-process-section */
+ .Whitelabel-process-section {
+        padding: 60px 0;
+        position: relative;
+    }
+
+    @media screen and (min-width:992px) {
+        .Whitelabel-features-content{
+            height: 350px !important;
+        }        
+    }
+    
+    .Whitelabel-process-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        padding: 0 15px;
+    }
+    
+    .Whitelabel-process-title {
+        text-align: center;
+        color: black;
+        font-size: 32px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        font-family: sans-serif;
+    }
+    
+    .Whitelabel-process-steps {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    
+    .Whitelabel-process-card {
+        border-radius: 20px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: sticky;
+        top: 7rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        height: 300px;
+    }
+    .Whitelabel-process-card.card1{
+        background-color: #FDECEF;
+    }
+    .Whitelabel-process-card.card2{
+        background-color: #FFF0E5;
+    }
+    .Whitelabel-process-card.card3{
+        background-color: #FFFDE1;
+    }
+    .Whitelabel-process-card.card4{
+        background-color: 	#EFFFF8;
+    }
+   
+    .Whitelabel-process-icon {
+        margin-bottom: 15px;
+    }
+    
+    .Whitelabel-process-icon img {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+    }
+    
+    .Whitelabel-process-step-title {
+        color: #0099cc;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        font-family: sans-serif;
+    }
+    
+    .Whitelabel-process-step-desc {
+        color: black;
+        line-height: 1.6;
+        font-size: 15px;
+        font-family: sans-serif;
+    }
+    
+    /* Responsive styles */
+    @media (max-width: 768px) {
+        .Whitelabel-process-section {
+            padding: 40px 0;
+        }
+        
+        .Whitelabel-process-title {
+            font-size: 28px;
+        }
+        
+        .Whitelabel-process-subtitle {
+            font-size: 15px;
+        }
+        
+        .Whitelabel-process-card {
+            padding: 20px;
+        }
+        
+        .Whitelabel-process-icon img {
+            width: 60px;
+            height: 60px;
+        }
+        
+        .Whitelabel-process-step-title {
+            font-size: 18px;
+        }
+        
+        .Whitelabel-process-step-desc {
+            font-size: 14px;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .Whitelabel-process-title {
+            font-size: 24px;
+        }
+        
+        .Whitelabel-process-subtitle {
+            font-size: 14px;
+        }
+        
+        .Whitelabel-process-icon img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+/* ------------------------------------------ */
+/* TokenDevelopment-Crypto-token */
+.Tokendevelopment-Crypto-token{
+    background-color: #E9F9FB;
+    padding-block: 50px;
+}
+.Tokendevelopment-Crypto-token-container{
+    width: 100%;
+    padding-inline: 50px;
+}
+.Tokendevelopment-Crypto-token-container-box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,minmax(100px,1fr));
+    gap:20px;
+}
+.industry-card{
+    margin: auto;
+    width: 100%;
+    padding:10px 40px;
+    border:1px solid #0A97BE;
+    border-radius: 0.5rem;
+    box-shadow : 0px 0px 5px #0A97BE;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 90px;
+}
+
+
+/* ---------------------------------------- */
+/* TokenDevelopment-Blockchain */
+.TokenDevelopment-header{
+    padding-inline: 50px;
+    
+}
+.TokenDevelopment-Blockchain{
+    padding-block: 50px;
+}
+
+
+/* ------------------------------------------ */
+/* TokenDevelopment-why-choose */
+
+/* --------------------------------------------- */
+/* Craitrix-Chooseus */
+.Craitrix-Chooseus {
+    background: url('./asset/Vector.png');
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+}
+
+.Craitrix-Chooseus-right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Craitrix-Chooseus-right h2 {
+    color: #0A97BE;
+}
+
+.Craitrix-Chooseus-right p {
+    line-height: 2;
+}
+
+/* ------------------------------------ */
+
+/* -------------------------------------------- */
+/* Craitrix-Frequently */
+
+
+/* faq-contactus */
+
+
+.faqListContainer{
+  width: 70%;
+  margin:auto;
+}
+.faq-contactus-container{
+  background-color: #E9F9FB;
+  padding-block: 50px;
+}
+.faq-contactus-container img{
+  position: absolute;
+  z-index: 0;
+  width: 40%;
+  left:0;
+  top: 0;
+}
+.faq-contactus-container h2{
+    color:#0A97BE;
+  font-size: 40px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 30px;
+}
+/* --------------- */
+.faq-question-content{
+  position: relative;
+    width: 100%;
+  background-color: white;
+  margin-bottom: 10px;
+    padding:10px 20px;
+    box-shadow: 0px 5px 10px black;
+    border-radius: 1rem;
+    color: #0099CC;
+    cursor: pointer;
+}
+.faq-content-box{
+    border:1px solid #0A97BE;
+    border-radius: 0.5rem;
+    position: relative;
+    padding: 5px 10px 5px 50px;
+}
+.faq-content-box::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    left:39px;
+    top: -1px;
+    z-index: 1;
+    border-radius: 0.5rem 0px 0px 0px;
+    border:1px solid #0A97BE;
+     border-right:none;
+    border-bottom:none;
+    box-shadow: -5px -10px 0px white ;
+}
+.faq-content-box::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    left:-1px;
+    top: 39px;
+    z-index: 1;
+    border-radius: 0.5rem 0px 0px 0px;
+    border:1px solid #0A97BE;
+     border-right:none;
+    border-bottom:none;
+    box-shadow: -8px 0px 0px white ;
+}
+.faq-content-small-box{
+    position: absolute;
+    top: -1PX !important;
+    left: -1PX !important;
+    border:1px solid #0A97BE;
+     border-left: none;
+     border-top:none;
+     border-radius: 0px 0px 0.5rem 0px;
+
+    width: 40px;
+    height: 40px;
+    background-color: white;
+}
+.faq-content-small-box img{
+    width: 40px;
+}
+.faq-content-box p{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+  .faq-contactus p{
+    margin-block: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+    .faq-contactus p i{
+        margin-left: 20px;
+    }
+/* ------------------------------ */
+.faq-contactus{
+  margin-bottom:20px;
+}
+.faq-answer-content{
+  position: relative;
+    width: 100%;
+  background-color: white;
+    margin-left:100px;
+    padding:10px 20px;
+    box-shadow: 0px 5px 10px black;
+    border-radius: 1rem;
+
+}
+.faq-ans-content-box{
+  width:100%;
+     border:1px solid #0A97BE;
+    border-radius: 0.5rem;
+    position: relative;
+    padding: 5px 50px 5px 10px;
+    background-color: #E9F9FB;
+}
+
+.faq-ans-content-box p{
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.faq-ans-content-box::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    right:39px;
+    top: -1px;
+    z-index: 1;
+    border-radius:0px 0.5rem 0px 0px;
+    border:1px solid #0A97BE;
+     border-left:none;
+    border-bottom:none;
+    box-shadow: 1px -5px 0px white ;
+}
+.faq-ans-content-box::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    right:-1px;
+    top: 39px;
+    z-index: 1;
+    border-radius:0px 0.5rem 0px 0px;
+    border:1px solid #0A97BE;
+     border-left:none;
+    border-bottom:none;
+    box-shadow: 10px -5px 0px white ;
+}
+
+.faq-ans-content-small-box{
+    position: absolute;
+    top: -1PX !important;
+    right: -1PX !important;
+    border:1px solid #0A97BE;
+     border-right: none;
+     border-top:none;
+     border-radius: 0px 0px 0px 0.5rem ;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+}
+
+.faq-ans-content-small-box img{
+    width: 40px;
+}
+
+
+@media (max-width:1200px) {
+   .faq-question-content{
+    width: 90%;
+  }
+  .faq-answer-content {
+    width: 90%;
+  }
+}
+@media (max-width:987px) {
+    .faq-contactus-container img{
+  width: 70%;
+}
+  .faq-answer-content {
+    margin-left:50px;
+  }
+}
+
+@media (max-width:768px) {
+    .faq-content-box{
+        height: fit-content !important;
+    }
+  .faq-question-content{
+    width: 90%;
+  }
+  .faq-answer-content {
+    width: 90%;
+  }
+  .faq-contactus p{
+    font-size: 14px;
+    
+  }
+  
+
+}
+
+@media (max-width:487px) {
+     .Whitelabel-features-left {
+    margin-top:0px;
+    margin-bottom:0px;
+  }
+  .faq-contactus p{
+    font-size: 10px;
+         margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+  }
+  .faq-content-box{
+    height: 30px;
+  }
+  .faq-content-small-box {
+    width:30px;
+    height: 30px;
+  }
+    .faq-content-small-box img{
+      width: 30px;
+    }
+    .faq-content-box::before {
+      left:29px;
+      height: 15px;
+    }
+    .faq-content-box::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 4px;
+        left: 0px;
+        top: 29px;
+        z-index: 1;
+        border-radius: 0.5rem 0px 0px 0px;
+        border: 1px solid #0A97BE;
+        border-right: none;
+        border-bottom: none;
+        box-shadow: -8px 0px 0px white;
+    }
+
+
+    .faq-ans-content-small-box img {
+    width: 30px;
+}
+.faq-ans-content-small-box
+ {
+    height: 30px;
+ }
+.faq-ans-content-box::before
+ {
+    height: 20px;
+}
+.faq-ans-content-box::after
+ {
+    top: 29px;
+    height: 0px;
+ }
+     .faq-answer-content {
+      width: 90%;
+margin-left:30px    }
+ 
+}
+
+.faqListContainer{
+  width: 70%;
+  margin:auto;
+}
+
+.faq-contactus-container{
+  background-color: #E9F9FB;
+  padding-block: 50px;
+    position: relative;
+
+}
+.faq-contactus-container img{
+  position: absolute;
+  z-index: 0;
+  width: 40%;
+  left:0;
+  top: 0;
+}
+.faq-contactus-container h2{
+  font-size: 40px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* --------------- */
+.faq-question-content{
+  position: relative;
+    width: 100%;
+  background-color: white;
+  margin-bottom: 10px;
+    padding:10px 20px;
+    box-shadow: 0px 5px 10px black;
+    border-radius: 1rem;
+}
+.faq-content-box{
+    border:1px solid #0A97BE;
+    border-radius: 0.5rem;
+    position: relative;
+    padding: 5px 10px 5px 50px;
+}
+.faq-content-box::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    left:39px;
+    top: -1px;
+    z-index: 1;
+    border-radius: 0.5rem 0px 0px 0px;
+    border:1px solid #0A97BE;
+     border-right:none;
+    border-bottom:none;
+    box-shadow: -5px -10px 0px white ;
+}
+.faq-content-box::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 8px;
+    left:0px;
+    top: 39px;
+    z-index: 1;
+    border-radius: 0.5rem 0px 0px 0px;
+    border:1px solid #0A97BE;
+     border-right:none;
+    border-bottom:none;
+    box-shadow: -8px 0px 0px white ;
+}
+.faq-content-small-box{
+    position: absolute;
+    top: -2PX !important;
+    left: -2PX !important;
+    border:1px solid #0A97BE;
+     border-left: none;
+     border-top:none;
+     border-radius: 0px 0px 0.5rem 0px;
+    width: 43px;
+    height: 42px;
+    background-color: white;
+}
+.faq-content-small-box img{
+    width: 40px;
+}
+
+ 
+  .faq-contactus p{
+    margin-block: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+    .faq-contactus p i{
+        margin-left: 20px;
+    }
+/* ------------------------------ */
+.faq-contactus{
+  margin-bottom:20px;
+}
+.faq-answer-content{
+  position: relative;
+    width: 100%;
+  background-color: white;
+    margin-left:100px;
+    padding:10px 20px;
+    box-shadow: 0px 5px 10px black;
+    border-radius: 1rem;
+
+}
+.faq-ans-content-box{
+  width:100%;
+     border:1px solid #0A97BE;
+    border-radius: 0.5rem;
+    position: relative;
+    padding: 5px 50px 5px 10px;
+    background-color: #E9F9FB;
+}
+
+.faq-ans-content-box::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    right:39px;
+    top: -1px;
+    z-index: 1;
+    border-radius:0px 0.5rem 0px 0px;
+    border:1px solid #0A97BE;
+     border-left:none;
+    border-bottom:none;
+    box-shadow: 1px -5px 0px white ;
+}
+.faq-ans-content-box::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 6px;
+    right: -1px;
+    top: 39px;
+    z-index: 1;
+    border-radius: 0px 0.5rem 0px 0px;
+    border: 1px solid #0A97BE;
+    border-left: none;
+    border-bottom: none;
+    box-shadow: 10px -1px 0px white;
+}
+
+.faq-ans-content-small-box{
+    position: absolute;
+    top: -2PX !important;
+    right: -2PX !important;
+    border:1px solid #0A97BE;
+     border-right: none;
+     border-top:none;
+     border-radius: 0px 0px 0px 0.5rem ;
+    width: 42px;
+    height: 42px;
+    background-color: white;
+}
+
+.faq-ans-content-small-box img{
+    width: 40px;
+}
+
+
+@media (max-width:1200px) {
+   .faq-question-content{
+    width: 90%;
+  }
+  .faq-answer-content {
+    width: 90%;
+  }
+}
+@media (max-width:987px) {
+  .faq-answer-content {
+    margin-left:50px;
+  }
+  .leftimg{
+    width: 100%;
+  }
+}
+
+@media (max-width:768px) {
+    .faq-content-box{
+        height: 60px;
+    }
+  .faq-question-content{
+    width: 90%;
+  }
+  .faq-answer-content {
+    width: 90%;
+  }
+  .faq-contactus p{
+    font-size: 14px;
+    
+  }
+  
+
+}
+
+@media (max-width:487px) {
+    .faqListContainer{
+        width: 90%;
+    }
+  .faq-contactus p{
+    font-size: 10px;
+         margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+  }
+  .faq-content-box{
+    height: 40px;
+  }
+  .faq-content-small-box {
+    width:32px;
+    height: 32px;
+    top:-2px !important;
+    left:-2px !important;
+  }
+    .faq-content-small-box img{
+      width: 30px;
+    }
+    .faq-content-box::before {
+      left:39px;
+      height: 15px;
+    }
+    .faq-content-box::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 4px;
+        left: 0px;
+        top: 29px;
+        z-index: 1;
+        border-radius: 0.5rem 0px 0px 0px;
+        border: 1px solid #0A97BE;
+        border-right: none;
+        border-bottom: none;
+        box-shadow: -8px 0px 0px white;
+    }
+
+
+    .faq-ans-content-small-box img {
+    width: 30px;
+}
+.faq-ans-content-small-box
+ {
+    height: 32px;
+ }
+.faq-ans-content-box::before
+ {
+    height: 20px;
+}
+.faq-ans-content-box::after
+ {
+    top: 29px;
+    height: 20px;
+ }
+     .faq-answer-content {
+      width: 90%;
+margin-left:30px    }
+ 
+}
+
+
+
+@media (max-width:1400px) {
+    .faq-content-small-box{
+        width: 42px;
+    }
+  .faq-question-icon{
+    left: 2%;
+    top:45px;
+  }
+}
+@media (max-width:1200px) {
+  .faq-question-icon{
+    left: 0%;
+  }
+    .faq-ans-text{
+      padding:20px 60px 20px 20px;
+    }
+  .faq-ans-text p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width:987px) {
+  .faq-question-icon{
+    left:0%;
+    top:35%;
+  }
+     .faq-ans-text{
+      height: 50px;
+     }
+  .faq-ans-icon {
+    width:50px;
+  }
+
+}
+@media (max-width: 768px) {
+  .faq-item {
+    margin-bottom: 10px;
+}
+  .faq-question{
+    padding:10px 10px 10px 20px;
+  }
+  .faq-question-text {
+    height: 50px;
+  }
+   .faq-question-text p{
+    font-size: 10px;
+   }
+   .faq-question-icon{
+    width: 30px;
+    left:4%;
+    top:55%
+   }
+   .faq-answer{
+    margin-left:30px;
+   }
+       .faq-ans-text {
+        height: 20px;
+    }
+     .faq-ans-text p{
+      font-size: 10px;
+     }
+     .faq-ans-icon {
+      top:40px;
+    width:30px;
+  }
+}
+@media (max-width:487px){
+  .curved-box{
+    width: 100%;
+  }
+   .faq-question{
+    border-radius: 1rem;
+   }
+   .faq-question-text {
+    height: 35px;
+  }
+ .faq-question-text p{
+  font-size: 8px;
+  height: 35px;
+          display: flex;
+        align-items: center;
+ }
+  .faq-question-icon{
+    width: 20px;
+    left:6%;
+    top:65%
+   }
+    .faq-ans-icon {
+      top:40px;
+      right:10px;
+    width:20px;
+  }
+      .faq-ans-text {
+        height: 0px;
+      }
+   .faq-ans-text p{
+    font-size: 7px;
+   }
+   .faq-contactus {
+    padding:0px;
+   }
+   .faq-contactus h2 {
+    font-size: 20px;
+    padding-block: 20px;
+   }
+
+
+   /* ------------------------ */
+   .Craitrix-Contactus-container-right-info a{
+    font-size: 10px !important;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color:#0099CC;
+    cursor: pointer;
+}
+}
+
+/* ------------------------------------------------ */
+
+/* --------------------------------------------- */
+/* Craitrix-Contactus */
+.Craitrix-Contactus {}
+
+* {
+    /* outline: 1px solid red; */
+}
+
+.Craitrix-Contactus-container {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.212);
+    border-radius: 1rem;
+    padding: 20px 40px;
+}
+
+.contact-box {
+    border-radius: 1rem;
+    padding: 10px;
+    box-shadow: 0px 0px 5px #0A97BE70;
+}
+
+.contact-box h5 span {
+    color: #0A97BE;
+}
+
+.form-label {
+    color: #0A97BE;
+    font-weight: bold;
+}
+
+.Craitrix-Contactus-container-button {
+    background-color: #0A97BE;
+    color: white;
+    border: none;
+    width: 60%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 1rem;
+}
+
+.contact-box2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-box2 img {
+    width: 100%;
+    height: 100%
+}
+
+.Craitrix-Contactus-container-right {
+    padding: 40px 40px;
+    box-shadow: 0px 0px 10px #0A97BE70;
+    border-radius: 1rem;
+    margin-top: 20px;
+
+
+}
+
+.Craitrix-Contactus-container-right-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-left: 1px solid rgba(0, 0, 0, 0.459);
+}
+
+.border-none {
+    border-left: none;
+}
+
+.Craitrix-Contactus-container-right-div img {
+    width: 45px;
+}
+
+.Craitrix-Contactus-container-right-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.Craitrix-Contactus-container-right-info p {
+    font-size: 14px;
+}
+
+@media (max-width:1200px) {
+    .Craitrix-Contactus-container-right-div {
+        border-left: none;
+        justify-content: start;
+    }
+}
+
+@media (max-width:768px) {
+    .contact-box2 {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media (max-width:487px) {
+    .Craitrix-Contactus-container-right-info h6 {
+        font-size: 12px !important;
+    }
+
+    .Craitrix-Contactus-container-right-info p {
+        font-size: 10px;
+    }
+
+    .Craitrix-Contactus-container-right-div img {
+        width: 30px;
+    }
+}
+
+/* --------------------------------------------- */
+/* footer-section */
+
+
+.footer-section {
+    margin-bottom: 60vh;
+    width: auto;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 2;
+    position: relative;
+    border-radius: 0px 0px 79px 79px;
+    box-shadow: 0px 8px 0px #0099cc, 0px 20px 180px 5px #0099cc66;
+}
+
+.wl-process-ccontainer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.6s ease;
+    transform: translateY(100%);
+    z-index: 1;
+
+}
+
+.wl-process-ccontainer.reveal {
+    transform: translateY(0);
+    margin-bottom: 100px;
+    height: 200px;
+}
+
+.bottom-content img {
+    height: 100%;
+    width: 70%;
+    margin-left: 15%;
+    opacity: 1;
+
+}
+
+.bottom-content {
+    background-color: white;
+    align-items: center;
+    display: flex;
+    height: 90%;
+}
+
+.box {
+    background-color: #FBFBFB;
+    padding: 30px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.box h6 {
+    color: #0A97BE;
+}
+
+.box ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+
+.box ul li a:hover{
+    color: #0099CC;
+}
+
+.box1 {
+    background-color: #FBFBFB;
+    padding: 15px;
+    height: fit-content;
+    border-radius: 15px;
+}
+
+.footer-div1-img {
+    display: flex;
+    margin: auto
+}
+
+.footer-div1-para {
+    text-align: justify;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.footer-div1 span {
+    color: #0099CC
+}
+
+.footer-div5-para {
+    margin-bottom: 0px !important;
+}
+.footer-div5-email{
+        display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+.footer-div8 span {
+    color: #0A97BE;
+}
+
+
+/* responsive design */
+
+@media (max-width:1140px) {
+    .nav-link{
+        font-size: 12px;
+    }
+}
+@media (max-width:1060px) {
+
+    /* Craitrix-Nav-section */
+    .nav-link{
+        font-size: 10px !important;
+    }
+}
+
+
+@media (max-width:1024px) {
+
+    /* Craitrix-Nav-section */
+    .Craitrix-nav-logo img {
+        width: 100px;
+        display: flex;
+        margin: 0px;
+    }
+
+    .Craitrix-nav-button button {
+        margin: auto;
+    }
+
+    .tab-btn.navactive {
+        background: linear-gradient(to right, #0A97BE, #5BC4DD);
+        color: white;
+        border-bottom: 1px solid #00aaff;
+
+    }
+
+    .Craitrix-nav-items ul li {
+        height: fit-content;
+    }
+
+    .nav-link {
+        width: 100%;
+        font-size: 10px !important;
+    }
+}
+
+@media (max-width:1000px) {
+
+     /* Craitrix-Nav-section */
+    .card-entry {
+        display: block;
+        padding: 0px;
+        box-shadow: none;
+        background-color: transparent !important;
+    }
+
+    .entry-icon {
+        display: none;
+    }
+
+    .card-entry p {
+        display: none;
+    }
+}
+
+/* Show downbox only on desktop */
+@media (min-width: 992px) {
+    .Craitrix-box {
+        display: none !important;
+    }
+      .wl-features-content {
+        height: 350px !important;
+    }
+}
+
+@media screen and (min-width:992px) {
+  
+}
+
+/* On mobile, hide .Craitrix-downbox and use .Craitrix-box */
+@media (max-width: 991.98px) {
+
+    /* Craitrix-nav-section */
+    .Craitrix-downbox {
+        display: none !important;
+    }
+
+    .Craitrix-box {
+        display: none;
+    }
+
+    .Craitrix-nav-items {
+        display: block;
+    }
+
+    .Craitrix-nav-items ul li {
+        height: fit-content;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.507);
+    }
+
+    .close-btn {
+        font-size: 20px !important;
+
+    }
+
+    .tab-header {
+        justify-content: space-between;
+        
+    }
+
+    .tab-header-button {
+        display: flex;
+        width: 100% !important;
+        margin-left: 0px !important;
+        justify-content: space-between;
+    }
+
+    .tab-content {
+        max-height: 200px !important;
+    }
+
+    .tab-btn {
+        width: 100%;
+    }
+       .card-entry {
+        height: fit-content !important;
+    }
+    .tab-pane{
+        gap:0px;
+    }
+    .item-content img {
+    width: 30px;
+    }
+    .tab-content {
+        padding:20px 20px;
+    }
+    .item-content{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.397);
+    }
+
+    /* ------------------------------------------ */
+    /* Tokendevelopment-hero */
+    .Tokendevelopment-hero-left{
+        text-align: center;
+    }
+    .Tokendevelopment-hero-right{
+        width: 80%;
+        display: flex;
+        margin:auto;
+    }
+    .Tokendevelopment-hero-left button {
+        width: 70%;
+    }
+    /* ---------------------------------- */
+    /* Token-development-services */
+    .TokenDevelopment-service {
+        padding-top: 0px;
+    }
+    /* .TokenDevelopment-service {
+        padding:20px;
+    } */
+    .TokenDevelopment-service-btn
+    {
+        font-size: 14px;
+    }
+    .custom-shape{
+        display: none;
+    }
+    .icon-box div{
+        font-size: 14px;
+    }
+
+    /* ------------------------------------ */
+    /* Multichain */
+    .Multi-Chain-box{
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+
+    /* ------------------------------- */
+   /* Development-process */
+   .feature-box {
+    max-height: 700px;
+    height: 700px;
+}
+/* ------------------------------- */
+/* TokenDevelopment-Crypto-token */
+.Tokendevelopment-Cross-Chain-header h2 {
+    width: 100%;
+}
+.Tokendevelopment-Cross-Chain-header p {
+    width: 90%;
+}
+.Tokendevelopment-Crypto-token-container-box
+ {
+    grid-template-columns: repeat(3,minmax(100px,1fr));
+ }
+ .Tokendevelopment-Crypto-token-header{
+    text-align: center;
+ }
+
+ /* ----------------------------------- */
+ /* TokenDevelopment-Blockchain */
+ .TokenDevelopment-header{
+    text-align: center;
+    padding-inline: 10px;
+    padding-top:20px
+ }
+ .icon-box{
+    width: 100%;
+ }
+}
+
+
+@media (max-width: 768px) {
+
+    /* Craitrix-nav-section */
+    .Craitrix-nav {
+        padding: 0px;
+    }
+
+    .Craitrix-nav-logo img {
+        width: 80px;
+    }
+
+    .tab-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 0px;
+        padding: 0px 0px;
+        margin-right: 20px;
+        background-color: #f8f9fb;
+    }
+   .tab-header-button{
+    margin-right: 20px;
+   }
+    .tab-btn {
+        font-size: 10px;
+        width: 100%;
+    }
+
+
+    .card-entry {
+        display: block;
+        padding: 0px;
+        box-shadow: none;
+        background-color: transparent !important;
+    }
+
+    .entry-icon {
+        display: none;
+    }
+
+    .card-entry p {
+        display: none;
+    }
+
+    .Craitrix-nav-items ul {
+
+        padding-left: 0px;
+    }
+
+    .nav-link {
+        width: 100%;
+        display: flex !important;
+
+    }
+    .tab-pane{
+        gap:0px;
+    }
+    .item-content img {
+    width: 30px;
+    }
+    .tab-content {
+        padding:20px 20px;
+    }
+    /* -------------------------------- */
+    /* TokenDevelopment-hero */
+    .Tokendevelopment-right h2 {
+        text-align: center;
+    }
+    .TokenDevelopment-Blockchain .container{
+        padding-right:0px;
+    }
+    /* ------------------------------ */
+    /* Tokendevelopment-Crypto-token */
+    .industry-card
+ {
+    font-size: 12px;
+ }
+
+ .Multi-Chain-box {
+    width: 90% !important;
+    margin: auto;
+    margin-bottom: 10px;
+ }
+ /* ------------------------------------- */
+ /* TokenDevelopment-Crypto-token */
+ .Tokendevelopment-Crypto-token{
+    padding-inline:10px;
+ }
+   /* ------------------------------------------ */
+    /* Craitrix-Chooseus */
+    .Craitrix-Chooseus-right p {
+        line-height: 1.3;
+        text-align: justify;
+    }
+
+    
+    /* ------------------------------------------- */
+    /* Craitrix-footer */
+    .box {
+        height: fit-content;
+        padding: 20px;
+    }
+
+    .box ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+    }
+
+    .bottom-content img {
+        height: 100%;
+        width: 100%;
+        margin-left: 0px !important;
+        opacity: 1;
+    }
+
+    .wl-process-ccontainer.reveal {
+        margin-bottom: 20px;
+    }
+   .bottom-content{
+        height: 60%;
+    }
+}
+@media (max-width: 480px) {
+    /* Nav-section */
+    .Craitrix-nav-logo{
+        margin-left: 10px;
+    }
+    .item-content h6{
+        font-size: 10px;
+    }
+        /* ------------------------------ */
+    /* Tokendevelopment-Crypto-token */
+  .Tokendevelopment-Crypto-token-container-box
+ {
+    grid-template-columns: repeat(2,minmax(100px,1fr));
+ }
+   .Multi-Chain-box{
+    font-size: 14px;
+   }
+     .feature-box {
+        height: 700px;
+     }
+     .icon-box img{
+        width: 40px;
+        height: 40px;
+     }
+         .icon-box div {
+        font-size: 12px;
+    }
+     .Tokendevelopment-Crypto-token-header h2 {
+        width:100%;
+     }
+     #TokenDevelopment-service-desc {
+        margin-top: 25px;
+        font-size: 14px;
+     }
+}
+
+@media (max-width:380px) {
+    .Tokendevelopment-Crypto-token-container {
+    padding-inline: 10px;
+}
+    #TokenDevelopment-service-desc {
+        font-size: 12px;
+        margin-top: 30px;
+     }
+    
+}
