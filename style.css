@@ -1,0 +1,2898 @@
+/* Prevent scrolling */
+.no-scroll {
+    overflow: hidden;
+}
+h2,h3,h4{
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
+li{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* *{
+    outline: 1px solid red;
+} */
+
+/* Blur effect on background */
+.blur-background {
+    filter: blur(4px);
+    transition: filter 0.3s ease-in-out;
+}
+
+.Craitrix-box {
+    display: none;
+}
+
+.Craitrix-box.show {
+    display: block;
+}
+#main-content{
+    margin-top: 100px;
+}
+
+/* ------------------------- */
+/* Critrix-Nav-section */
+.Craitrix-Nav-section {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+}
+
+.Craitrix-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.Craitrix-nav-logo {
+
+    margin-left: 80px;
+}
+
+.Craitrix-nav-logo img {
+    width: 120px;
+    display: flex;
+    margin: auto;
+}
+
+.navbar-toggler .toggler-icon {
+    width: 24px;
+    height: 2px;
+    background-color: #0099CC;
+    display: block;
+    margin: 6px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.navbar-toggler.open .top-bar {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar-toggler.open .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggler.open .bottom-bar {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.Craitrix-nav-items {
+    flex: 10;
+    display: flex;
+}
+
+.Craitrix-nav-items ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    flex: 9;
+}
+
+.Craitrix-nav-items ul li {
+    list-style: none;
+    font-size: 14px;
+}
+
+.nav-link {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: black !important;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: #0099CC !important;
+}
+
+.nav-link.nav-active {
+    color: #0099CC !important;
+}
+
+.arrow-icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.rotate-arrow {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+.Craitrix-nav-button {
+    flex: 3;
+    text-align: center;
+}
+
+.Craitrix-nav-button button {
+    width: 70%;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 10px;
+    background: linear-gradient(to right, #0A97BE, #087C9ED9);
+    color: white;
+    margin-left: auto;
+}
+
+/* Content area below navbar */
+.Craitrix-box {
+    display: none;
+    padding: 15px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.Craitrix-downbox {
+    display: none;
+    background: white;
+    width: 100%;
+    position: relative;
+    z-index: 999;
+    height: 400px;
+    max-height: 60%;
+    box-shadow: 0px 0px 5px #087C9E;
+}
+
+.Craitrix-box h5 {
+    font-weight: bold;
+    color: #087C9E;
+    margin-bottom: 8px;
+}
+
+.Craitrix-box div.entry {
+    background-color: #f8f9fa;
+    border-left: 4px solid #0A97BE;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: block;
+}
+
+.tab-header {
+    background-color: #f8f9fb;
+    display: flex;
+    gap: 20px;
+    padding: 10px 80px;
+    border-bottom: none;
+}
+
+.tab-header-button {
+    display: flex;
+    width: 60% !important;
+    margin-left: 0px !important;
+    justify-content: space-between;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: #000;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.tab-btn.navactive {
+    background: linear-gradient(to right, #0A97BE, #5BC4DD);
+    color: #fff;
+}
+
+.tab-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 80px;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.tab-pane {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tab-pane.navactive {
+    display: flex !important;
+}
+
+.card-entry {
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    height: 120px;
+    gap: 20px;
+    flex: 1 1 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.item-content img {
+    width: 60px;
+    height: 100%;
+    flex: 2;
+}
+
+.item-content div {
+    flex: 9;
+}
+
+
+.icon-container {
+    width: 100px;
+}
+
+.entry-icon {
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+}
+
+/* ------------------------------------------ */
+/* Binance-Clone-hero */
+.BinanceClone-hero {
+    background: linear-gradient(to right, #FFFFFF, #92E0EE82);
+    padding-block: 100px;
+}
+
+.BinanceClone-hero-right {
+    width: 80%;
+    display: flex;
+    margin: auto;
+
+}
+
+.BinanceClone-hero-right img {
+    width: 100%;
+}
+
+.BinanceClone-hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100%;
+}
+.BinanceClone-hero-left h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.BinanceClone-hero-left h1 span {
+    color: #0A97BE;
+}
+.BinanceClone-hero-left p
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.BinanceClone-hero-left button {
+    background-color: #0A97BE;
+    padding: 12px 60px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width:50%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* ------------------------------------- */
+/* BinanceClone-Whitelabel */
+.BinanceClone-Whitelabel {
+    background: url("./asset/Vector.png");
+    background-position: center;
+    background-size: contain;
+    padding-block: 20px;
+}
+
+.Binance-Whitelabel-left {
+    width: 500px;
+    height: 500px;
+}
+
+.Binance-Whitelabel-left img {
+    width: 100%;
+}
+
+.Binance-Whitelabel-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.Binance-Whitelabel-right h2 {
+    color: #0A97BE;
+}
+
+.Binance-Whitelabel-right p {
+    font-weight: 400;
+    line-height: 2;
+}
+
+
+/* --------------------------------------- */
+/* Binance-Clone-Notablefeature */
+.Binance-Notablefeature {
+    position: relative;
+}
+
+
+@media screen and (min-width:992px) {
+    .wl-features-content {
+        height: 350px !important;
+    }
+}
+
+/* .Binance-Notablefeature-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        padding: 0 15px;
+    }
+     */
+.Binance-Notablefeature-title {
+        color:#0A97BE;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    padding-block: 20px;
+}
+
+
+.Binance-Notablefeature-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0px auto;
+}
+
+.Binance-Notablefeature-card {
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: sticky;
+    top: 8rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+.Binance-Notablefeature-left{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card1 {
+    background-color: #FDECEF;
+
+}
+
+.card2 {
+    background-color: #FFF0E5;
+}
+
+.card3 {
+    background-color: #FFFDE1;
+}
+
+.card4 {
+    background-color: #EFFFF8;
+}
+
+.card5 {
+    background-color: #ECF8FD;
+}
+
+.card6 {
+    background-color: #F7F0FF;
+}
+
+.Binance-Notablefeature-icon {
+    margin-bottom: 15px;
+}
+
+.Binance-Notablefeature-icon img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.Binance-Notablefeature-step-title {
+    color: #0099cc;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.Binance-Notablefeature-step-desc {
+    color: black;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* Responsive styles */
+@media (max-width:987px) {
+    .Binance-Notablefeature-icon {
+        width: 60% !important;
+        display: flex;
+        margin:auto;
+    }
+}
+@media (max-width: 768px) {
+    .Binance-Notablefeature-section {
+        padding: 40px 0;
+    }
+
+    .Binance-Notablefeature-title {
+        font-size: 28px;
+    }
+
+    .Binance-Notablefeature-subtitle {
+        font-size: 15px;
+    }
+
+    .Binance-Notablefeature-card {
+        padding: 20px;
+    }
+
+    .Binance-Notablefeature-icon img {
+        width: 100%;
+    }
+
+    .Binance-Notablefeature-step-title {
+        font-size: 18px;
+    }
+
+    .Binance-Notablefeature-step-desc {
+        font-size: 14px;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+    .Binance-Notablefeature-title {
+        font-size: 24px;
+    }
+
+    .Binance-Notablefeature-subtitle {
+        font-size: 14px;
+    }
+
+   .Binance-Notablefeature-step-desc{
+    font-size: 12px;
+   }
+
+    .BinanceClone-MoneyMaking-right {
+        display: none;
+    }
+
+    .BinanceClone-MoneyMaking-left {
+        width: 100% !important;
+    }
+
+    .BinanceClone-MoneyMaking-left p {
+        line-height: 2 !important;
+    }
+
+}
+
+/* Binance-Clone-Script */
+.BinanceClone-Notablefeature {
+    margin-top: 50px;
+    background-color: #E9F9FBAD;
+    padding-block: 20px;
+}
+.BinanceClone-Notablefeature h2{
+    color:#0A97BE;
+}
+.BinanceClone-feature-box {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+   height: 400px;
+   max-height: 400px;
+}
+
+.BinanceClone-feature-buttons {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.BinanceClone-feature-buttons button {
+    border: 1px solid #ABABAB;
+    border-radius: 20px;
+    text-align: left;
+    padding: 13px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #6F6F6F;
+}
+
+.BinanceClone-feature-content {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.BinanceClone-Notablefeature-header {
+    color: #0980A1;
+}
+
+.BinanceClone-feature-content img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+.BinanceClone-feature-content p{
+    text-align: justify;
+}
+
+.BinanceClone-feature-action-buttons {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-around   ;
+    height: 100%;
+}
+
+.BinanceClone-feature-action-buttons button {
+    border: 1px solid #ABABAB;
+    border-radius: 20px;
+    padding: 13px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #6F6F6F;
+}
+
+.active-feature {
+    background-color: #279EBF !important;
+    color: white !important;
+}
+@media (max-width:968px) {
+    .BinanceClone-feature-box{
+        height: fit-content;
+        max-height: fit-content;
+    }
+}
+/* ---------------------------------------- */
+/* BinanceClome-Securityfeature */
+
+
+.BinanceClone-Securityfeature-header {
+    text-align: center;
+    color: #0A97BE;
+}
+
+.BinanceClone-Securityfeature-left {
+    height: auto;
+}
+
+.BinanceClone-Securityfeature-left img {
+    width: 100%;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 30px !important
+}
+
+.accordion-item {
+    background-color: #fff;
+    border: none !important;
+}
+
+.accordion-button {
+    border: 1px solid #0A97BE !important;
+    border-radius: 1rem !important;
+    color: #0A97BE !important;
+}
+
+/* ----------------------------------------- */
+/* BinanceClone-MoneyMaking */
+.BinanceClone-MoneyMaking {
+    width: 100%;
+    background: url("./asset/Vector.png");
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    padding-block: 50px;
+    max-height: 900px;
+}
+
+.BinanceClone-box {
+    background-color: #E9F9FB;
+    border-radius: 0px 7rem 7rem 0px;
+    border-right: 10px solid #0A97BE;
+    padding: 40px;
+    position: relative;
+}
+
+.BinanceClone-MoneyMaking-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.BinanceClone-MoneyMaking-left h2 {
+    color: #0A97BE;
+    margin-bottom: 20px;
+}
+
+.BinanceClone-MoneyMaking-left p {
+    text-align: justify;
+    line-height: 2;
+}
+
+.BinanceClone-MoneyMaking-right {
+    margin-left: 50px;
+    height: 700px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.BinanceClone-MoneyMaking-right img {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.BinanceClone-MoneyMaking-custom-underline {
+    height: 10px;
+    width: 55%;
+    background-color: #1ba2e3;
+    border-radius: 0px 50px 10px 0px;
+    position: absolute;
+    margin-left: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* --------------------------------------- */
+/* BinanceClone-Highlightingfeature */
+.BinanceClone-Highlightingfeature {
+    padding-top: 90px;
+    padding-bottom:50px;
+    position: relative;
+}
+
+.BinanceClone-Highlightingfeature-left {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.BinanceClone-Highlightingfeature-left img {
+    width: 100%;
+}
+
+.BinanceClone-Highlightingfeature-right {
+    height: 100%;
+}
+
+.BinanceClone-Highlightingfeature-right h2 {
+    color: #0A97BE;
+
+}
+
+.BinanceClone-Highlightingfeature-right-lists {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    height: 100%;
+}
+
+.BinanceClone-Highlightingfeature-right-list {
+    display: flex;
+    align-items: center;
+    border: 2px solid #0A97BE;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.BinanceClone-Highlightingfeature-right-list img {
+    width: 40px;
+}
+
+.BinanceClone-Highlightingfeature-right-list p {
+    margin-left: 20px;
+    margin-bottom: 0px !important;
+}
+
+
+/* ---------------------------------- */
+/* BinanceClone-BusinessGains */
+.BinanceClone-BusinessGains {
+    margin-top: 40px;
+    padding-block: 30px;
+    background-color: #F0FBFC;
+}
+
+.BinanceClone-BusinessGains h2 {
+    color: #0A97BE;
+    text-align: center;
+    padding-block: 20px;
+}
+
+.Craitrix-revenue-container {
+    padding: 20px 60px 0px 60px;
+    border: 1px solid #0A97BEA3;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 7px #0A97BEA3;
+    width: 90%;
+    margin: auto;
+    background-color: white;
+
+}
+
+.Craitrix-revenue-container-left ul {
+    padding: 10px;
+    width: 70%;
+}
+
+.Craitrix-revenue-container-left ul li {
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #0A97BE33;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #0A97BE;
+}
+
+
+.menu-btn {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.side-icon {
+    position: absolute;
+    width: 20px;
+    overflow: hidden;
+    animation: slideIn 0.4s forwards;
+    z-index: 1;
+    display: none;
+}
+
+.menu-btn.active2 .side-icon {
+    display: block;
+    left: 0;
+}
+
+.menu-btn.active2 li {
+    padding-left: 30px;
+    color: #0099CC;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-20%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.Craitrix-revenue-container-right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Craitrix-revenue-container-right img {
+    width: 130px;
+}
+
+.Craitrix-revenue-container-right h3 {
+    color: #0A97BE;
+}
+
+.Craitrix-revenue-container-right p {
+    width: 80%;
+    line-height: 2;
+    text-align: justify;
+}
+
+/* ----------------------------------------- */
+/* Binance-Clone-Workflow */
+.workflow-section {
+    position: relative;
+    padding: 50px 20px 0px 20px;
+    text-align: center;
+}
+
+.workflow-title {
+    padding-bottom: 20px;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.workflow-title span {
+    color: #0ea5e9;
+}
+
+.workflow-container {
+
+    align-items: center;
+    margin-top: 40px;
+    position: relative;
+}
+
+.workflow-img {
+    position: relative;
+}
+
+.workflow-img-img {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.workflow-img img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    position: absolute;
+    height: auto;
+    border-radius: 20px;
+}
+.workflow-img-img2{
+    width: 100%;
+}
+.workflow-card {
+    position: relative;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 20px 5px 5px 10px;
+    /* leave space for icon */
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+}
+
+
+.number-icon {
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    width: 80px;
+    height: 80px;
+}
+
+.number-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.workflow-card h5 {
+    color: #0ea5e9;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.workflow-card p {
+    font-size: 10px;
+    text-align: justify;
+}
+
+.left-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.right-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+}
+
+/* --------------------------------------- */
+/* BinanceClone-TrustworthyBinance */
+.BinanceClone-TrustworthyBinance {
+    padding-block: 50px;
+    background: url("./asset/Vector.png");
+    background-position: center;
+    background-size: contain;
+}
+
+.BinanceClone-TrustworthyBinance-left {
+    width: 400px;
+}
+
+.BinanceClone-TrustworthyBinance-left img {
+    width: 60%;
+    height: auto;
+}
+
+.BinanceClone-TrustworthyBinance-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.BinanceClone-TrustworthyBinance-right h2 {
+    color: #0A97BE;
+    padding-bottom: 20px;
+}
+
+.BinanceClone-TrustworthyBinance-right p {
+    line-height: 2;
+    text-align: justify;
+}
+
+/* ---------------------------------- */
+/* BinanceClone-revenueModel */
+.BinanceClone-revenueModel {
+    padding-block: 50px;
+    background-color: #E9F9FB;
+}
+
+.BinanceClone-revenueModel .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.BinanceClone-revenueModel h3 {
+    text-align: center;
+    color: #0A97BE;
+}
+
+.BinanceClone-revenueModel-box {
+    padding: 10px;
+    background-color: white;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0px 0px 10px #0A97BE;
+    margin-top: 20px;
+    max-height: 300px;
+    height: 300px;
+}
+
+.BinanceClone-revenueModel-box h4 {
+    color: #0A97BE;
+    margin-bottom: 15px;
+}
+
+.BinanceClone-revenueModel-box p {
+    text-align: center;
+}
+
+/* -------------------------------------------- */
+/* Craitrix-Contact */
+.cta-banner {
+    height: 300px;
+    background: linear-gradient(to right, #0A97BE, #087C9ED9);
+    position: relative;
+    width: 100%;
+}
+
+.cta-img2 {
+    position: absolute;
+    height: 100%;
+    width: 500px;
+    left: 0;
+    top: 0;
+}
+
+.cta-img2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.cta-img1 {
+    position: absolute;
+    height: 100%;
+    width: 500px;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.cta-img1 img {
+    width: 100%;
+    height: 100%;
+}
+
+/* responsive */
+@media (max-width:1024px) {
+    .cta-banner {
+        height: 250px;
+
+    }
+
+    .cta-img1 {
+        width: 400px;
+    }
+
+    .cta-img2 {
+        width: 400px;
+    }
+}
+
+@media (max-width:968px) {
+    .cta-banner {
+        height: 200px;
+    }
+
+    .cta-img1 {
+        width: 300px;
+    }
+
+    .cta-img2 {
+        width: 300px;
+    }
+}
+
+@media (max-width:768px) {
+    .cta-img1 {
+        width: 200px;
+    }
+
+    .cta-img2 {
+        width: 200px;
+    }
+
+    .cta-banner h4 {
+        font-size: 16px;
+    }
+}
+
+/* -------------------------------------------- */
+/* BinanceClone-why-cryptiecraft */
+.BinanceClone-why-cryptiecraft {
+    background: url("./asset/Vector.png");
+    background-position: center;
+    background-size: contain;
+
+
+}
+
+.multi-crypto-wallet-section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.multi-crypto-wallet-section h2 {
+    color: black;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.multi-crypto-wallet-section h2+p {
+    margin-top: 30px;
+    margin-bottom: 45px;
+
+}
+
+.multi-crypto-wallet-section p {
+    font-size: 17px;
+}
+
+.features-circle-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.center-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 464px;
+    z-index: 1;
+}
+
+.center-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.feature-circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.feature-item {
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.feature-box {
+    background-color: white;
+    border: 1px solid #e6f7fc;
+    padding: 25px;
+    /* box-shadow: 0 5px 15px rgba(0, 153, 204, 0.1); */
+    box-shadow: 0px 0px 20px #0099cc;
+    z-index: 1;
+    min-width: 200px;
+}
+
+.feature-box span {
+    color: #0099cc;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.connector {
+    position: absolute;
+    background-color: transparent;
+    border-top: 2px dashed #0099cc;
+    z-index: 0;
+    display: none;
+}
+
+/* Positioning for each feature */
+.top-left {
+    top: 6%;
+    left: 41%;
+    border-radius: 0px 0px 15px 0px;
+
+}
+
+.top-left .connector {
+    width: 100px;
+    transform: rotate(45deg);
+    top: 25px;
+    left: 100%;
+}
+
+.top-right {
+    top: 25%;
+    right: 18%;
+}
+
+.top-right .connector {
+    width: 100px;
+    transform: rotate(-45deg);
+    top: 25px;
+    right: 100%;
+}
+
+.right-top {
+    bottom: 18%;
+    right: 18%;
+}
+
+.right-top .connector {
+    width: 80px;
+    top: 50%;
+    right: 100%;
+}
+
+.right-bottom {
+    top: 47%;
+    right: 15%;
+}
+
+.right-bottom .connector {
+    width: 80px;
+    top: 50%;
+    right: 100%;
+}
+
+.bottom-right {
+    bottom: 10%;
+    right: 25%;
+}
+
+.bottom-right .connector {
+    width: 100px;
+    transform: rotate(45deg);
+    bottom: 25px;
+    right: 100%;
+}
+
+.left-top {
+    top: 26%;
+    left: 18%;
+}
+
+.left-top .connector {
+    width: 80px;
+    top: 50%;
+    left: 100%;
+}
+
+.left-middle {
+    top: 48%;
+    left: 15%;
+}
+
+.left-middle .connector {
+    width: 100px;
+    top: 50%;
+    left: 100%;
+}
+
+.left-bottom {
+    bottom: 17%;
+    left: 17%;
+}
+
+.left-bottom .connector {
+    width: 80px;
+    top: 50%;
+    left: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .features-circle-container {
+        height: 550px;
+    }
+
+    .feature-box {
+        padding: 12px 20px;
+        min-width: 180px;
+    }
+
+    .feature-box span {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .features-circle-container {
+        height: 500px;
+    }
+
+
+    .feature-box {
+        min-width: 160px;
+    }
+
+    .feature-box span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .multi-crypto-wallet-section {
+        padding: 30px 15px;
+    }
+
+    .multi-crypto-wallet-section h2 {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .features-circle-container {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .center-logo {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin-bottom: 30px;
+    }
+
+    .feature-circle {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .feature-item {
+        position: relative;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .feature-box {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .connector {
+        display: none;
+    }
+
+    .top-left,
+    .top-right,
+    .right-top,
+    .right-bottom,
+    .bottom-right,
+    .left-top,
+    .left-middle,
+    .left-bottom {
+        top: unset;
+        left: unset;
+        right: unset;
+        bottom: unset;
+    }
+}
+
+
+/* -------------------------------------------- */
+
+
+@media (max-width: 480px) {
+    .multi-crypto-wallet-section h2 {
+        font-size: 24px;
+        margin-bottom: 0px;
+    }
+    .multi-crypto-wallet-section h2+p {
+        text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+    .center-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .feature-box {
+        padding: 10px 15px;
+    }
+
+    .feature-box span {
+        font-size: 13px;
+    }
+
+    /* ------------------ */
+    .Craitrix-revenue-container {
+        position: relative;
+        height: 700px;
+    }
+
+    .Craitrix-revenue-container-left-div2 {
+        position: absolute;
+        width: 90%;
+        bottom: 0px;
+    }
+
+    .Craitrix-revenue-container-right {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .Craitrix-revenue-container-right img {
+        width: 70px;
+    }
+
+    .BinanceClone-BusinessGains h3 {
+        padding: 0px;
+    }
+
+    .BinanceClone-BusinessGains p {
+        line-height: 1.5;
+    }
+
+
+.faq-contactus-container img {
+display: none;
+}
+.BinanceClone-BusinessGains {
+    margin-top: 0px;
+}
+}
+/* -------------------------------------------- */
+/* Craitrix-Frequently */
+
+
+/* faq-contactus */
+
+
+.faqListContainer{
+  width: 70%;
+  margin:auto;
+}
+.faq-contactus-container{
+  background-color: #E9F9FB;
+  padding-block: 50px;
+}
+.faq-contactus-container img{
+  position: absolute;
+  z-index: 0;
+  width: 40%;
+  left:0;
+  top: 0;
+}
+.faq-contactus-container h2{
+    color:#0A97BE;
+  font-size: 40px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 30px;
+}
+/* --------------- */
+.faq-question-content{
+  position: relative;
+    width: 100%;
+  background-color: white;
+  margin-bottom: 10px;
+    padding:10px 20px;
+    box-shadow: 0px 5px 10px black;
+    border-radius: 1rem;
+    color: #0099CC;
+    cursor: pointer;
+}
+.faq-content-box{
+    border:1px solid #0A97BE;
+    border-radius: 0.5rem;
+    position: relative;
+    padding: 5px 10px 5px 50px;
+}
+.faq-content-box::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    left:39px;
+    top: -1px;
+    z-index: 1;
+    border-radius: 0.5rem 0px 0px 0px;
+    border:1px solid #0A97BE;
+     border-right:none;
+    border-bottom:none;
+    box-shadow: -5px -10px 0px white ;
+}
+.faq-content-box::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    left:-1px;
+    top: 39px;
+    z-index: 1;
+    border-radius: 0.5rem 0px 0px 0px;
+    border:1px solid #0A97BE;
+     border-right:none;
+    border-bottom:none;
+    box-shadow: -8px 0px 0px white ;
+}
+.faq-content-small-box{
+    position: absolute;
+    top: -1PX !important;
+    left: -1PX !important;
+    border:1px solid #0A97BE;
+     border-left: none;
+     border-top:none;
+     border-radius: 0px 0px 0.5rem 0px;
+
+    width: 40px;
+    height: 40px;
+    background-color: white;
+}
+.faq-content-small-box img{
+    width: 40px;
+}
+.faq-content-box p{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+  .faq-contactus p{
+    margin-block: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+    .faq-contactus p i{
+        margin-left: 20px;
+    }
+/* ------------------------------ */
+.faq-contactus{
+  margin-bottom:20px;
+}
+.faq-answer-content{
+  position: relative;
+    width: 100%;
+  background-color: white;
+    margin-left:100px;
+    padding:10px 20px;
+    box-shadow: 0px 5px 10px black;
+    border-radius: 1rem;
+
+}
+.faq-ans-content-box{
+  width:100%;
+     border:1px solid #0A97BE;
+    border-radius: 0.5rem;
+    position: relative;
+    padding: 5px 50px 5px 10px;
+    background-color: #E9F9FB;
+}
+
+.faq-ans-content-box p{
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.faq-ans-content-box::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    right:39px;
+    top: -1px;
+    z-index: 1;
+    border-radius:0px 0.5rem 0px 0px;
+    border:1px solid #0A97BE;
+     border-left:none;
+    border-bottom:none;
+    box-shadow: 1px -5px 0px white ;
+}
+.faq-ans-content-box::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    right:-1px;
+    top: 39px;
+    z-index: 1;
+    border-radius:0px 0.5rem 0px 0px;
+    border:1px solid #0A97BE;
+     border-left:none;
+    border-bottom:none;
+    box-shadow: 10px -5px 0px white ;
+}
+
+.faq-ans-content-small-box{
+    position: absolute;
+    top: -1PX !important;
+    right: -1PX !important;
+    border:1px solid #0A97BE;
+     border-right: none;
+     border-top:none;
+     border-radius: 0px 0px 0px 0.5rem ;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+}
+
+.faq-ans-content-small-box img{
+    width: 40px;
+}
+
+
+@media (max-width:1200px) {
+   .faq-question-content{
+    width: 90%;
+  }
+  .faq-answer-content {
+    width: 90%;
+  }
+}
+@media (max-width:987px) {
+    .faq-contactus-container img{
+  width: 70%;
+}
+  .faq-answer-content {
+    margin-left:50px;
+  }
+}
+
+@media (max-width:768px) {
+    .faq-content-box{
+        height: fit-content !important;
+    }
+  .faq-question-content{
+    width: 90%;
+  }
+  .faq-answer-content {
+    width: 90%;
+  }
+  .faq-contactus p{
+    font-size: 14px;
+    
+  }
+  
+
+}
+
+@media (max-width:487px) {
+     .Whitelabel-features-left {
+    margin-top:0px;
+    margin-bottom:0px;
+  }
+  .faq-contactus p{
+    font-size: 10px;
+         margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+  }
+  .faq-content-box{
+    height: 30px;
+  }
+  .faq-content-small-box {
+    width:30px;
+    height: 30px;
+  }
+    .faq-content-small-box img{
+      width: 30px;
+    }
+    .faq-content-box::before {
+      left:29px;
+      height: 15px;
+    }
+    .faq-content-box::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 4px;
+        left: 0px;
+        top: 29px;
+        z-index: 1;
+        border-radius: 0.5rem 0px 0px 0px;
+        border: 1px solid #0A97BE;
+        border-right: none;
+        border-bottom: none;
+        box-shadow: -8px 0px 0px white;
+    }
+
+
+    .faq-ans-content-small-box img {
+    width: 30px;
+}
+.faq-ans-content-small-box
+ {
+    height: 30px;
+ }
+.faq-ans-content-box::before
+ {
+    height: 20px;
+}
+.faq-ans-content-box::after
+ {
+    top: 29px;
+    height: 0px;
+ }
+     .faq-answer-content {
+      width: 90%;
+margin-left:30px    }
+ 
+}
+
+.faqListContainer{
+  width: 70%;
+  margin:auto;
+}
+
+.faq-contactus-container{
+  background-color: #E9F9FB;
+  padding-block: 50px;
+    position: relative;
+
+}
+.faq-contactus-container img{
+  position: absolute;
+  z-index: 0;
+  width: 35%;
+  left:0;
+  top: 0;
+}
+.faq-contactus-container h2{
+  font-size: 40px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* --------------- */
+.faq-question-content{
+  position: relative;
+    width: 100%;
+  background-color: white;
+  margin-bottom: 10px;
+    padding:10px 20px;
+    box-shadow: 0px 5px 10px black;
+    border-radius: 1rem;
+}
+.faq-content-box{
+    border:1px solid #0A97BE;
+    border-radius: 0.5rem;
+    position: relative;
+    padding: 5px 10px 5px 50px;
+}
+.faq-content-box::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    left:39px;
+    top: -1px;
+    z-index: 1;
+    border-radius: 0.5rem 0px 0px 0px;
+    border:1px solid #0A97BE;
+     border-right:none;
+    border-bottom:none;
+    box-shadow: -5px -10px 0px white ;
+}
+.faq-content-box::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 8px;
+    left:0px;
+    top: 39px;
+    z-index: 1;
+    border-radius: 0.5rem 0px 0px 0px;
+    border:1px solid #0A97BE;
+     border-right:none;
+    border-bottom:none;
+    box-shadow: -8px 0px 0px white ;
+}
+.faq-content-small-box{
+    position: absolute;
+    top: -2PX !important;
+    left: -2PX !important;
+    border:1px solid #0A97BE;
+     border-left: none;
+     border-top:none;
+     border-radius: 0px 0px 0.5rem 0px;
+    width: 43px;
+    height: 42px;
+    background-color: white;
+}
+.faq-content-small-box img{
+    width: 40px;
+}
+
+ 
+  .faq-contactus p{
+    margin-block: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+    .faq-contactus p i{
+        margin-left: 20px;
+    }
+/* ------------------------------ */
+.faq-contactus{
+  margin-bottom:20px;
+}
+.faq-answer-content{
+  position: relative;
+    width: 100%;
+  background-color: white;
+    margin-left:100px;
+    padding:10px 20px;
+    box-shadow: 0px 5px 10px black;
+    border-radius: 1rem;
+
+}
+.faq-ans-content-box{
+  width:100%;
+     border:1px solid #0A97BE;
+    border-radius: 0.5rem;
+    position: relative;
+    padding: 5px 50px 5px 10px;
+    background-color: #E9F9FB;
+}
+
+.faq-ans-content-box::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    right:39px;
+    top: -1px;
+    z-index: 1;
+    border-radius:0px 0.5rem 0px 0px;
+    border:1px solid #0A97BE;
+     border-left:none;
+    border-bottom:none;
+    box-shadow: 1px -5px 0px white ;
+}
+.faq-ans-content-box::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 6px;
+    right: -1px;
+    top: 39px;
+    z-index: 1;
+    border-radius: 0px 0.5rem 0px 0px;
+    border: 1px solid #0A97BE;
+    border-left: none;
+    border-bottom: none;
+    box-shadow: 10px -1px 0px white;
+}
+
+.faq-ans-content-small-box{
+    position: absolute;
+    top: -2PX !important;
+    right: -2PX !important;
+    border:1px solid #0A97BE;
+     border-right: none;
+     border-top:none;
+     border-radius: 0px 0px 0px 0.5rem ;
+    width: 42px;
+    height: 42px;
+    background-color: white;
+}
+
+.faq-ans-content-small-box img{
+    width: 40px;
+}
+
+
+@media (max-width:1200px) {
+   .faq-question-content{
+    width: 90%;
+  }
+  .faq-answer-content {
+    width: 90%;
+  }
+}
+@media (max-width:987px) {
+  .faq-answer-content {
+    margin-left:50px;
+  }
+  .leftimg{
+    width: 100%;
+  }
+}
+
+@media (max-width:768px) {
+    .faq-content-box{
+        height: 60px;
+    }
+  .faq-question-content{
+    width: 90%;
+  }
+  .faq-answer-content {
+    width: 90%;
+  }
+  .faq-contactus p{
+    font-size: 14px;
+    
+  }
+  
+
+}
+
+@media (max-width:487px) {
+    .faqListContainer{
+        width: 90%;
+    }
+  .faq-contactus p{
+    font-size: 10px;
+         margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+  }
+  .faq-content-box{
+    height: 40px;
+  }
+  .faq-content-small-box {
+    width:32px;
+    height: 32px;
+    top:-2px !important;
+    left:-2px !important;
+  }
+    .faq-content-small-box img{
+      width: 30px;
+    }
+    .faq-content-box::before {
+      left:39px;
+      height: 15px;
+    }
+    .faq-content-box::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 4px;
+        left: 0px;
+        top: 29px;
+        z-index: 1;
+        border-radius: 0.5rem 0px 0px 0px;
+        border: 1px solid #0A97BE;
+        border-right: none;
+        border-bottom: none;
+        box-shadow: -8px 0px 0px white;
+    }
+
+
+    .faq-ans-content-small-box img {
+    width: 30px;
+}
+.faq-ans-content-small-box
+ {
+    height: 32px;
+ }
+.faq-ans-content-box::before
+ {
+    height: 20px;
+}
+.faq-ans-content-box::after
+ {
+    top: 29px;
+    height: 20px;
+ }
+     .faq-answer-content {
+      width: 90%;
+margin-left:30px    }
+ 
+}
+
+
+
+@media (max-width:1400px) {
+    .faq-content-small-box{
+        width: 42px;
+    }
+  .faq-question-icon{
+    left: 2%;
+    top:45px;
+  }
+}
+@media (max-width:1200px) {
+  .faq-question-icon{
+    left: 0%;
+  }
+    .faq-ans-text{
+      padding:20px 60px 20px 20px;
+    }
+  .faq-ans-text p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width:987px) {
+  .faq-question-icon{
+    left:0%;
+    top:35%;
+  }
+     .faq-ans-text{
+      height: 50px;
+     }
+  .faq-ans-icon {
+    width:50px;
+  }
+
+}
+@media (max-width: 768px) {
+  .faq-item {
+    margin-bottom: 10px;
+}
+  .faq-question{
+    padding:10px 10px 10px 20px;
+  }
+  .faq-question-text {
+    height: 50px;
+  }
+   .faq-question-text p{
+    font-size: 10px;
+   }
+   .faq-question-icon{
+    width: 30px;
+    left:4%;
+    top:55%
+   }
+   .faq-answer{
+    margin-left:30px;
+   }
+       .faq-ans-text {
+        height: 20px;
+    }
+     .faq-ans-text p{
+      font-size: 10px;
+     }
+     .faq-ans-icon {
+      top:40px;
+    width:30px;
+  }
+}
+@media (max-width:487px){
+  .curved-box{
+    width: 100%;
+  }
+   .faq-question{
+    border-radius: 1rem;
+   }
+   .faq-question-text {
+    height: 35px;
+  }
+ .faq-question-text p{
+  font-size: 8px;
+  height: 35px;
+          display: flex;
+        align-items: center;
+ }
+  .faq-question-icon{
+    width: 20px;
+    left:6%;
+    top:65%
+   }
+    .faq-ans-icon {
+      top:40px;
+      right:10px;
+    width:20px;
+  }
+      .faq-ans-text {
+        height: 0px;
+      }
+   .faq-ans-text p{
+    font-size: 7px;
+   }
+   .faq-contactus {
+    padding:0px;
+   }
+   .faq-contactus h2 {
+    font-size: 20px;
+    padding-block: 20px;
+   }
+
+
+   /* ------------------------ */
+   .Craitrix-Contactus-container-right-info a{
+    font-size: 10px !important;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color:#0099CC;
+    cursor: pointer;
+}
+}
+
+/* --------------------------------------------- */
+/* Craitrix-Contactus */
+.Craitrix-Contactus {}
+
+* {
+    /* outline: 1px solid red; */
+}
+
+.Craitrix-Contactus-container {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.212);
+    border-radius: 1rem;
+    padding: 20px 40px;
+}
+
+.contact-box {
+    border-radius: 1rem;
+    padding: 10px;
+    box-shadow: 0px 0px 5px #0A97BE70;
+}
+
+.contact-box h5 span {
+    color: #0A97BE;
+}
+
+.form-label {
+    color: #0A97BE;
+    font-weight: bold;
+}
+
+.Craitrix-Contactus-container-button {
+    background-color: #0A97BE;
+    color: white;
+    border: none;
+    width: 60%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 1rem;
+}
+
+.contact-box2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-box2 img {
+    width: 100%;
+    height: 100%
+}
+
+.Craitrix-Contactus-container-right {
+    padding: 40px 40px;
+    box-shadow: 0px 0px 10px #0A97BE70;
+    border-radius: 1rem;
+    margin-top: 20px;
+
+
+}
+
+.Craitrix-Contactus-container-right-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-left: 1px solid rgba(0, 0, 0, 0.459);
+}
+
+.border-none {
+    border-left: none;
+}
+
+.Craitrix-Contactus-container-right-div img {
+    width: 45px;
+}
+
+.Craitrix-Contactus-container-right-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.Craitrix-Contactus-container-right-info p {
+    font-size: 14px;
+}
+
+@media (max-width:1200px) {
+    .Craitrix-Contactus-container-right-div {
+        border-left: none;
+        justify-content: start;
+    }
+}
+
+@media (max-width:768px) {
+    .contact-box2 {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media (max-width:487px) {
+    .Craitrix-Contactus-container-right-info h6 {
+        font-size: 12px !important;
+    }
+
+    .Craitrix-Contactus-container-right-info p {
+        font-size: 10px;
+    }
+
+    .Craitrix-Contactus-container-right-div img {
+        width: 30px;
+    }
+}
+
+/* --------------------------------------------- */
+/* footer-section */
+
+
+.footer-section {
+    margin-bottom: 60vh;
+    width: auto;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 2;
+    position: relative;
+    border-radius: 0px 0px 79px 79px;
+    box-shadow: 0px 8px 0px #0099cc, 0px 20px 180px 5px #0099cc66;
+}
+
+.wl-process-ccontainer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.6s ease;
+    transform: translateY(100%);
+    z-index: 1;
+
+}
+
+.wl-process-ccontainer.reveal {
+    transform: translateY(0);
+    margin-bottom: 100px;
+    height: 200px;
+}
+
+.bottom-content img {
+    height: 100%;
+    width: 70%;
+    margin-left: 15%;
+    opacity: 1;
+
+}
+
+.bottom-content {
+    background-color: white;
+    align-items: center;
+    display: flex;
+    height: 90%;
+}
+
+.box {
+    background-color: #FBFBFB;
+    padding: 30px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.box h6 {
+    color: #0A97BE;
+}
+
+.box ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+
+.box ul li a:hover{
+    color: #0099CC;
+}
+
+.box1 {
+    background-color: #FBFBFB;
+    padding: 15px;
+    height: fit-content;
+    border-radius: 15px;
+}
+
+.footer-div1-img {
+    display: flex;
+    margin: auto
+}
+
+.footer-div1-para {
+    text-align: justify;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.footer-div1 span {
+    color: #0099CC
+}
+
+.footer-div5-para {
+    margin-bottom: 0px !important;
+}
+.footer-div5-email{
+        display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: space-around;
+}
+.footer-div8 span {
+    color: #0A97BE;
+}
+
+
+/* responsive design */
+
+@media (max-width:1140px) {
+    .nav-link {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:1060px) {
+
+    /* Craitrix-Nav-section */
+    .nav-link {
+        font-size: 10px !important;
+    }
+}
+
+
+@media (max-width:1024px) {
+
+    /* Craitrix-Nav-section */
+    .Craitrix-nav-logo img {
+        width: 100px;
+        display: flex;
+        margin: 0px;
+    }
+
+    .Craitrix-nav-button button {
+        margin: auto;
+    }
+
+    .tab-btn.navactive {
+        background: linear-gradient(to right, #0A97BE, #5BC4DD);
+        color: white;
+        border-bottom: 1px solid #00aaff;
+
+    }
+
+    .Craitrix-nav-items ul li {
+        height: fit-content;
+    }
+
+    .nav-link {
+        width: 100%;
+        font-size: 10px !important;
+    }
+}
+
+@media (max-width:1000px) {
+
+    /* Craitrix-Nav-section */
+    .card-entry {
+        display: block;
+        padding: 0px;
+        box-shadow: none;
+        background-color: transparent !important;
+    }
+
+    .entry-icon {
+        display: none;
+    }
+
+    .card-entry p {
+        display: none;
+    }
+}
+
+/* Show downbox only on desktop */
+@media (min-width: 992px) {
+    .Craitrix-box {
+        display: none !important;
+    }
+
+    .workflow-container {
+        grid-template-columns: 1fr;
+    }
+
+    .dotted-line {
+        display: none;
+    }
+
+    .left-col,
+    .right-col {
+        align-items: center;
+    }
+}
+
+
+/* On mobile, hide .Craitrix-downbox and use .Craitrix-box */
+@media (max-width: 991.98px) {
+
+    /* Craitrix-nav-section */
+    .Craitrix-downbox {
+        display: none !important;
+    }
+
+    .Craitrix-box {
+        display: none;
+    }
+
+    .Craitrix-nav-items {
+        display: block;
+    }
+
+    .Craitrix-nav-items ul li {
+        height: fit-content;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.507);
+    }
+
+    .close-btn {
+        font-size: 20px !important;
+
+    }
+
+    .tab-header {
+        justify-content: space-between;
+
+    }
+
+    .tab-header-button {
+        display: flex;
+        width: 100% !important;
+        margin-left: 0px !important;
+        justify-content: space-between;
+    }
+
+    .tab-content {
+        max-height: 200px !important;
+    }
+
+    .tab-btn {
+        width: 100%;
+    }
+
+    .card-entry {
+        height: fit-content !important;
+    }
+
+    .tab-pane {
+        gap: 0px;
+    }
+
+    .item-content img {
+        width: 30px;
+    }
+
+    .tab-content {
+        padding: 20px 20px;
+    }
+
+    .item-content {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.397);
+    }
+
+    /* _____________________________ */
+    /* BinanceClone-hero */
+    .BinanceClone-hero-right {
+        margin-top: 50px;
+    }
+
+    /* ---------------------------------- */
+    /* BinanceClone-Securityfeature */
+    .BinanceClone-Securityfeature-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    /* ------------------------------------- */
+    /* BinanceClone-MoneyMaking */
+   
+
+    .BinanceClone-MoneyMaking-left {
+        width: 50%;
+    }
+
+    .BinanceClone-MoneyMaking-left p {
+        line-height: 1;
+        font-size: 10px;
+    }
+
+    .BinanceClone-MoneyMaking-right {
+        margin-left: 50px;
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+
+
+    /* ------------------------------------------ */
+    /* BinanceClone-Highlightingfeature */
+    .BinanceClone-Highlightingfeature-left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .BinanceClone-Highlightingfeature-left img {
+        width: 100%;
+    }
+
+    .BinanceClone-Highlightingfeature-right {
+        height: 100%;
+    }
+
+    /* --------------------------------- */
+    /*  */
+    .left-col {
+        justify-content: flex-start;
+    }
+
+    .right-col {
+        justify-content: flex-end;
+    }
+
+    .workflow-img {
+        width: 30% !important;
+        position: absolute;
+        top: 50%;
+        left: 35%;
+    }
+
+    /* ------------------------------------------- */
+    /* BinanceClone-BusinessGains */
+    .Craitrix-revenue-container {
+        padding: 0px;
+    }
+
+    .Craitrix-revenue-container-left ul {
+        padding: 10px;
+        width: 100%;
+    }
+
+    /* ____________________________________________ */
+    /* BinanceClone-TrustworthyBinance */
+    .BinanceClone-TrustworthyBinance-left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    /* --------------------------------------------- */
+    /* BinanceClone-faq-section */
+
+}
+
+
+@media (max-width: 768px) {
+
+    /* Craitrix-nav-section */
+    .Craitrix-nav {
+        padding: 0px;
+    }
+
+    .Craitrix-nav-logo img {
+        width: 80px;
+    }
+
+    .tab-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 0px;
+        padding: 0px 0px;
+        margin-right: 20px;
+        background-color: #f8f9fb;
+    }
+
+    .tab-header-button {
+        margin-right: 20px;
+    }
+
+    .tab-btn {
+        font-size: 10px;
+        width: 100%;
+    }
+
+
+    .card-entry {
+        display: block;
+        padding: 0px;
+        box-shadow: none;
+        background-color: transparent !important;
+    }
+
+    .entry-icon {
+        display: none;
+    }
+
+    .card-entry p {
+        display: none;
+    }
+
+    .Craitrix-nav-items ul {
+
+        padding-left: 0px;
+    }
+
+    .nav-link {
+        width: 100%;
+        display: flex !important;
+
+    }
+
+    .tab-pane {
+        gap: 0px;
+    }
+
+    .item-content img {
+        width: 30px;
+    }
+
+    .tab-content {
+        padding: 20px 20px;
+    }
+
+
+    /* ------------------------- */
+    /* BinanceClone-hero */
+    .BinanceClone-hero{
+        padding-block: 50px;
+    }
+    .BinanceClone-hero-left{
+        display: flex
+;
+    justify-content: center;
+    align-items: center;
+    }
+       .BinanceClone-hero-left p{
+        text-align: center;
+       }
+         .BinanceClone-hero-left button{
+        width: 70%;
+        display: flex;
+        margin: auto;
+    }
+
+    .BinanceClone-hero-right {
+        width:100%;
+    }
+    .BinanceClone-hero-right img {
+        width: 80%;
+        display: flex;
+        margin: auto;
+    }
+    /* --------------------------------------------- */
+    /* BinanceWhitelabel */
+    .Binance-Whitelabel-right h2{
+        padding-block: 30px;
+    }
+    /* ------------------------------------------ */
+    /* BinanceClone-Highlightingfeature */
+    .BinanceClone-Highlightingfeature-left {
+        width: 80%;
+        margin:20px auto;
+        }
+    .BinanceClone-Highlightingfeature-right h2 {
+     position: absolute;
+     top:0;
+     padding-block:20px;    
+}
+
+
+    /* ----------------------------------------- */
+    /* BInanceClone-Securityfeature */
+    .BinanceClone-Securityfeature-left {
+        width: 80%;
+        margin: auto;
+    }
+
+    /* ------------------------------------- */
+    /*  */
+    .left-col {
+        justify-content: flex-start;
+    }
+
+    .right-col {
+        justify-content: flex-end;
+    }
+
+    .workflow-img {
+        width: 30%;
+        position: absolute;
+        top: 50%;
+        left: 35%;
+    }
+/* ----------------------------------------- */
+/* BinanceClone-TrustWorthyBinance */
+.BinanceClone-TrustworthyBinance-right h2 {
+    text-align: center;
+}
+    /* Craitrix-revenue */
+    .Craitrix-revenue-container {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .Craitrix-revenue-container-left ul {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .Craitrix-revenue-container-right p {
+        width: 100%;
+        padding-right: 10px;
+    }
+
+    /* --------------------------- */
+    /* BinanceClone-faq-section */
+    .faq-container {
+        display: block;
+    }
+
+    .faq-left {
+        width: 100%;
+    }
+
+    .faq-right {
+        width: 100%;
+    }
+
+   
+    /* ------------------------------------------- */
+    /* Craitrix-footer */
+    .box {
+        height: fit-content;
+        padding: 20px;
+    }
+
+    .box ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+    }
+
+    .bottom-content img {
+        height: 100%;
+        width: 100%;
+        margin-left: 0px !important;
+        opacity: 1;
+    }
+
+    .wl-process-ccontainer.reveal {
+        margin-bottom: 20px;
+    }
+   .bottom-content{
+        height: 60%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    #main-content{
+          margin-top:60px;
+    }
+    /* Nav-section */
+    .Craitrix-nav-logo {
+        margin-left: 10px;
+    }
+
+    .item-content h6 {
+        font-size: 10px;
+    }
+
+    /* Binance-whitelabel */
+    
+    .Binance-Whitelabel-left {
+        width: 100%;
+        height: 100%;
+    }
+    .BinanceClone-hero-left {
+        align-items: center;
+    }
+  
+    .BinanceClone-Whitelabel {
+        padding-block: 0px;
+    }
+
+    /* --------------------------- */
+    /* BinanceClone-Notablefeature */
+    .feature-buttons {
+        flex: none;
+        width: 100%;
+    }
+
+    .feature-action-buttons {
+        flex: none;
+        width: 100%;
+    }
+.workflow-img-img2 {
+    width: 190%;
+}
+
+
+    /* -------------------------------- */
+    /* workflow-Container */
+    .workflow-container {
+        gap: 100px
+    }
+
+    .left-col {
+        justify-content: flex-start;
+    }
+
+    .right-col {
+        justify-content: flex-end;
+    }
+
+    .workflow-img {
+        width: 50%;
+        position: absolute;
+        top: 48%;
+    }
+
+    /* ---------------------------------- */
+    /* BinanceClone-Contact */
+    .contact-box {
+        box-shadow: 0px 0px 10px #0a97beec;
+        padding: 0px;
+    }
+
+    .Binance-contact-img {
+        width: 100%;
+    }
+
+    .contact-box2 {
+        padding: 0px;
+    }
+
+
+
+
+}
