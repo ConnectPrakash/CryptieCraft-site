@@ -508,6 +508,18 @@ document.addEventListener('click', function (e) {
 });
 
 
+
+
+function openPopup() {
+      const overlay = document.getElementById('popup-overlay');
+      overlay.style.display = 'flex';
+ 
+      const closeBtn = overlay.querySelector('.close-btn');
+      closeBtn.addEventListener('click', () => {
+        overlay.style.display = 'none';
+      }, { once: true }); // Ensure listener is added only once
+    }
+
 // Attach listeners to nav links
 document.querySelectorAll('.Craitrix-nav-items .nav-link').forEach(link => {
   link.addEventListener("click", listEventHandler);
@@ -554,15 +566,23 @@ collapse.addEventListener('shown.bs.collapse', () => {
 const BlockChain = [
   {
     img: "assets/spot exchange.png",
-    desc: "Spot Exchange allows users to trade cryptocurrencies instantly at market prices. It's ideal for straightforward trades and quick access to digital assets."
+    desc: "We develop centralized cryptocurrency exchanges that provide access for a central authority to manage trades and transactions on the platform. It offers users compliance assurance, fast transactions, and grievance support."
   },
   {
     img: "assets/P2P.png",
-    desc: "Users trade crypto directly with one another, often with customizable terms. The platform typically acts as an escrow to secure the transaction until both parties fulfill their obligations."
+    desc: "This exchange simplifies peer-to-peer trades that let the users to hold onto their funds in the entire trading. In the phase of real huge profits, we develop it with complete customization features and user-friendly interfaces.."
   },
   {
     img: "assets/future exchange.png",
-    desc: "Traders speculate on the future price of crypto assets using contracts like futures or options, without owning the actual asset. These exchanges often involve leverage and margin trading."
+    desc: "This hybrid exchange comes with the combined benefits of both centralized and decentralized exchange platforms. Besides, our robust hybrid model covers quick transaction, continual liquidity and high level security for optimizing the activities of cryptocurrency trading. "
+  },
+    {
+    img: "assets/P2P.png",
+    desc: "We develop, ready to launch  peer-to-peer crypto exchange platform that is specialized in reliable transactions and high speed, without the involvement of intermediaries. This facilitates the direct transactions with enhanced privacy, diminished fees and with multiple trading options. "
+  },
+  {
+    img: "assets/future exchange.png",
+    desc: "Our feature-rich and safe DeFi exchange focuses on decentralization that allows to swap several cryptocurrencies from several chains. Our DeFi exchange platform supports crypto lending, liquidity and foster financial inclusivity."
   }
 ]
 
@@ -610,20 +630,20 @@ document.addEventListener('DOMContentLoaded', function () {
                 {
                     name: 'trading-engine',
                     title: 'Advanced Trading Engine',
-                    image: 'assets/Advanced Trading Engine.png',
-                    description: 'The white label cryptocurrency exchange software from cryptiecraft is designed in a way that has low latency and high-speed transactions. Though, the high market volatility, it assures for the seamless trade execution in that cases too'
+                    image: 'assets/Trading Engine.png',
+                    description: 'The white label cryptocurrency exchange software from cryptiecraft has inbuilt powerful trading engine that has low latency and high-speed transactions.During, high market volatility, it assures for the seamless trade execution flawlessly'
                 },
                 {
                     name: 'matching',
                     title: 'Order Matching Algorithm',
-                    image: 'assets/Order Matching Algorithm.png',
-                    description: 'Our exchange script has a powerful inbuilt algorithm that matches the real time buy and sell orders efficiently. This mechanism enables instant trade execution based on the time, priority and price and also diminishes the delays in trade and embellishes the liquidity.'
+                    image: 'assets/Whitelabel-Order Matching Algorithm.png',
+                    description: 'Our exchange software has a powerful inbuilt algorithm that matches the real time buy and sell orders efficiently. This mechanism enables instant trade execution based on the time, priority and price and also diminishes the delays in trade and embellishes the liquidity.'
                 },
                 {
                     name: 'charts',
                     title: 'Live Trading Charts',
-                    image: 'assets/Live Trading Charts.png',
-                    description: 'For the stunning technical analysis, our ready made script has integrated real-time charts with multiple indicators that let the users to effectively track the trends, price movements, trading volumes. The system supports all chart types, including line, bar, candlestick, area, Heikin-Ashi, Renko, and OHLC charts..'
+                    image: 'assets/Whitelabel-Live Trading Charts.png',
+                    description: 'For the stunning technical analysis, our White Label Exchange software is integrated with real-time charts and multiple indicators that let the users effectively track the trends, price movements, trading volumes. The system supports all chart types, including line, bar, candlestick, area, Heikin-Ashi, Renko, and OHLC charts.'
                 }
             ]
         },
@@ -632,19 +652,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 {
                     name: 'two-factor',
                     title: 'Multisignature Wallet',
-                    image: 'assets/Multisignature Wallet.png',
+                    image: 'assets/Whitelabel-Multi-Signature Wallet.png',
                     description: 'Multiple signatures for withdrawals is a high demanded feature in cryptocurrency and blockchain applications, providing enhanced asset security by preventing access from unauthorized users and reducing hacking risks. This assures that the funds are protected with an additional verification layer.'
                 },
                 {
                     name: 'encryption',
                     title: '2FA Authentication',
-                    image: 'assets/2FA Authentication.png',
-                    description: 'The 2FA authentication in the exchange software adds an additional layer of security through two-factor methods such as OTPs, Google Authenticator, and more. This includes authenticator apps, email verification, and mobile verification which plays a major role in safeguarding user accounts from unauthorized access and attacks like phishing..'
+                    image: 'assets/Whitelabel-2FA Authentication.png',
+                    description: 'The 2FA authentication in the exchange software adds an additional layer of security through Two-Factor methods such as OTPs, Google Authenticator and more. This includes authenticator apps, email verification, and mobile verification which plays a major role in safeguarding user accounts from unauthorized access and attacks like phishing.'
                 },
                 {
                     name: 'cold-storage',
                     title: 'Real-Time Fraud Detection With AI/ML',
-                    image: 'assets/ML.png',
+                    image: 'assets/Whitelabel-Real-Time Fraud Detection With AI-ML.png',
                     description: 'To detect any kind of suspicious activity instantly, CryptieCraft has built the white-label exchange software with an advanced AI/ML security system. It also analyzes real-time flags, fraudulent transactions, and anomalous trade patterns'
                 }
             ]
@@ -654,20 +674,20 @@ document.addEventListener('DOMContentLoaded', function () {
                 {
                     name: 'multi-currency',
                     title: 'Multi-Chain Support',
-                    image: 'assets/Multi-Chain Support.png',
-                    description: 'The multi-chain wallet in the exchange software paves the way to securely store all types of cryptocurrencies across various blockchain networks such as BTC, ETH, SOL, BNB, Polygon, and other leading cryptos, with an advanced level of security embedded in it. This setup helps users store multiple cryptocurrencies under one roof to securely store, transact, and trade.'
+                    image: 'assets/Whitelabel-Multi-Chain Support.png',
+                    description: 'The Multi-chain wallet in the exchange software paves the way to securely store all types of cryptocurrencies across various blockchain networks such as BTC, ETH, SOL, BNB, Polygon, and other leading cryptos with an advanced level of security embedded in it.'
                 },
                 {
                     name: 'deposit-withdrawal',
                     title: 'Seamless Token Integration',
-                    image: 'assets/Seamless Token Integration.png',
-                    description: 'The dynamic token integration feature enables seamless token additions without technical errors or hassles. This module allows the admin to list new tokens from top token standard networks such as ERC-20, BEP-20, TRC-20 and SOL extending the opportunity to offer major trading pairs and support high-volume assets within the exchange.'
+                    image: 'assets/Whitelabel-Seamless Token Integration.png',
+                    description: 'The Dynamic token integration feature enables the admin to list new tokens from top token standard networks such as ERC-20, BEP-20, TRC-20 and SOL extending the opportunity to offer major trading pairs and support high-volume assets within the exchange.'
                 },
                 {
                     name: 'transaction-history',
                     title: 'Secure Wallet Infrastructure',
-                    image: 'assets/Secure Wallet Infrastructure.png',
-                    description: 'To maintain the digital assets in a secure way, our platform implements high level security protocols. For hassle free fund management, it supports both hot and cold wallets that come with encrypted private key storage to prevent any attacks or threats.'
+                    image: 'assets/Whitelabel-Secure Wallet Infrastructure.png',
+                    description: 'To Maintain the digital assets in a secure way, our platform implements high level security protocols. For hassle free fund management, it supports both hot and cold wallets that come with encrypted private key storage to prevent any attacks or threats.'
                 }
             ]
         },
@@ -676,19 +696,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 {
                     name: 'order-types',
                     title: 'Different Order Type Support',
-                    image: 'assets/different-order-types.png',
-                    description: 'The application is built to let traders execute their strategies across various order types. It allows users to efficiently manage entry and exit points. Moreover, it enhances the trading flexibility for both advanced traders and beginners.'
+                    image: 'assets/Whitelabel-Supports Different Order Types 1.png',
+                    description: 'The Application is built to let traders execute their strategies across various order types such as Limit, Market, Stop-loss. It allows users to efficiently manage entry and exit points. Moreover, it enhances the trading flexibility for both advanced traders and beginners.'
                 },
                 {
                     name: 'margin-trading',
                     title: 'Margin Trading',
-                    image: 'assets/Margin Trading.png',
-                    description: 'The Margin Trading feature in the white-label cryptocurrency exchange allows users to trade with borrowed funds to maximize profits. It also supports leverage trading along with risk management tools and helps traders prevent losses.'
+                    image: 'assets/Whitelabel-Margin Trading.png',
+                    description: 'The Margin Trading feature in the white-label cryptocurrency exchange allows users trade with borrowed funds to maximize profits. It also supports leverage trading along with risk management tools and helps traders prevent losses.'
                 },
                 {
                     name: 'api-trading',
                     title: 'Bot & Algo Trading Support',
-                    image: 'assets/Bot & Algo Trading Support.png',
+                    image: 'assets/Whitelabel-Bot & Algo Trading Support.png',
                     description: 'Leveraging AI-driven bots and algorithms, our white-label cryptocurrency exchange supports automated trading solutions. To enhance efficiency, it enables high-frequency trading strategies and executes trades 24/7 without manual intervention.'
                 }
             ]
@@ -963,3 +983,164 @@ window.addEventListener('scroll', () => {
     footerContainer.classList.remove('reveal');
   }
 });
+
+
+
+  const slider = document.getElementById("slider");
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % 7; // Loop 0 -> 1 -> 2 -> 0
+    slider.style.transform = `translateX(-${index * 100}%)`;
+  }, 3000);
+
+
+
+  const exchanges = [
+  {
+    name: "BINANCE",
+    colorClass: "brand-binance",
+    logo: "./assets/selling1.png",
+    features: [
+      " Hybrid exchange model  ",
+      "Built-in P2P trading  ",
+      "Multi-layer security  ",
+      "Fast trade engine",
+      " Liquidity integration  ",
+      "Margin & futures",
+      "Global fiat support",
+      "Advanced chart tools ",
+      "Auto KYC/AML",
+      " Mobile-friendly access"
+    ]
+  },
+  {
+    name: "COINBASE",
+    colorClass: "brand-coinbase",
+    logo: "./assets/selling2.png",
+    features: [
+      "Simple user interface ",
+      "Instant crypto swaps",
+      " Secure in-app wallet ",
+      "Biometric login option ",
+      "Auto-invest options ",
+      "Developer-friendly APIs ",
+      " Licensed-ready backend  ",
+      "Verified user onboarding",
+      "Portfolio tracking ",
+      "Staking features "
+    ]
+  },
+   {
+    name: "ByBit Clone",
+    colorClass: "brand-binance",
+    logo: "./assets/selling3.png",
+    features: [
+      "Perpetual contracts support  ",
+      "Dual-price safety",
+      "High leverage options",
+      "Margin mode choices",
+      " Insurance fund setup",
+      "Auto liquidation alerts",
+      "Copy trading tools",
+      "Advanced trade orders ",
+      "Market depth views ",
+      "Lightning-fast engine  "
+    ]
+  },
+  {
+    name: "Kraken Clone",
+    colorClass: "brand-coinbase",
+    logo: "./assets/selling4.png",
+    features: [
+      "Wide fiat pairs",
+      "Institutional-grade trading ",
+      "OTC trade desk",
+      "Reserve proof system",
+      " Cold asset storage",
+      "Multi-market support ",
+      "Regulator-compliant design ",
+      "Pro trading tools",
+      "Audit-ready reports",
+      "Custom order types  "
+    ]
+  },
+   {
+    name: "KuCoin Clone",
+    colorClass: "brand-binance",
+    logo: "./assets/selling5.png",
+    features: [
+   "Referral reward system",
+"Crypto lending feature",  
+ "Soft staking model",
+" AI trade bots  ",
+ "Launchpad access"  ,
+" Discounted trade fees ",
+"Tiered KYC levels ",
+"All-in-one trading  ",
+" Cross-chain enabled  ",
+ "Daily bonus rewards  "
+
+    ]
+  },
+  {
+    name: "Paxful Clone ",
+    colorClass: "brand-coinbase",
+    logo: "./assets/selling6.png",
+    features: [
+      " 300+ payment modes ",
+      "Escrow-protected trades",
+      "Seller trust ratings ",
+      "Dispute resolution tools  ",
+      "Built-in trade chat  ",
+      " User crypto wallet  ",
+      "Vendor verification  ",
+      "Local fiat gateway  ",
+      "KYC optional access ",
+      "Real-time pricing  "
+    ]
+  },
+];
+
+  const renderCards = () => {
+  const container = document.getElementById("exchangeCards");
+  exchanges.forEach(exchange => {
+    const card = document.createElement("div");
+    card.className = " col-lg-6";
+
+    const leftFeatures = exchange.features.slice(0, 5);
+    const rightFeatures = exchange.features.slice(5);
+
+    card.innerHTML = `
+      <div class="exchange-card">
+        <div class="exchange-header ${exchange.colorClass}">
+          <img src="${exchange.logo}" class="whitelabel-selling-img">
+          <span class="exchange-title">${exchange.name}</span>
+        </div>
+        <div class="whitelabel-feature">
+          <div class="features-title">Value Added Features</div>
+          <div class="row">
+            <div class="col-6">
+              <ul class="list-unstyled">
+                ${leftFeatures.map(f => `<li><i class="fa-solid fa-check"></i> ${f}</li>`).join("")}
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="list-unstyled">
+                ${rightFeatures.map(f => `<li><i class="fa-solid fa-check"></i> ${f}</li>`).join("")}
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+        <a  class="btn get-quote-btn w-100" onclick="openPopup()">Get A Quote →</a>
+      </div>
+    `;
+    container.appendChild(card);
+  });
+};
+
+renderCards();
+
+
+
