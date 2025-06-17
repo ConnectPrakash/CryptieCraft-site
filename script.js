@@ -565,23 +565,23 @@ collapse.addEventListener('shown.bs.collapse', () => {
 
 const BlockChain = [
   {
-    img: "assets/spot exchange.png",
+    img: "assets/Centralized_Exchange.png",
     desc: "We develop centralized cryptocurrency exchanges that provide access for a central authority to manage trades and transactions on the platform. It offers users compliance assurance, fast transactions, and grievance support."
   },
   {
-    img: "assets/P2P.png",
+    img: "assets/Decentralized_Exchange.png",
     desc: "This exchange simplifies peer-to-peer trades that let the users to hold onto their funds in the entire trading. In the phase of real huge profits, we develop it with complete customization features and user-friendly interfaces.."
   },
   {
-    img: "assets/future exchange.png",
+    img: "assets/Hybrid_Exchange.png",
     desc: "This hybrid exchange comes with the combined benefits of both centralized and decentralized exchange platforms. Besides, our robust hybrid model covers quick transaction, continual liquidity and high level security for optimizing the activities of cryptocurrency trading. "
   },
     {
-    img: "assets/P2P.png",
+    img: "assets/P2P_Exchange.png",
     desc: "We develop, ready to launch  peer-to-peer crypto exchange platform that is specialized in reliable transactions and high speed, without the involvement of intermediaries. This facilitates the direct transactions with enhanced privacy, diminished fees and with multiple trading options. "
   },
   {
-    img: "assets/future exchange.png",
+    img: "assets/DeFi_Exchange.png",
     desc: "Our feature-rich and safe DeFi exchange focuses on decentralization that allows to swap several cryptocurrencies from several chains. Our DeFi exchange platform supports crypto lending, liquidity and foster financial inclusivity."
   }
 ]

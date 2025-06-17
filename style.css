@@ -500,7 +500,15 @@ h1{
     cursor:auto;
 }
 
-
+@media (max-width:468px) {
+    .Whitelabel h2{
+    font-size: 28px !important;
+    margin-bottom: 5px;
+}
+.hero-info{
+    font-size: 16px;
+}
+}
 
 /* ---------------------------------------------- */
 /* Whitelabel-Blockchain */
@@ -550,6 +558,7 @@ h1{
     width: 100%;
     margin: 100px auto 20px auto;
     padding: 70px;
+    max-height: 300px;
     
 }
 .Whitelabel-Blockchain-div-box-round
@@ -572,8 +581,8 @@ h1{
 
 
 .Whitelabel-Blockchain-div-box img {
-    width: 80%;
-    height: 90%;
+    width: 70%;
+    height: 70%;
 }
 #Whitelabel-Blockchain-desc {
     width: 60%;
@@ -2124,8 +2133,11 @@ width: 100%;
 }
 
 @media (max-width:487px) {
+    .Whitelabel-features-content{
+        height: 480px !important;
+    }
      .Whitelabel-features-left {
-    margin-top:0px;
+    margin-top:15px;
     margin-bottom:0px;
   }
   .faq-contactus p{
@@ -2227,9 +2239,9 @@ margin-left:30px    }
 }
 
 .bottom-content img {
-    height: 100%;
-    width: 70%;
-    margin-left: 15%;
+    height: 150%;
+    width: 100%;
+    /* margin-left: 15%; */
     opacity: 1;
 
 }
@@ -2287,10 +2299,10 @@ margin-left:30px    }
 }
 .footer-div5-head{
     color: #0A97BE;
-    font-size: 12px;
+    font-size: 14px;
 }
 .footer-div5-para {
-    font-size: 10px;
+    font-size: 14px;
     margin-bottom: 0px !important;
 }
 .footer-div5-email{
@@ -2719,6 +2731,7 @@ margin-left:30px    }
 }
 .Whitelabel-feature-description p {
     font-size: 12px;
+    height: 90px;
 }
 .Whitelabel-features-right {
     padding-top:0px;
@@ -3351,12 +3364,14 @@ clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 100% 100%, 0 100%, 0% 80%, 
 
     }
    .userfeature-box:hover .userfeature-title{
-     color: white;
-     font-size: 28px;
+     display: none;
      
    }
 
 @media (max-width:480px) {
+    .Whitelabel-userfeature{
+        padding-top: 0px;
+    }
     .userfeature-box {
     height: 270px;
     }
@@ -3400,10 +3415,10 @@ clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 100% 100%, 0 100%, 0% 80%, 
   box-shadow: 0px 0px 15px #0A97BEB5;
   position: relative;
   max-height:350px;
-  min-width:450px;
+  /* min-width:450px; */
   min-height: 350px;
   z-index: 1;
-   width: 550px;
+   /* width: 550px; */
   height: 380px;
   display: flex;
   flex-direction: column;
@@ -3622,6 +3637,10 @@ display: none;
     .BinanceNft-process-right {
         height: 360px;
     }
+    .step-number{
+        padding:10px 20px;
+        font-size: 2rem;
+    }
 }
 
 .Whitelabel-demo-section {
@@ -3677,24 +3696,40 @@ display: none;
   height: 100%;
   border-radius: 10px;
 }
-
+@media (max-width:986px) {
+    .Whitelabel-demo {
+        width: 100%;
+    }
+}
+@media (max-width:768px) {
+     .Whitelabel-best-selling ul li{
+        font-size: 14px;
+      padding:10px 0px !important;
+    }
+}
 @media (max-width:480px) {
     .Whitelabel-demo{
-        width: 100%;
+        width: 95%;
+        display: flex;
+        margin: auto;
     }
     .background-img{
         height: 280px !important;
     }
     .Whitelabel-best-selling ul li{
         font-size: 10px;
+      padding:10px 0px !important;
     }
     .whitelabel-selling-img {
-        width: 50px !important;
+        width: 30px !important;
     }
     .whitelabel-feature{
         height: fit-content !important;
         padding:10px !important;
     }
+       .whitelabel-feature .row{
+        padding-right:0px !important;
+       }
     .Whitelabel-demo-section{
         padding-top: 0px;
     }
@@ -3833,7 +3868,14 @@ display: none;
     right: 3%;
     bottom:15%;
 }
-
+@media (max-width:468px) {
+    .exchange-card{
+        padding:10px;
+    }
+    .get-quote-btn{
+        padding:10px 20px;
+    }
+}
 /* ------------------------------------------------ */
 /* Whitelabel-showcase */
 .Whitelabel-showcase-div .row{
@@ -4054,7 +4096,7 @@ display: none;
     margin: auto;
 }
 .Whitelabel-revenue-div{
-    height: 300px;
+    height: 320px;
     text-align: center;
     background-color: white;
     padding: 10px 20px;
@@ -4147,7 +4189,11 @@ display: none;
 .BinanceNft-feature-icon img{
     width:100%;
 }
-
+@media (max-width:768px) {
+    .BinanceNft-feature-div-box{
+        width: 100% !important;
+    }
+}
 @media (max-width:468px) {
     .BinanceNft-feature-div-box{
         width: 95% !important;
