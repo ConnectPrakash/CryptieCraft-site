@@ -8,19 +8,19 @@ const data = [
           {
             name: "Binance Clone Script",
             desc: "Powerful Binance clone script to launch your crypto exchange",
-            icons: "/asset/header/binance.png",
+            icons: "assets/header/binance.png",
             color: "#fff8dc"
           },
           {
             name: "Coinbase Clone Script",
             desc: "Launch a user-friendly crypto exchange with our coinbase clone script",
-            icons: "/asset/header/coinbase.png",
+            icons: "assets/header/coinbase.png",
             color: "#add8e6"
           },
           {
             name: "Kucoin Clone Script",
             desc: "Start a feature-rich exchange with our KuCoin clone script",
-            icons: "/asset/header/kucoin.png",
+            icons: "assets/header/kucoin.png",
             color: "#ccffcc"
           }
         ]
@@ -31,7 +31,7 @@ const data = [
           {
             name: "Whitelabel Crypto Exchange Development",
             desc: "Build your own crypto exchange with our ready whitelabel solution",
-            icons: "/asset/header/whitelabel.png",
+            icons: "assets/header/whitelabel.png",
             color: "#ffe4e1"
           },
 
@@ -48,19 +48,19 @@ const data = [
           {
             name: "ERC-20 Token Development",
             desc: "Create your Ethereum based ERC-20 token with secure and scalable smart contracts",
-            icons: "/asset/header/Copy of ethereum.png",
+            icons: "assets/header/Copy of ethereum.png",
             color: "rgb(218, 216, 216)"
           },
           {
             name: "TRC-20 Token Development",
             desc: "Launch TRC-20 token on Tron with high-speed, efficient blockchain performance",
-            icons: "/asset/header/trc 20.png",
+            icons: "assets/header/trc 20.png",
             color: "rgb(253, 178, 178)"
           },
           {
             name: "BEP-20 Token Development",
             desc: "custom BEP-20 token development for fast,low few crypto projects",
-            icons: "/asset/header/BEP.png",
+            icons: "assets/header/BEP.png",
             color: "rgb(241, 241, 131)"
           }
         ]
@@ -71,13 +71,13 @@ const data = [
           {
             name: "ICO Development",
             desc: "End to end ICO development to raise funds with your custom crypto token",
-            icons: "/asset/header/ico.png",
+            icons: "assets/header/ico.png",
             color: "#dcebf3"
           },
           {
             name: "STO Development",
             desc: "Secure and compliant STO development to tokenize real world access",
-            icons: "/asset/header/STO.png",
+            icons: "assets/header/STO.png",
             color: "rgb(246, 235, 255)"
           }
         ]
@@ -93,19 +93,19 @@ const data = [
           {
             name: "Binance NFT Clone Script",
             desc: "Create a secure NFT marketPlace like Binance with minting,trading and advanced smart contracts",
-            icons: "/asset/header/binancenftmarketplace.png",
+            icons: "assets/header/binancenftmarketplace.png",
             color: "rgb(255, 240, 158)"
           },
           {
             name: "Opensea Clone Script",
             desc: "Launch your own NFT marketplace with our opensea clone script, offering secure transactions and customizable features",
-            icons: "/asset/header/OPENSEA.png",
+            icons: "assets/header/OPENSEA.png",
             color: "rgb(197, 233, 247)"
           },
           {
             name: "Rarible NFT Clone Script",
             desc: "Empower Creators with a decentralized NFT marketplace like Rarible , supporting minting, buying and selling of digital assets",
-            icons: "/asset/header/rarible.png",
+            icons: "assets/header/rarible.png",
             color: "rgb(248, 233, 228)"
           }
         ]
@@ -116,7 +116,7 @@ const data = [
           {
             name: "NFT Marketplace Development",
             desc: "Build your own NFT marketplace to mint, trade and showcase digital assets seamlessly",
-            icons: "/asset/header/MArketplace solution.png",
+            icons: "assets/header/MArketplace solution.png",
             color: "#e2f4fa"
           }
         ]
@@ -132,13 +132,13 @@ const data = [
           {
             name: "Metamask Clone Script",
             desc: "Create a secure web3 wallet like Metamask with our ready-to launch clone script",
-            icons: "/asset/header/metamask.png",
+            icons: "assets/header/metamask.png",
             color: "rgb(253, 196, 175)"
           },
           {
             name: "Trust Wallet Clone Script",
             desc: "Build a multi-crypto wallet like Trust wallet with complete customization support",
-            icons: "/asset/header/trust-wallet-token.png",
+            icons: "assets/header/trust-wallet-token.png",
             color: "#75cce9"
           }
         ]
@@ -149,13 +149,13 @@ const data = [
           {
             name: "Crypto Wallet Development",
             desc: "Develop secure and multi-chain crypto wallets for seamless digital asset management",
-            icons: "/asset/header/Crypto wallet development.png",
+            icons: "assets/header/Crypto wallet development.png",
             color: "#e6d7ba"
           },
           {
             name: "Defi Wallet Development",
             desc: "Build non-custodial Defi wallets for decentralized trading, staking and asset control",
-            icons: "/asset/header/defi wallet.png",
+            icons: "assets/header/defi wallet.png",
             color: "#daecec"
           }
         ]
@@ -171,19 +171,19 @@ const data = [
           {
             name: "Crypto Payment Geteway Development",
             desc: "Build a secure crypto payment gateway to accept digital currencies globally",
-            icons: "/asset/header/crypto payment gateway.png",
+            icons: "assets/header/crypto payment gateway.png",
             color: "#fdf1fd"
           },
           {
             name: "Binace Pay Clone Script",
             desc: "Create a Binance Pay-like platform for seamless crypto payments and transfers",
-            icons: "/asset/header/binance pay clone.png",
+            icons: "assets/header/binance pay clone.png",
             color: "rgb(253, 253, 219)"
           },
           {
             name: "CoinPayments Clone Script",
             desc: "Build a multi-crypto payments platform like CoinPayments for global merchants",
-            icons: "/asset/header/coin payment.png",
+            icons: "assets/header/coin payment.png",
             color: "#a0ddf7"
           }
         ]
@@ -194,7 +194,7 @@ const data = [
           {
             name: "crypto MLM Software Development",
             desc: "Launch a profitable crypto network marketing platform with our MLM business solution",
-            icons: "/asset/header/crypto mlm.png",
+            icons: "assets/header/crypto mlm.png",
             color: "#fddddd"
           },
 
@@ -211,19 +211,19 @@ const data = [
           {
             name: "Uniswap Clone Script",
             desc: "Launch a decentralized exchange like Uniswap with powerful trading features",
-            icons: "/asset/header/uniswap.png",
+            icons: "assets/header/uniswap.png",
             color: "rgb(248, 162, 191)"
           },
           {
             name: "Pancakeswap Clone Script",
             desc: "Build a user-friendly DEX like PancakeSwap with seamless token swaps and liquidity pools.",
-            icons: "/asset/header/Pancakeswap.png",
+            icons: "assets/header/Pancakeswap.png",
             color: "rgb(201, 169, 169)"
           },
           {
             name: "Sushiswap Clone Script",
             desc: "Create your own DEX like SushiSwap with staking, farming, and governance tools",
-            icons: "/asset/header/sushi-logo.png",
+            icons: "assets/header/sushi-logo.png",
             color: "rgb(235, 178, 235)"
           }
         ]
@@ -234,7 +234,7 @@ const data = [
           {
             name: "DEX Development",
             desc: "Develop decentralized exchanges tailored to your business model and users",
-            icons: "/asset/header/DEX-Development.png",
+            icons: "assets/header/DEX-Development.png",
             color: "#d6f8d6"
           }
         ]
@@ -548,104 +548,190 @@ collapse.addEventListener('shown.bs.collapse', () => {
 });
 
 
+//header appears on scrollback//
+
+document.addEventListener("DOMContentLoaded", function () {
+  const header = document.querySelector(".Craitrix-Nav-section");
+  let lastScrollTop = 0;
+  const headerHeight = header.offsetHeight;
+  window.addEventListener("scroll", function () {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll > lastScrollTop && currentScroll > headerHeight) {
+      // Scrolling down — hide header
+      header.style.top = `-${headerHeight}px`;
+      header.classList.remove("scrolled");
+    } else if (currentScroll < lastScrollTop) {
+      // Scrolling up — show header
+      header.style.top = "0";
+      header.classList.add("scrolled");
+    }
+
+    lastScrollTop = Math.max(currentScroll, 0); // Prevent negative scroll
+  });
+});
+
+
+// popup
+    function openPopup() {
+      const overlay = document.getElementById('popup-overlay');
+      overlay.style.display = 'flex';
+  
+      const closeBtn = overlay.querySelector('.close-btn');
+      closeBtn.addEventListener('click', () => {
+        overlay.style.display = 'none';
+      }, { once: true }); // Ensure listener is added only once
+    }
+
+
 
 // Binance-User-features
- const content = {
+//  const content = {
+//       track: {
+//         title: "Secure Login & Regulatory-Ready Onboarding",
+//         text: "Users can sign up or log in to the platform through social logins or one-click email signup, eliminating the need to fill out lengthy forms. KYC/AML verification is mandatory for performing any financial transactions and comes integrated by default within the system.",
+//         icon: "assets/compliance.png"
+//       },
+//       instant: {
+//         title: "Track of trades and transactions",
+//         text: "The user dashboard offers eye-appealing information in the form of pie charts and graphical representations of the trades and transactions done on the platform, providing a wide range of visibility on the account and helping users enhance their trade strategies and manage accounts efficiently.",
+//         icon: "assets/Instant Cryptocurrency Buying and Selling.png"
+//       },
+//       refer: {
+//         title: "Simplified Trading with OTC Support",
+//         text: "The Binance clone script is a beginner-friendly platform that allows new users to instantly buy or sell cryptocurrencies through the Over-The-Counter (OTC) trading module with just a one-click swap, making the trade process highly trade-friendly and efficient.",
+//         icon: "assets/Option to Refer & Earn.png"
+//       }
+//       ,cryptocurrence: {
+//         title: "Flexible Deposits & Withdrawals with Scalable Payment Integration",
+//         text: "Users are able to deposit and withdraw multiple cryptocurrencies and can also use the platform as a secure storage for their crypto assets. In addition, the platform is scalable to accommodate various and the latest payment gateways, extending support for depositing and withdrawing fiat currencies.",
+//         icon: "assets/Deposit Cryptocurrency or Fiat.png"
+//       },
+//       transaction: {
+//         title: "Advanced Trading tools for informed decisions",
+//         text: "To trade with low latency and make accurate and instant decisions, the trading tools are essential and crucial which should be present in the same trade interface. This increases the efficiency of the trades and the profits too, where the platform provides all the advanced trade charts and tools inbuilt in the trading interface.",
+//         icon: "assets/History of Transaction.png"
+//       },
+//       cryptowallet: {
+//         title: "Affiliate Module to earn",
+//         text: "With the use of the affiliate module, each successful referral helps you earn rewards in the form of either cryptocurrency or reduced trading fees. The referral system also helps more users discover the best solution for their trading needs.",
+//         icon: "assets/Crypto Wallets.png"
+//       }
+//     };
+
+//     function showFeature(key) {
+//       const feature = content[key];
+//       const container = document.getElementById("feature-content");
+//       container.innerHTML = `
+//         <img src="${feature.icon}" alt="Feature Icon" />
+//         <h5 class="BinanceClone-Notablefeature-header">${feature.title}</h5>
+//         <p>${feature.text}</p>
+//       `;
+
+//       // Update active button style
+//       document.querySelectorAll(".BinanceClone-feature-buttons button").forEach(btn => {
+//         btn.classList.remove("active-feature");
+//       });
+//        document.querySelectorAll(".BinanceClone-feature-action-buttons button").forEach(btn => {
+//         btn.classList.remove("active-feature");
+//       });
+//       event.target.classList.add("active-feature");
+//     }
+
+
+
+    // user feature
+
+    const content = {
       track: {
-        title: "Keep track of buy/sell orders",
-        text: "Users of the exchange can track buy and sell orders more simply thanks to the integration of an intuitive tracking graphic.",
-        icon: "./asset/sellorders.png"
+                text: "Users can access the platform through social logins or one-click email signup, eliminating the need to fill out lengthy forms. KYC/AML verification is mandatory for performing any financial transactions which is integrated by default within the system.",
+        icon: "assets/compliance.png"
       },
       instant: {
-        title: "Instant Cryptocurrency Buying and Selling",
-        text: "Our Binance clone script is connected to our high-end user panel, enabling instantaneous cryptocurrency buying and selling.",
-        icon: "./asset/Instant Cryptocurrency Buying and Selling.png"
+        
+        text: "The user dashboard offers eye-appealing information in the form of pie charts and graphical representations of the trades and transactions done on the platform, providing a wide range of visibility on the account and helping users enhance their trade strategies and manage accounts efficiently.",
+        icon: "assets/track of trades.png"
       },
       refer: {
-        title: "Option to Refer & Earn",
-        text: "By encouraging friends and relatives to join the platform, users can take advantage of the referral program and generate significant profits. With this option, new traders immediately add to the volume of trades.",
-        icon: "./asset/Option to Refer & Earn.png"
-      }
-      ,cryptocurrence: {
-        title: "Deposit Cryptocurrency or Fiat",
-        text: "With an intuitive dashboard, Cryptiecraft Binance clone software lets customers deposit fiat money and cryptocurrency with ease.",
-        icon: "./asset/Deposit Cryptocurrency or Fiat.png"
+                text: "The Binance clone script is a beginner-friendly platform that allows new users to instantly buy or sell cryptocurrencies through the Over-The-Counter (OTC) trading module with just a one-click swap, making the exchange process highly user-friendly and efficient.",
+        icon: "assets/otc support.png"
+      },
+      cryptocurrence: {
+        
+        text: "Users are able to deposit and withdraw multiple cryptocurrencies and can also use the platform as a secure storage for their crypto assets. In addition, the platform is scalable to accommodate various payment gateways, extending support for deposit and withdrawal of fiat currencies.",
+        icon: "assets/deposit and withdraw.png"
       },
       transaction: {
-        title: "History of Transaction",
-        text: "As members of an exchange platform, they can keep track of all of their transactions, including deposits and withdrawals made using fiat money as well as cryptocurrency.",
-        icon: "./asset/History of Transaction.png"
+        
+        text: "To trade with low latency and make accurate and instant decisions, the trading tools are essential and crucial which should be present in the same trade interface. This increases the efficiency of the trades and the profits too, where the platform provides all the advanced trade charts and tools inbuilt in the same trade interface.",
+        icon: "assets/advanced trading.png"
       },
       cryptowallet: {
-        title: "Access to Crypto Wallets",
-        text: "For managing cryptocurrencies during the trading and withdrawal processes, our Strong White label Binance clone script offers a very dependable cryptocurrency wallet with feature-rich security measures.",
-        icon: "./asset/Crypto Wallets.png"
+       
+        text: "With the use of the affiliate module, each successful referral helps you earn rewards in the form of either cryptocurrency or reduced trading fees. The referral system also helps more users discover the best solution for their trading needs.",
+        icon: "assets/affiliate module.png"
       }
     };
 
-    function showFeature(key) {
+    function showFeature(key, event) {
       const feature = content[key];
+      if (!feature) return;
+
       const container = document.getElementById("feature-content");
       container.innerHTML = `
         <img src="${feature.icon}" alt="Feature Icon" />
-        <h5 class="BinanceClone-Notablefeature-header">${feature.title}</h5>
         <p>${feature.text}</p>
       `;
 
-      // Update active button style
-      document.querySelectorAll(".BinanceClone-feature-buttons button").forEach(btn => {
+      // Remove active class from all buttons
+      document.querySelectorAll("button").forEach(btn => {
         btn.classList.remove("active-feature");
       });
-       document.querySelectorAll(".BinanceClone-feature-action-buttons button").forEach(btn => {
-        btn.classList.remove("active-feature");
-      });
-      event.target.classList.add("active-feature");
+
+      // Add active class to clicked button
+      if (event && event.target) {
+        event.target.classList.add("active-feature");
+      }
     }
+
 
 // BinanceClone-BusinessGains
     
 const contentData = [
   {
-    title: "Time-Reduction",
-    image: "./asset/Time Reduction.png",
+      image: "assets/Time Reduction.png",
     description:
-      "It can take longer to build a cryptocurrency exchange like Binance from scratch, but this white-label Binance clone script solution allows for the creation of the platform more quickly.",
+      "Building an exchange like Binance from scratch takes a longer development time, whereas our Binance clone script solution enables launching the platform with the required customizations more quickly.",
   },
   {
-    title: "Economical",
-    image: "./asset/Economical.png",
-    description: "Compared to the cost of creating the cryptocurrency exchange platform like Binance from scratch, this Binance Clone App solution is incredibly affordable and can be fully modified to add uniqueness."
+    
+    image: "assets/Economical.png",
+    description: "The major aspect to be considered while developing a software is the cost associated with it and when it comes to a solution like Binance, the development cost to build from scratch will surely skyrocket. That's where Cryptiecraft takes the lead, providing premium software at a comparatively lower cost than building from zero."
   },
   {
-    title: "Smooth Personalization",
-    image: "./asset/Smooth Personalization.png",
+    
+    image: "assets/Smooth Personalization.png",
     description:
-      "Since the solution is fully adaptable, industry-driven features can be added to make it more distinctive and cutting edge so that it can succeed in the market.",
+      "The solution is fully scalable, allowing industry-driven features to be integrated to make it distinctive and advanced in the market, helping it stay ahead of the competition.",
   },
   {
-    title: "Real-time Transaction",
-    image: "./asset/Real-time Transaction.png",
+    
+    image: "assets/Real-time Transaction.png",
     description:
-      "Our Binance clone app, similar to Binance, has a high TPS ratio and enables quick transactions. Even larger transactions, which can be finished in seconds, fall under this category.",
+      "Our Binance clone Script has high TPS to provide quicker and low latency transactions. Even huge trade volumes can be finished within seconds ensuring a flawless trade execution process.",
   },
   {
-    title: "Loaded with Features",
-    image: "./asset/Loaded with Features.png",
+    
+    image: "assets/Loaded with Features.png",
     description:
-      "Our feature-rich Binance Clone Script exchange platform, which resembles Binance, provides a range of trading choices for novice, intermediate, and expert traders.",
-  },
-   {
-    title: "Listing of Several Coins",
-    image: "./asset/Listing of Several Coins.png",
-    description:
-      "Depending on your company's requirements, you can list over 500 different cryptocurrencies, tokens, and stablecoins by using our white-label Binance clone.",
+      "Our feature-rich Binance Clone Script exchange platform provides a range of trading choices for novice, intermediate, and expert traders, integrated with leading and demanding features in the industry.",
   },
 
 ];
 
 function setActive(index) {
   const buttons = document.querySelectorAll(".menu-btn");
-  const title = document.querySelector(".Craitrix-revenue-container-right h3");
+  
   const desc = document.querySelector(".Craitrix-revenue-container-right p");
   const img = document.querySelector(".Craitrix-revenue-container-right img");
 
@@ -658,7 +744,7 @@ function setActive(index) {
   });
   const data = contentData[index];
   if (data) {
-    title.innerText = data.title;
+    
     desc.innerText = data.description;
     img.src = data.image;
     img.alt = data.title;
@@ -699,7 +785,7 @@ answers.forEach((item, index) => {
     <div class="faq-question-content" data-index="${index}">
       <div class="faq-content-box">
         <div class="faq-content-small-box">
-          <img src="asset/faq-question.png" />
+          <img src="assets/faq-question.png" />
         </div>
         <p>${item.title}  <i class="fa-solid fa-angles-down"></i></p>
       </div>
@@ -707,7 +793,7 @@ answers.forEach((item, index) => {
     <div class="faq-answer-content" id="faq-answer-${index}" style="display: none;">
       <div class="faq-ans-content-box">
         <div class="faq-ans-content-small-box">
-          <img src="asset/faq-answer.png" />
+          <img src="assets/faq-answer.png" />
         </div>
         <p>${item.content}</p>
       </div>
